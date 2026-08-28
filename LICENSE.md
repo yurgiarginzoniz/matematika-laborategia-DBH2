@@ -1,6 +1,6 @@
 # Matematikako Laborategia — Lizentzia / Licencia
 
-**Egilea / Autor:** [EGILEAREN IZENA / NOMBRE DEL AUTOR]
+**Egilea / Autor:** Yurgi Arginzoniz
 
 **Adimen artifizialaren laguntzarekin garatua / Desarrollado con asistencia de IA:** OpenAI ChatGPT.
 

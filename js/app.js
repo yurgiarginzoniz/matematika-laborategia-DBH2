@@ -1,7 +1,7 @@
 
 const SITE = {
   name: "Matematikako Laborategia",
-  author: "[EGILEAREN IZENA / NOMBRE DEL AUTOR]",
+  author: "Yurgi Arginzoniz",
   ai: "OpenAI ChatGPT",
   license: "CC BY-NC-SA 4.0",
   licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/"

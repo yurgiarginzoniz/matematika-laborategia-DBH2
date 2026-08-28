@@ -1,0 +1,150 @@
+# Matematikako Laborategia — jarduera
+# Fitxategi hau jardueraren iturri nagusia da.
+# HTML fitxak hemendik sortu behar dira; ez alderantziz.
+
+id: "6-pospoloak"
+bertsioa: "0.6.3"
+izena: "6 pospoloen erronka"
+
+fitxa_teknikoa:
+  deskribapen_laburra: >
+    Sei pospolo erabiliz lau triangelu aldeberdin berdin eraikitzeko erronka.
+    Soluzio desberdinek ikasleek enuntziatuari gehitzen dizkioten baldintza
+    ez-esplizituak agerian uzten dituzte.
+  jarduera_mota: "Erronka"
+  fasea:
+    - "Kultura sortzea"
+  denboralizazioa: "30–40 min"
+  irekiera_maila: "Itxia"
+  zailtasuna: "Ertaina"
+  taldekatzea: "Ausazko 3ko taldeak"
+  gaiak:
+    - "Geometria"
+    - "Interpretazioa"
+  pentsatzeko_tresnak:
+    - "Suposizio ezkutuak identifikatzea"
+    - "Ikuspegia aldatzea"
+  konpetentziak:
+    - kodea: "1.1"
+      sakontasuna: 3
+      nola_lantzen_da: >
+        Enuntziatuaren baldintzak interpretatzea eta geuk gehitutako baldintzak bereiztea.
+    - kodea: "1.2"
+      sakontasuna: 2
+      nola_lantzen_da: >
+        Estrategia desberdinak probatu eta soluzioak arrazoitzea.
+    - kodea: "2.2"
+      sakontasuna: 1
+      nola_lantzen_da: >
+        Konfigurazio geometrikoak irudikatzea eta azaltzea.
+    - kodea: "5.1"
+      sakontasuna: 2
+      nola_lantzen_da: >
+        Blokeoari aurre egitea eta estrategia aldatzea.
+    - kodea: "5.2"
+      sakontasuna: 1
+      nola_lantzen_da: >
+        Taldeko ideiak entzun eta kontrastatzea.
+
+jardueraren_aurkezpena:
+  helburua: >
+    Jarduera hau ez da soilik konfigurazio bat aurkitzeko erronka. Bere balio nagusia
+    problemak irakurtzean geuk gehitzen ditugun baldintza inplizituak agerian uztean dago.
+  azalpen_nagusia: |
+    Ikasle gehienek pospoloak mahai gainean jartzen hasten dira eta, ia konturatu gabe,
+    figura laua izan behar dela onartzen dute. Gainera, pospoloak beren muturretan
+    elkartu behar direla eta «lau triangelu» esateak «zehazki lau» esan nahi duela
+    pentsatu ohi dute.
+
+    Hasierako konfigurazio lauak eta blokeoa ez dira jardueraren porrota: jardueraren
+    material didaktiko nagusietako bat dira. Irakasleak ez luke berehala «pentsatu hiru
+    dimentsiotan» edo antzeko pistarik eman behar. Askoz interesgarriagoa da galdetzea:
+    «Zer dakigu benetan? Zer hartu dugu ziurtzat?»
+
+    Lehen soluzioa aurkitzea ez da jardueraren amaiera. Beste konfigurazio batzuk bilatu
+    eta soluzio bakoitzak zer suposizio inplizitu apurtzen duen aztertzea da jardueraren
+    benetako aberastasuna.
+  soluzioen_irakurketa:
+    - izena: "Tetraedroa"
+      zer_apurtzen_du: "«Planoan egon behar du» suposizioa."
+      azalpena: >
+        Sei pospoloak tetraedro erregular baten sei ertzak dira eta lau aurpegiak
+        triangelu aldeberdin berdinak dira.
+      irakaslearen_galdera: "Non esan dugu figura laua izan behar dela?"
+    - izena: "Soluzio laua"
+      zer_apurtzen_du: "«Pospoloak muturretan bakarrik elkartu daitezke» suposizioa."
+      azalpena: >
+        Pospolo baten zati bat triangelu baten alde izan daiteke; pospolo oso baten muturra
+        ez da nahitaez triangelu baten erpina.
+      irakaslearen_galdera: "Triangelu baten aldea pospolo oso bat izan behar al da?"
+    - izena: "David izarra"
+      zer_apurtzen_du: "«Lau» esan nahi du «zehazki lau» suposizioa."
+      azalpena: >
+        Bi triangelu aldeberdin gurutzatuta sei triangelu txiki eta hexagono zentral bat
+        agertzen dira.
+      irakaslearen_galdera: "Enuntziatuak dio lau baino gehiago ezin direla egon?"
+  eramateko_ideia: >
+    Beste problema batean blokeatzen direnean, ikasleek beren buruari galdetzea:
+    «Baldintza hori problemak dio, ala nik jarri dut?»
+
+irakaslearen_fitxa:
+  jardueraren_deskribapena: >
+    3ko taldeetan, ikasleek sei pospolorekin lau triangelu aldeberdin berdin
+    eraikitzeko konfigurazioak bilatzen dituzte. Ez da argitzen figura planoa izan
+    behar den, pospoloak muturretan elkartu behar diren edo zehazki lau triangelu
+    izan behar diren.
+  prestaketa:
+    - "6 pospolo edo zotz talde bakoitzeko."
+    - "Enuntziatua proiektatzeko aukera."
+  aurkezpena: >
+    Sei pospolo dituzue. Lau triangelu aldeberdin berdin eraiki behar dituzue seiak erabiliz.
+  ez_esatekoak:
+    - "Ez esan trikimailua dela."
+    - "Ez esan figura laua edo espaziala dela."
+    - "Ez esan pospoloak nola elkartu behar diren."
+  denboralizazioa:
+    - tartea: "0–5 min"
+      fasea: "Aurkezpena"
+      azalpena: "Baldintzak soilik argitu."
+    - tartea: "5–20 min"
+      fasea: "Esplorazioa"
+      azalpena: "Taldeak behatu eta egiten dituzten suposizioak identifikatu."
+    - tartea: "20–30 min"
+      fasea: "Bateratzea"
+      azalpena: "Soluzio desberdinak erakutsi eta alderatu."
+    - tartea: "30–40 min"
+      fasea: "Hausnarketa"
+      azalpena: "Suposizio ezkutuak eta ikuspegia aldatzea izendatu."
+  galdera_erabilgarriak:
+    - "Zer hartu duzue ziurtzat?"
+    - "Enuntziatuak benetan esaten al du hori?"
+    - "Beste modu batean irudika daiteke?"
+    - "Lehen soluzioa aurkitu ondoren: beste bat egon daiteke?"
+  soluzioak:
+    - izena: "Tetraedroa"
+      irudiak:
+        - "../assets/tetraedroa.svg"
+    - izena: "Hiru soluzio nagusiak"
+      irudiak:
+        - "../assets/6_pospoloak_hiru_soluzioak.png"
+  ebaluazioan_zer_behatu:
+    - "Enuntziatuaren baldintzak eta beren suposizioak bereizten dituzten."
+    - "Blokeoaren aurrean estrategia aldatzen duten."
+    - "Soluzioa ahoz justifikatzeko gai diren."
+
+ikaslearen_fitxa:
+  beharrezkoa: true
+  titulua: "6 pospoloen erronka"
+  blokeak:
+    - mota: "enuntziatua"
+      testua: >
+        Sei pospolo erabiliz, eraiki lau triangelu aldeberdin berdin.
+    - mota: "galdera"
+      testua: "Zer probatu duzue?"
+    - mota: "galdera"
+      testua: "Zer aldatu duzue?"
+
+loturak:
+  aurretik_egitekoak: []
+  ondoren_egitekoak:
+    - "9-puntuak"

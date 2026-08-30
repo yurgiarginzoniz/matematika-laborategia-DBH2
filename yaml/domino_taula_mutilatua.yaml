@@ -1,0 +1,100 @@
+id: domino-taula-mutilatua
+bertsioa: 0.1.4
+izena: Domino-taula mutilatua
+fitxa_teknikoa:
+  deskribapen_laburra: Kontrako bi izkinak kendutako xake-taula dominoekin estali daitekeen erabaki eta ezintasuna koloreztatze bidez frogatzea.
+  jarduera_mota: Erronka
+  fasea:
+  - Pentsatzeko tresnak garatzea
+  denboralizazioa: 30–45 min
+  irekiera_maila: Itxia
+  zailtasuna: Ertaina
+  taldekatzea: Ausazko 3ko taldeak
+  gaiak:
+  - Geometria
+  - Logika
+  - Frogak
+  pentsatzeko_tresnak:
+  - Koloreztatzea
+  - Aldaezina identifikatzea
+  - Kontraadibideak eta ezintasuna arrazoitzea
+  konpetentziak:
+  - kodea: '1.1'
+    sakontasuna: 2
+    nola_lantzen_da: Estalduraren baldintzak eta piezen propietateak interpretatzea.
+  - kodea: '1.2'
+    sakontasuna: 3
+    nola_lantzen_da: Saiakera konstruktiboetatik ezintasuna frogatzeko estrategia batera igarotzea.
+  - kodea: '2.2'
+    sakontasuna: 2
+    nola_lantzen_da: Taularen irudikapen geometrikoa eta koloreztatzea arrazoibidean erabiltzea.
+  - kodea: '3.2'
+    sakontasuna: 2
+    nola_lantzen_da: Kasuak aztertu eta koloreztatze bidez ondorio orokorra justifikatzea.
+  - kodea: '5.1'
+    sakontasuna: 2
+    nola_lantzen_da: Konfigurazioak aurkitzeko blokeoaren aurrean estrategia mota aldatzea.
+jardueraren_aurkezpena:
+  helburua: Ikasleek konfigurazio bat aurkitu ezin izatetik konfiguraziorik ezin dela existitu frogatzera jauzi egitea, koloreztatzea ezintasuna erakusteko tresna gisa erabiliz.
+  azalpen_nagusia: '8×8 xake-taula arrunt bati kontrako bi izkinak kentzen zaizkio. 62 laukitxo geratzen dira, eta 31 domino 2×1ek ere 62 laukitxo estaltzen dituzte. Azalera-kontuak ez du ezintasuna erakusten; horregatik problema benetan sinesgarria da.
+
+
+    Lehen fasean ikasleek dominoak kokatzen saiatzea komeni da. Ia taula osoa estaltzea lortuko dute eta azken hutsuneak leku deserosotan geratuko dira. Une hori garrantzitsua da: «ez dut aurkitu» ez da «ezinezkoa da». Matematikoki bigarrena baieztatzeko, aukera guztiak banan-banan probatu gabe arrazoiren bat behar dugu.
+
+
+    Xake-taularen koloreztatzea da giltza. Kontrako bi izkinak kolore berekoak dira. 32 zuri eta 32 beltzetatik bi kolore bereko kentzean 30 kolore bateko eta 32 besteko geratzen dira. Domino batek, nola jarrita ere, ondoko bi laukitxo estaltzen ditu eta beti zuri bat eta beltz bat hartzen ditu.
+
+
+    31 dominok, beraz, 31 zuri eta 31 beltz estali beharko lituzkete. Taula mutilatuak ez du kopuru hori. Ezintasuna ez dago konfigurazio jakin batean; domino bakoitzak koloreen arteko oreka mantentzen duela da arrazoia.
+
+
+    Bateratzean galdera nagusia da zer egin dugun desberdin: hasieran soluzio bat eraikitzen saiatu gara; gero soluziorik ezin dela egon frogatzeko propietate bat bilatu dugu. Koloreztatzea ez da dekorazioa, objektu guztiek errespetatzen duten aldaezin bat ikusgarri egiteko modua da.'
+  ikasleen_ibilbide_tipikoa:
+  - Dominoak kokatzen saiatzen dira eta ia-estaldurak lortzen dituzte.
+  - Azalera 62=31×2 dela egiaztatzen dute, baina horrek ez du nahikoa ematen.
+  - «Ezinezkoa dela uste dugu» agertzen da, oraindik frogarik gabe.
+  - Xake-taularen koloreek domino bakoitzaren propietate konstantea erakusten dute.
+  - 30/32 desorekak ezintasuna frogatzen du.
+  bateratze_eztabaida: &id001
+  - 62 laukitxo izateak zer frogatzen du? Eta zer ez du frogatzen?
+  - Konfigurazio asko probatu ondoren, nola frogatuko genuke ez dagoela bat ere?
+  - Domino bakoitzak taularen koloreei buruz zer propietate du?
+  - Kendutako bi izkinek zer dute komunean?
+  - Zer mantentzen du domino bat jartzen dugun bakoitzean?
+  eramateko_ideia: Zerbait aurkitu ez izanak ez du frogatzen ezinezkoa denik; ezintasuna frogatzeko konfigurazio guztiek errespetatu behar duten propietate bat bila dezakegu.
+irakaslearen_fitxa:
+  jardueraren_deskribapena: Ikasleek kontrako bi izkinak kendutako 8×8 taula 31 dominoekin estaltzen saiatzen dira eta, ondoren, estaldura posible edo ezinezkoa dela frogatu behar dute.
+  aurkezpena: '8×8 xake-taula bati kontrako bi izkinak kendu dizkiogu. Geratzen den taula 31 domino 2×1 erabiliz guztiz estali al daiteke? Erantzuna ez da nahikoa: frogatu.'
+  denboralizazioa:
+  - tartea: 0–5 min
+    fasea: Aurkezpena
+    azalpena: Taula eta dominoaren baldintzak argitu.
+  - tartea: 5–20 min
+    fasea: Eraikuntza-saiakerak
+    azalpena: Estaldurak bilatzen utzi; ez aurreratu koloreztatzea.
+  - tartea: 20–30 min
+    fasea: Frogaren beharra
+    azalpena: «Ez dut lortu» eta «ezinezkoa da» bereizi.
+  - tartea: 30–45 min
+    fasea: Koloreztatzea eta bateratzea
+    azalpena: Domino bakoitzak zer kolore estaltzen dituen aztertu.
+  galdera_erabilgarriak: *id001
+  soluzioak:
+  - izena: Koloreztatze bidezko ezintasuna
+    azalpena: Kontrako izkinak kolore berekoak dira. Horiek kenduta kolore bateko 30 eta besteko 32 laukitxo geratzen dira. Domino 2×1 bakoitzak beti kolore bakoitzeko bana estaltzen du; 31 dominok 31+31 beharko lituzkete. Beraz estaldura ezinezkoa da.
+  ebaluazioan_zer_behatu:
+  - Saiakera konstruktiboa eta froga bereizten dituzten.
+  - Koloreztatzea informazio matematiko gisa erabiltzen duten.
+  - Ezintasuna aukera guztiak probatu gabe justifikatzen duten.
+  hedapenak:
+  - Zer gertatzen da kendutako bi laukitxoak kolore desberdinekoak badira?
+  - Beste taula-neurri batzuekin zer gertatzen da?
+ikaslearen_fitxa:
+  beharrezkoa: true
+  titulua: Domino-taula mutilatua
+  blokeak:
+  - mota: enuntziatua
+    testua: 8×8 xake-taula bati kontrako bi izkinak kendu dizkiogu. 31 domino 2×1ekin guztiz estali al daiteke? Frogatu zuen erantzuna.
+loturak:
+  aurretik_egitekoak: []
+  ondoren_egitekoak: []

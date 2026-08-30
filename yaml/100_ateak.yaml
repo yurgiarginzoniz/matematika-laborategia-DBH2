@@ -1,0 +1,100 @@
+id: 100-ateak
+bertsioa: 0.1.4
+izena: 100 ateak
+fitxa_teknikoa:
+  deskribapen_laburra: 100 ate ireki eta ixteko prozesu errepikatu batean amaieran zein geratzen diren irekita aurkitu eta karratu perfektuekin duten lotura azaltzea.
+  jarduera_mota: Ikerketa
+  fasea:
+  - Pentsatzeko tresnak garatzea
+  denboralizazioa: 1–2 saio
+  irekiera_maila: Erdi-irekia
+  zailtasuna: Ertaina
+  taldekatzea: Ausazko 3ko taldeak
+  gaiak:
+  - Patroiak
+  - Zatitzaileak
+  - Zenbakien propietateak
+  pentsatzeko_tresnak:
+  - Kasu sinpleagoak aztertzea
+  - Taula sistematikoa egitea
+  - Patroiak bilatzea
+  - Kasu partikularretatik orokortzea
+  konpetentziak:
+  - kodea: '1.2'
+    sakontasuna: 3
+    nola_lantzen_da: Prozesua antolatzeko estrategiak sortu eta ondorioa justifikatzea.
+  - kodea: '3.1'
+    sakontasuna: 3
+    nola_lantzen_da: Ateen aldaketak zatitzaileekin erlazionatu eta karratu perfektuen patroia identifikatzea.
+  - kodea: '3.2'
+    sakontasuna: 3
+    nola_lantzen_da: Kasu txikietatik aierua egin eta zatitzaileen egiturarekin egiaztatzea.
+  - kodea: '5.2'
+    sakontasuna: 2
+    nola_lantzen_da: Irudikapen eta azalpen desberdinak taldean alderatzea.
+jardueraren_aurkezpena:
+  helburua: 'Esperimentazio eta datu-antolaketatik zenbakien egitura batera igarotzea: ate bakoitzaren egoera bere zatitzaile kopuruaren paritateak erabakitzen duela ulertzea.'
+  azalpen_nagusia: '100 ateak hasieran itxita daude. 1. pertsonak ate guztiak aldatzen ditu; 2.ak 2ren multiploak; 3.ak 3ren multiploak, eta horrela 100. pertsonaraino. «Aldatu» hitzak irekita badago ixtea eta itxita badago irekitzea esan nahi du.
+
+
+    100 kasuak zuzenean simulatzea aspergarria izan daiteke. Horregatik 10, 12 edo 20 aterekin fisikoki edo taula batean hastea komeni da. Ikasleek amaierako egoerak erregistratzen dituzte eta 1,4,9,16... bezalako zenbakiak agertzen hasten dira. Patroia aurkitzea, ordea, ez da ikerketaren amaiera.
+
+
+    Ate jakin bat noiz aldatzen den galdetzeak egitura erakusten du. 12. atea 1., 2., 3., 4., 6. eta 12. txandetan aldatzen da: 12ren zatitzaile bakoitzeko behin. Beraz, ate bat irekita geratuko da aldaketa kopurua bakoitia bada.
+
+
+    Zatitzaileak normalean bikoteka datoz: d eta n/d. Karratu perfektuetan bakarrik gertatzen da bikoteko bi kideak berdinak izatea, erro karratua zenbaki osoa denean. Horregatik karratu perfektuek zatitzaile kopuru bakoitia dute eta haien ateak irekita geratzen dira.
+
+
+    Jardueraren balioa «1,4,9,...» aurkitzea baino gehiago da: simulazioak aierua sortzen du, baina zergatia beste objektu matematiko batean —zatitzaileetan— aurkitzen da. Horrek ikerketa matematikoaren ziklo osoa eskaintzen du.'
+  ikasleen_ibilbide_tipikoa:
+  - 10–20 aterekin prozesua simulatzen dute.
+  - Amaieran irekita geratzen diren ateen patroia erregistratzen dute.
+  - Karratu perfektuak direla susmatzen dute.
+  - Ate bakoitzaren aldaketa-kopurua bere zatitzaileekin lotzen dute.
+  - Zatitzaile kopuru bakoitia karratu perfektuen ezaugarria dela justifikatzen dute.
+  bateratze_eztabaida: &id001
+  - Noiz aldatzen da 12. atea? Eta 16.a?
+  - Ate baten zenbakiaren zer propietatek esaten digu zenbat aldiz aldatuko den?
+  - Zatitzaileak nola parekatu daitezke?
+  - Noiz geratzen da zatitzaile bat bikoterik gabe?
+  - Patroia ikusi dugu; zer falta zaigu azalpen bat izateko?
+  eramateko_ideia: Patroi batek zer gertatzen den iradoki dezake; zergatik gertatzen den azaltzeko, askotan azpiko egitura matematikoa bilatu behar da.
+irakaslearen_fitxa:
+  jardueraren_deskribapena: Ikasleek ateak ireki/ixteko prozesua kasu txiki batean simulatzen dute, emaitzak antolatzen dituzte, 100 aterako aierua egiten dute eta zergatik gertatzen den azaltzen dute.
+  aurkezpena: 100 ate itxita daude. 1. pertsonak ate guztiak aldatzen ditu; 2.ak 2ren multiploak; 3.ak 3ren multiploak... 100.ak 100. atea. Zein ate geratuko dira irekita amaieran? Zergatik?
+  denboralizazioa:
+  - tartea: '1. saioa: 0–15 min'
+    fasea: Simulazioa
+    azalpena: 10–20 aterekin prozesua egin.
+  - tartea: '1. saioa: 15–35 min'
+    fasea: Datuak eta patroia
+    azalpena: Emaitzak antolatu eta aierua formulatu.
+  - tartea: '1. saioa: 35–55 min'
+    fasea: Zergatia
+    azalpena: Ate baten aldaketak zatitzaileekin lotu.
+  - tartea: 2. saioa (aukerakoa)
+    fasea: Froga eta hedapenak
+    azalpena: Karratu perfektuen zatitzaile-paritatea justifikatu eta aldaerak ikertu.
+  galdera_erabilgarriak: *id001
+  soluzioak:
+  - izena: Karratu perfektuak
+    azalpena: n. atea n-ren zatitzaile bakoitzeko behin aldatzen da. Irekita geratzeko aldaketa kopurua bakoitia izan behar da. Zatitzaileak d·(n/d)=n bikoteka datoz; karratu perfektuetan erro karratua bere buruarekin parekatzen da eta zatitzaile kopurua bakoitia da. Beraz 1,4,9,16,25,36,49,64,81,100 geratzen dira irekita.
+  ebaluazioan_zer_behatu:
+  - Datuak sistematikoki antolatzen dituzten.
+  - Patroia eta justifikazioa bereizten dituzten.
+  - Zatitzaileen bikoteen azalpena ulertu eta komunikatzen duten.
+  hedapenak:
+  - n ate egongo balira, zenbat geratuko lirateke irekita?
+  - Zer aldatzen da hasieran ate guztiak irekita badaude?
+ikaslearen_fitxa:
+  beharrezkoa: true
+  titulua: 100 ateak
+  blokeak:
+  - mota: enuntziatua
+    testua: 100 ate itxita daude. Pertsona bakoitzak bere zenbakiaren multiplo diren ateak aldatzen ditu. Zein geratuko dira irekita?
+  - mota: testua
+    testua: Hasi ate gutxiagorekin. Antolatu zuen datuak eta idatzi zuen aierua eta azalpena.
+loturak:
+  aurretik_egitekoak: []
+  ondoren_egitekoak: []

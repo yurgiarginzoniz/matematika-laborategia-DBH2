@@ -1,0 +1,89 @@
+id: txokolate-tableta
+bertsioa: 0.1.4
+izena: Txokolate-tableta
+fitxa_teknikoa:
+  deskribapen_laburra: Txokolate-tableta baten laukitxo guztiak banantzeko zenbat haustura behar diren aztertzea, eta estrategia desberdinek kopurua aldatzen duten erabakitzea.
+  jarduera_mota: Erronka
+  fasea:
+  - Pentsatzeko tresnak garatzea
+  denboralizazioa: 20–30 min
+  irekiera_maila: Erdi-irekia
+  zailtasuna: Erraza–ertaina
+  taldekatzea: Ausazko 3ko taldeak
+  gaiak:
+  - Logika
+  - Zenbaketa
+  - Aldaezinak
+  pentsatzeko_tresnak:
+  - Prozesua urratsez urrats aztertzea
+  - Aldaezina identifikatzea
+  - Kasu sinpleagoak aztertzea
+  konpetentziak:
+  - kodea: '1.1'
+    sakontasuna: 2
+    nola_lantzen_da: Haustura bakoitzaren baldintzak eta helburua zehaztasunez interpretatzea.
+  - kodea: '1.2'
+    sakontasuna: 3
+    nola_lantzen_da: Estrategia desberdinak alderatu eta haustura kopurua zergatik den beti bera justifikatzea.
+  - kodea: '3.2'
+    sakontasuna: 2
+    nola_lantzen_da: Kasu txikietatik aierua egin eta arrazoibidez egiaztatzea.
+  - kodea: '5.2'
+    sakontasuna: 1
+    nola_lantzen_da: Taldeko estrategiak alderatu eta azalpen komuna eraikitzea.
+jardueraren_aurkezpena:
+  helburua: Ikasleek estrategia optimizatzeko problema dirudien batean emaitza estrategiaren araberakoa ez dela aurkitzea, eta prozesu batean aldatzen ez den egitura bat bilatzen ikastea.
+  azalpen_nagusia: 'Tableta 6×4 laukitxokoa izan daiteke, baina neurriak ez dira jardueraren muina. Baldintza garrantzitsua da haustura bakoitzean esku artean dugun pieza bakar bat hausten dela bi piezatan. Galderak estrategia optimizatzeko gonbita dirudi: erditik hasi? zati handiak lehenago hautsi? lerro luzeak aprobetxatu?
+
+
+    Ikasleek marrazkiak eta estrategia desberdinak proposatuko dituzte. Horiek probatzea merezi du, baina laster beste ikuspegi bat sor daiteke: ez begiratu non hausten dugun, baizik eta haustura bakoitzak pieza kopuruari zer egiten dion. Hasieran pieza bakarra dugu. Haustura bakoitzak pieza bat hartu eta bi bihurtzen ditu; beraz, guztizko pieza kopurua zehazki batean handitzen da.
+
+
+    24 laukitxo bereizi nahi baditugu, 1 piezatik 24 piezara joan behar dugu: 23 igoera, eta hortaz 23 haustura. Ez dago estrategia hoberik haustura kopuruari dagokionez. Hau aldaezin baten lehen esperientzia bikaina da, termino teknikoa berehala eman beharrik gabe.
+
+
+    Bateratzean komeni da hasierako galderara itzultzea: zergatik zirudien hausteko moduak garrantzia zuela? Zer neurtu dugu azkenean? Ikasleek ikus dezakete problema batzuetan objektuaren forma baino prozesuak sortzen duen aldaketa konstantea dela giltza.'
+  ikasleen_ibilbide_tipikoa:
+  - Hausteko estrategia «eraginkorrak» diseinatzen dituzte.
+  - Kasu txikiagoekin haustura kopuruak konparatzen dituzte.
+  - Haustura bakoitzak pieza kopurua +1 egiten duela identifikatzen dute.
+  - 1etik n piezara n−1 haustura behar direla orokortzen dute.
+  bateratze_eztabaida: &id001
+  - Haustura bakoitzaren ondoren, zenbat pieza gehiago ditugu?
+  - 2, 3, 4 edo 5 azken pieza nahi baditugu, zer gertatzen da?
+  - Hausteko lekua aldatzeak pieza kopuruaren bilakaera aldatzen al du?
+  - Zein informazio da estrategiaren independentea?
+  eramateko_ideia: Prozesu konplexu batean, urrats bakoitzak kantitate bati beti aldaketa bera eragiten badio, horrek estrategia guztien gainetik dagoen informazioa eman dezake.
+irakaslearen_fitxa:
+  jardueraren_deskribapena: Ikasleek tableta baten laukitxo guztiak banandu behar dituzte, haustura bakoitzean une horretako pieza bakar bat bi zatitan hautsiz. Gutxieneko haustura kopurua eta estrategiaren eragina aztertzen dituzte.
+  aurkezpena: 6×4 laukitxoko txokolate-tableta dugu. Haustura bakoitzean daukagun pieza bakar bat bi zatitan hautsi dezakegu. Zenbat haustura behar dira 24 laukitxoak banantzeko? Ba al dago besteak baino estrategia hoberik?
+  denboralizazioa:
+  - tartea: 0–5 min
+    fasea: Aurkezpena
+    azalpena: Erronka aurkeztu eta estrategiak libreki sortzen utzi.
+  - tartea: 5–15 min
+    fasea: Esplorazioa
+    azalpena: Marrazkiak, kasu txikiak eta estrategia desberdinak alderatu.
+  - tartea: 15–25 min
+    fasea: Egitura
+    azalpena: Haustura bakoitzean pieza kopuruari zer gertatzen zaion aztertu.
+  - tartea: 25–30 min
+    fasea: Bateratzea
+    azalpena: n piezarako orokortu eta aldaezinaren ideia izendatu.
+  galdera_erabilgarriak: *id001
+  soluzioak:
+  - izena: Pieza kopurua jarraitzea
+    azalpena: Hasieran pieza 1 dago. Haustura bakoitzak pieza bakarra bi bihurtzen du; guztizko kopurua +1. 24 pieza lortzeko 1→24 egin behar da, hau da, 23 haustura. Oro har n pieza lortzeko n−1 haustura.
+  ebaluazioan_zer_behatu:
+  - Kasu txikietara jotzen duten.
+  - Estrategiak probatu ondoren prozesuaren egitura aztertzen duten.
+  - n−1 emaitza zergatik den derrigorrezkoa azaltzen duten.
+  hedapenak:
+  - Zer gertatuko litzateke hainbat pieza batera apurtzea baimenduko bagenu?
+  - Formak edo tabletaren neurriak eragina al dute?
+ikaslearen_fitxa:
+  beharrezkoa: false
+  aukera: Tableta baten marrazkia arbelean edo pantailan nahikoa da.
+loturak:
+  aurretik_egitekoak: []
+  ondoren_egitekoak: []

@@ -1,50 +1,81 @@
-# Matematikako Laborategia
+# Matematikako Laborategia — DBH 2
 
-Web estática para gestionar materiales del Matematikako Laborategia.
+**Matematikako Laborategia matematikaren bidez pentsatzen ikasteko gunea da.**
 
-## Arquitectura
+DBH 2ko hautazko irakasgai honetan helburua ez da ohiko matematika-eskolako edukiak beste modu batean errepikatzea. Ikasleek erronkak, ikerketak, matematika-jolasak eta proiektuak erabiltzen dituzte problemak ulertzeko, estrategiak sortzeko, patroiak aurkitzeko, aieruak egiteko, argumentatzeko, irudikapenak aldatzeko eta beren ideiak besteekin kontrastatzeko.
 
-- `yaml/*.yaml` — fuente de verdad de las actividades.
-- `tools/build.py` — convierte los YAML en `data/actividades.js`.
-- `data/actividades.js` — paquete de datos que permite que el ZIP funcione con doble clic, sin servidor.
-- `jarduera.html` — única plantilla para todas las actividades.
-- `bankua.html` — banco dinámico.
-- `jarraipena.html` — seguimiento desacoplado de las actividades y guardado en `localStorage`.
-- `assets/` — imágenes y diagramas.
+Laborategiak hiru dimentsio uztartu nahi ditu: **hobeto pentsatzea**, **identitate matematiko positiboa eraikitzea** eta **matematikaz gozatzea**. Horregatik, erantzun zuzena aurkitzea ez da jarduera baten amaiera nahitaez. Nola iritsi garen, beste estrategia bat posible den, zergatik funtzionatzen duen edo zer gertatzen den baldintzak aldatzen baditugu ere ikerketaren parte dira.
 
-## Editar una actividad
+Ikasgelan, ahal denean, ausazko hirukoteetan lan egiten da. Irakaslearen lana ez da metodoa aurreratzea, baizik eta pentsamendua aktibatzeko galderak egitea, blokeoak aprobetxatzea eta jardueretan modu naturalean agertzen diren **pentsatzeko tresnak** izendatzen eta berrerabiltzen laguntzea.
 
-1. Modifica su YAML.
-2. Ejecuta:
-   `python3 tools/build.py`
-3. Recarga la web.
+## Webgunearen edukia
 
-En GitHub Pages, el workflow incluido ejecuta el build automáticamente al publicar.
+Webguneak jarduera-bankua, jarduera bakoitzaren fitxak, irakaslearentzako gida eta ikasturteko jarraipena biltzen ditu.
 
-## Uso offline
+Jarduera bakoitzak lau geruza izan ditzake:
 
-Descomprime la carpeta y abre `index.html`. No hace falta instalar nada para usar la web.
+1. **Fitxa teknikoa** — programaziorako eta bilaketarako metadatuak.
+2. **Jardueraren aurkezpena** — jarduera lehen aldiz erabiliko duen irakaslearentzako azalpen pedagogiko zabala.
+3. **Irakaslearen fitxa** — jarduera gelan egiteko gida operatiboa, denboralizazioa, galderak, soluzioak, blokeoak eta hedapenak barne.
+4. **Ikaslearen fitxa** — behar denean inprimatzeko materiala.
 
-## Licencia
+Ikasturteko esperientziaren **jarraipena** jardueretatik bereizita gordetzen da, jarduera bera urte edo une desberdinetan egin ahal izateko.
 
-CC BY-NC-SA 4.0. Consulta `LICENSE.md` y `lizentzia.html`.
+## Edukiaren iturria: YAML
 
+`yaml/` karpetako fitxategiak dira jardueren **edukiaren iturri nagusia**. Jarduera berria gehitu edo lehendik dagoena aldatu ondoren, webguneak erabiltzen duen datu-fitxategia berreraiki behar da:
 
-## Primera publicación en GitHub
+```bash
+python3 tools/build.py
+```
 
-1. Crea un repositorio público llamado, por ejemplo, `matematikako-laborategia`.
-2. Sube el contenido de esta carpeta a la raíz del repositorio.
-3. En GitHub: `Settings → Pages → Source → GitHub Actions`.
-4. Haz `push` a la rama `main`.
-5. El workflow `.github/workflows/pages.yml` genera `data/actividades.js` desde los YAML y publica la web automáticamente.
+Horrek `data/actividades.js` sortzen du.
 
-La carpeta raíz del proyecto debe mantenerse siempre con el nombre `matematikako-laborategia`.
+GitHub-en argitaratzean, GitHub Actions-ek urrats hori automatikoki egiten du. Lokalean YAML fitxategiak aldatu badira, komandoa eskuz exekutatu behar da.
 
-## Antes de publicar
+## Lokalean erabiltzea
 
-Sustituye `[EGILEAREN IZENA / NOMBRE DEL AUTOR]` por el nombre que quieras mostrar en:
-- `site.json`
-- `js/app.js`
-- `LICENSE.md`
-- `lizentzia.html`
+Banatutako bertsioa zuzenean erabil daiteke zerbitzaririk instalatu gabe: `index.html` ireki nabigatzailean.
 
+Nahi izanez gero, garapenerako zerbitzari lokal sinple bat erabil daiteke:
+
+```bash
+python3 -m http.server 8000
+```
+
+eta ondoren `http://localhost:8000` ireki.
+
+## Proiektuaren egitura
+
+```text
+.
+├── index.html
+├── jarduera.html
+├── bankua.html
+├── jarraipena.html
+├── gida.html
+├── lizentzia.html
+├── yaml/
+├── data/
+│   └── actividades.js
+├── assets/
+├── js/
+├── css/
+├── tools/
+│   └── build.py
+└── .github/workflows/
+```
+
+## Jarduera berriak gehitzea
+
+1. Sortu jardueraren YAML fitxategia `yaml/` karpetan.
+2. Mantendu lehendik dauden jardueren egitura.
+3. Gehitu behar diren irudi edo diagramak `assets/` karpetan.
+4. Exekutatu `python3 tools/build.py` lokalean, edo egin commit/push GitHub-era.
+5. Egiaztatu jarduera bankuan, jarduera-orrian eta inprimatzeko bistetan.
+
+## Lizentzia
+
+Materiala **Creative Commons BY-NC-SA 4.0** lizentziapean argitaratzen da: aitortza egin behar da, erabilera komertzialik ez da onartzen eta egokitzapenak lizentzia berarekin partekatu behar dira.
+
+Proiektua OpenAI ChatGPT-ren laguntzarekin garatu da.

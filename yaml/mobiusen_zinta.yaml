@@ -1,0 +1,109 @@
+id: mobiusen-zinta
+bertsioa: 0.1.4
+izena: Möbiusen zinta
+fitxa_teknikoa:
+  deskribapen_laburra: Paperezko zinta bati bira erdi eman, itsatsi eta moztu aurretik emaitza iragartzea; ondoren esperimentua eta azalpena alderatzea.
+  jarduera_mota: Ikerketa
+  fasea:
+  - Sakontzea eta aplikazioa
+  denboralizazioa: 1 saio
+  irekiera_maila: Irekia
+  zailtasuna: Erraza–ertaina
+  taldekatzea: Ausazko 3ko taldeak
+  gaiak:
+  - Geometria
+  - Topologia intuitiboa
+  - Esperimentazioa
+  pentsatzeko_tresnak:
+  - Aieruak egitea eta egiaztatzea
+  - Irudikapena aldatzea
+  - Esperimentu sistematikoa egitea
+  konpetentziak:
+  - kodea: '1.2'
+    sakontasuna: 2
+    nola_lantzen_da: Aieruak sortu, esperimentuz kontrastatu eta emaitzen arabera berrikustea.
+  - kodea: '2.2'
+    sakontasuna: 3
+    nola_lantzen_da: Objektu geometrikoaren propietateak marrazki, marka eta manipulazio bidez deskribatzea.
+  - kodea: '3.2'
+    sakontasuna: 3
+    nola_lantzen_da: Moztu aurretik aieruak formulatu eta manipulazioz egiaztatzea.
+  - kodea: '4.1'
+    sakontasuna: 2
+    nola_lantzen_da: Objektu harrigarri baten propietate matematikoak identifikatu eta deskribatzea.
+  - kodea: '5.1'
+    sakontasuna: 2
+    nola_lantzen_da: Aurreikuspen okerrak ikerketarako informazio gisa erabiltzea.
+  - kodea: '5.2'
+    sakontasuna: 2
+    nola_lantzen_da: Taldeko aurreikuspenak eta azalpenak alderatzea.
+jardueraren_aurkezpena:
+  helburua: 'Laborategi matematikoaren zikloa fisikoki bizitzea: objektua eraiki, propietateak esploratu, emaitza aurresan, esperimentatu, harridura kudeatu eta azalpen berria eraiki.'
+  azalpen_nagusia: 'Möbiusen zinta egiteko paper-zerrenda luze bati bira erdi ematen zaio muturrak itsatsi aurretik. Objektua sinplea da, baina eguneroko intuizio geometrikoarekin talka egiten duten propietateak ditu. Horregatik jarduera ez da «trikimailu» gisa aurkeztu behar, esperimentu matematiko gisa baizik.
+
+
+    Lehenik ikasleek zinta arrunt bat eta Möbiusen zinta alderatu ditzakete. Arkatzarekin erdiko lerro bat marrazten hasten badira arkatza altxatu gabe hasierako puntura itzuliko dira, zintaren «bi aldeetatik» igaro direla dirudien arren. Horrek dagoeneko galdera sortzen du: zenbat alde ditu objektuak?
+
+
+    Ondoren dator esperimentu nagusia. Erdiko lerrotik zinta guztiz moztu aurretik talde bakoitzak zer gertatuko den marraztu edo idatzi behar du. Ohiko aierua bi zinta bereizi lortzea da. Moztutakoan, ordea, zinta bakar handiago eta bihurrituago bat lortzen da. Harridura ez da amaiera: aurreikuspena zergatik huts egin duen eta ebakiaren ibilbidea objektuan nola doan aztertu behar da.
+
+
+    Bigarren esperimentu batean ertzetik zabaleraren heren batera moztu daiteke. Emaitza desberdina da eta lehen esperimentuan sortutako azalpena proban jartzen du. Taldeek aldaerak proposa ditzakete: bira osoa, bi bira, beste ebaki-posizio bat...
+
+
+    Jardueraren helburua ez da DBH2n topologia formalizatzea. Garrantzitsuena aieru-esperimentu-berrikuspen zikloa da eta marrazki lau batek objektu espazial baten portaera aurreikusteko dituen mugak bizitzea. Ikasleak bere aurreikuspen okerra gordetzen badu, esperimentuak benetako informazio matematikoa sortzen du.'
+  ikasleen_ibilbide_tipikoa:
+  - Zinta arrunta eta Möbiusen zinta eraikitzen dituzte.
+  - Erdiko ibilbidea marraztuz objektuaren aldeei buruzko intuizioa zalantzan jartzen dute.
+  - Moztu aurretik emaitza iragartzen eta marrazten dute.
+  - Esperimentuak ohiko aierua hausten du.
+  - Emaitza deskribatu, azalpena bilatu eta beste ebaki bat iragartzen dute.
+  bateratze_eztabaida: &id001
+  - Zenbat alde ditu zintak? Nola egiaztatuko zenukete?
+  - Moztu aurretik, zer objektu lortuko dituzuela uste duzue? Marraztu.
+  - Zuen aurreikuspenaren zein zatitan zegoen ezkutuko suposizioa?
+  - Ebakiaren lerroari jarraitzen badiogu, nondik doa?
+  - Lehen esperimentuak zer iradokitzen du hurrengoari buruz?
+  eramateko_ideia: 'Aurreikuspena esperimentuaren aurretik esplizitatzeak harridura ikaskuntza bihurtzen du: aierua ez da asmatu beharreko erantzuna, egiaztatu eta berrikusi daitekeen ideia baizik.'
+irakaslearen_fitxa:
+  jardueraren_deskribapena: Ikasleek Möbiusen zinta eraikitzen dute, haren propietateak marken bidez esploratzen dituzte eta hainbat ebakiren emaitza aurretik iragarri, esperimentatu eta azaldu egiten dute.
+  aurkezpena: 'Eraiki Möbiusen zinta bat. Moztu aurretik: zer gertatuko dela uste duzue zinta erdiko lerrotik guztiz mozten badugu? Marraztu zuen aierua, egin esperimentua eta azaldu zer gertatu den.'
+  denboralizazioa:
+  - tartea: 0–10 min
+    fasea: Eraikuntza eta esplorazioa
+    azalpena: Zinta arrunta eta Möbiusen zinta egin; erdiko ibilbidea markatu.
+  - tartea: 10–20 min
+    fasea: Aierua
+    azalpena: Erdiko ebakiaren emaitza marraztu/idatzi, moztu aurretik.
+  - tartea: 20–30 min
+    fasea: Esperimentua
+    azalpena: Moztu eta emaitza aurreikuspenarekin alderatu.
+  - tartea: 30–45 min
+    fasea: Bigarren esperimentua
+    azalpena: Heren bateko ebakia aurresan eta egin.
+  - tartea: 45–55 min
+    fasea: Bateratzea
+    azalpena: Aieruak, emaitzak eta azalpenak partekatu.
+  galdera_erabilgarriak: *id001
+  soluzioak:
+  - izena: Erdiko ebakia
+    azalpena: Bira erdiko Möbiusen zinta erdiko lerrotik moztean ez dira bi zinta bereizi lortzen; zinta bakar luzeago bat lortzen da, bi bira dituena.
+  - izena: Heren bateko ebakia
+    azalpena: 'Ertzetik zabaleraren heren batera ebakitzean bi osagai lotu lortzen dira: Möbiusen zinta estuago bat eta zinta luzeago bihurritu bat. Emaitza fisikoki egitea komeni da azalpena baino lehen.'
+  ebaluazioan_zer_behatu:
+  - Aierua esperimentua baino lehen esplizitatzen duten.
+  - Emaitza zehaztasunez deskribatzen duten.
+  - Aurreikuspen okerra berrikusteko prest dauden.
+  - Lehen esperimentutik bigarrenerako arrazoibidea transferitzen duten.
+  hedapenak:
+  - Bira oso batekin edo bi birekin zinta egin eta emaitzak alderatu.
+  - Ikasleek beren ebaki-esperimentua diseinatu eta beste talde bati aurresateko eman.
+ikaslearen_fitxa:
+  beharrezkoa: true
+  titulua: Möbiusen zinta — esperimentu-koadernoa
+  blokeak:
+  - mota: testua
+    testua: 'Esperimentu bakoitzean: 1) marraztu/idatzi zuen aierua; 2) egin esperimentua; 3) deskribatu emaitza; 4) zer aldatu da zuen azalpenan?'
+loturak:
+  aurretik_egitekoak: []
+  ondoren_egitekoak: []

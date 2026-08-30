@@ -3,7 +3,7 @@ const SITE = {
   name: "Matematikako Laborategia",
   author: "[EGILEAREN IZENA / NOMBRE DEL AUTOR]",
   ai: "OpenAI ChatGPT",
-  license: "CC BY-NC-SA 4.0",
+  license: "CC BY-NC-SA 4.0 · v0.1.4",
   licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   version: "0.1.3"
 };

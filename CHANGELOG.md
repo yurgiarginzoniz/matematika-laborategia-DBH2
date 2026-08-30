@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 0.1.4 — Jarduera-bankua zabaltzea
+- Bost jarduera berri: Txokolate-tableta, Nim, 100 ateak, Domino-taula mutilatua eta Möbiusen zinta.
+- Jarduera berriek aurkezpen pedagogiko zabala, irakaslearen gida, konpetentziak, galderak, soluzioak eta hedapenak dituzte.
+- `README.md` osorik euskaratu da eta DBH 2ko Matematikako Laborategiaren izaera pedagogikoa azaldu da.
+- 0.1.3ko baliabideen querystring bidezko bertsionatzea kendu da.
+- Bertsioa copyright/lizentzia oinean erakusteko prestatuta dago.
+
+
 ## 0.1.3 — Cache-busting eta bertsio ikusgarria
 - CSS, jarduera-datu eta JavaScript fitxategiek bertsio-parametroa daramate nabigatzaileak bertsio zaharra ez erabiltzeko.
 - Webaren bertsioa footerrean erakusten da, kargatutako bertsioa egiaztatzeko.

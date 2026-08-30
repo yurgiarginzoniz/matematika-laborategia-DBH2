@@ -1,0 +1,96 @@
+id: nim
+bertsioa: 0.1.4
+izena: 'Nim: irabazteko estrategia'
+fitxa_teknikoa:
+  deskribapen_laburra: Objektuak txandaka kenduz jokatzen den joko batean posizio irabazleak eta galtzaileak aurkitu eta estrategia orokor bat eraikitzea.
+  jarduera_mota: Matematika-jolasa
+  fasea:
+  - Pentsatzeko tresnak garatzea
+  denboralizazioa: 1 saio
+  irekiera_maila: Erdi-irekia
+  zailtasuna: Erraza–ertaina
+  taldekatzea: Ausazko 3ko taldeak
+  gaiak:
+  - Estrategia-jokoak
+  - Patroiak
+  - Logika
+  pentsatzeko_tresnak:
+  - Atzeraka lan egitea
+  - Kasu sinpleagoak aztertzea
+  - Patroiak bilatzea
+  - Aieruak egitea eta egiaztatzea
+  konpetentziak:
+  - kodea: '1.2'
+    sakontasuna: 3
+    nola_lantzen_da: Joko-estrategiak probatu, alderatu eta estrategia irabazlea justifikatzea.
+  - kodea: '3.1'
+    sakontasuna: 2
+    nola_lantzen_da: Posizio irabazle eta galtzaileen patroia identifikatzea.
+  - kodea: '3.2'
+    sakontasuna: 3
+    nola_lantzen_da: Kasu txikietatik estrategia orokorrari buruzko aierua egin eta egiaztatzea.
+  - kodea: '4.1'
+    sakontasuna: 3
+    nola_lantzen_da: Estrategia-joko baten egitura matematikoa identifikatu eta deskribatzea.
+  - kodea: '5.2'
+    sakontasuna: 2
+    nola_lantzen_da: Aurkariekin eta taldearekin estrategiak kontrastatzea.
+jardueraren_aurkezpena:
+  helburua: 'Jolasa bera ikerketa matematiko bihurtzea: partidetan ausazko mugimenduak egiteari utzi eta amaieratik atzeraka arrazoituz irabazteko egitura aurkitzea.'
+  azalpen_nagusia: 'Hasierako bertsioa nahita sinplea da: mahai gainean, adibidez, 21 fitxa daude; txanda bakoitzean jokalariak 1, 2 edo 3 fitxa kentzen ditu eta azken fitxa hartzen duenak irabazten du. Lehen minutuetan jolastea da egokiena, azalpen teorikorik gabe.
+
+
+    Partida batzuk egin ondoren galdera aldatzen da: «Zorte kontua da, ala norbaitek irabaztea ziurta dezake?». Joko osoa 21etik aztertzea zaila izan daiteke; amaieratik atzeraka egitea, ordea, argigarria da. Fitxa 1, 2 edo 3 geratzen badira, irabazi daiteke. 4 geratzen badira, edozein mugimenduk aurkariari 1–3 uzten dio: 4 galtzeko posizioa da. Hortik 8, 12, 16, 20... agertzen dira.
+
+
+    Beraz, helburua aurkariari 4ren multiplo bat uztea da. 21ekin hasten bada lehen jokalariak 1 kendu eta 20 uzten du; hortik aurrera aurkariak x kentzen badu, 4−x kentzen du. Bikoteko mugimenduek beti 4 kentzen dituzte eta azken fitxa lehen jokalariak hartuko du.
+
+
+    Interes pedagogikoa ez da trikimailua ezagutzea. Ikasleak «posizio ona» zer den definitzera, kasu txikiekin sailkatzera eta estrategia zergatik funtzionatzen duen azaltzera iristea da. Ondoren arau bat aldatzeak —1etik 4ra kentzea, hasierako kopurua aldatzea edo azkena hartzen duenak galtzea— benetan ulertu duten ala 4ren multiploen errezeta buruz ikasi duten erakusten du.'
+  ikasleen_ibilbide_tipikoa:
+  - Partida batzuk intuizioz jokatzen dituzte.
+  - «Ba al dago beti irabazteko modurik?» galdera sortzen da.
+  - Amaierako 1,2,3,4 fitxako posizioak sailkatzen dituzte.
+  - 4ren multiploen patroia aurkitzen dute.
+  - Estrategia azaltzen dute eta arauak aldatuta berriz ikertzen dute.
+  bateratze_eztabaida: &id001
+  - Fitxa gutxi geratzen direnean, zein posiziotan nahi zenuke zure txanda ez izatea?
+  - 4 fitxa geratzen bazaizkizu, zer gertatzen da? Eta 5?
+  - Zein kopuru utzi nahi diozu aurkariari?
+  - Aurkariak 1, 2 edo 3 kentzen badu, nola erantzun dezakezu?
+  - 1etik 4ra kentzeko aukera balego, zer aldatuko litzateke?
+  eramateko_ideia: Joko batean mugimendu onena aurkitzeko, askotan amaierako posizio ziurretatik atzeraka eraiki daiteke estrategia.
+irakaslearen_fitxa:
+  jardueraren_deskribapena: Ikasleek 21 fitxako 1–3 kentzeko jokoa behin eta berriz jokatzen dute, emaitzak aztertzen dituzte eta jokalari batek irabaztea bermatzeko estrategia dagoen ikertzen dute.
+  aurkezpena: 21 fitxa daude. Txanda bakoitzean 1, 2 edo 3 fitxa kendu behar dira. Azken fitxa hartzen duenak irabazten du. Zorte-jokoa da ala irabazteko estrategia aurki daiteke?
+  denboralizazioa:
+  - tartea: 0–10 min
+    fasea: Jolastu
+    azalpena: Bikoteka hainbat partida, estrategiarik azaldu gabe.
+  - tartea: 10–25 min
+    fasea: Ikerketa
+    azalpena: Kasu txikiak eta amaierako posizioak aztertu.
+  - tartea: 25–40 min
+    fasea: Estrategia
+    azalpena: Posizio galtzaileak identifikatu eta araua formulatu.
+  - tartea: 40–55 min
+    fasea: Justifikazioa eta aldaerak
+    azalpena: Estrategia frogatu eta jokoaren arau bat aldatu.
+  galdera_erabilgarriak: *id001
+  soluzioak:
+  - izena: 1–3 kentzeko estrategiaren egitura
+    azalpena: 4ren multiploak galtzeko posizioak dira jokalari perfektuen aurrean. 21etik lehen jokalariak 1 kentzen du 20 uzteko; ondoren aurkariak x kentzen duen bakoitzean 4−x kentzen du, 16,12,8,4 uzteko eta azkena hartzeko.
+  ebaluazioan_zer_behatu:
+  - Partidak datu gisa erabiltzen dituzten.
+  - Kasu txikietatik atzeraka arrazoitzen duten.
+  - Patroia ez ezik estrategia zergatik bermatzen den azaltzen duten.
+  hedapenak:
+  - Hasierako fitxa kopurua aldatu.
+  - Txanda bakoitzean 1–4 kentzea.
+  - Azken fitxa hartzen duenak galtzen duen bertsioa.
+ikaslearen_fitxa:
+  beharrezkoa: false
+  aukera: Fitxak, pospoloak edo bestelako objektu txikiak nahikoa dira.
+loturak:
+  aurretik_egitekoak: []
+  ondoren_egitekoak: []

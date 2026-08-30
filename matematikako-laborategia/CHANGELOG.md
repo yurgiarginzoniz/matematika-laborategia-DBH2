@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 0.1.2 — Lehen bost jardueren maila editoriala
+- Fitxa teknikoan `Laburpen-fitxa` izenburua eta taula trinkoa gehitu dira.
+- 9 puntuak, Eskuak ematea, Bi sokak eta Zenbat piano jardueren aurkezpen pedagogikoak sakon berridatzi dira.
+- Ikasleen ibilbide tipikoak, bateratze-galderak, blokeoak eta irakaslearen azalpen operatiboak zabaldu dira.
+- Esku-emateen bi justifikazioak, bi soken luzera/denbora bereizketa, 9 puntuen muga ikusezina eta pianoen Fermi-modelizazioaren kalitate-irizpideak esplizitatu dira.
+- YAML fitxategiak dira edukiaren iturri nagusia; `data/actividades.js` berreraiki da.
+
+
 ## 0.1.1 — 6 pospoloak erreferentziazko fitxa
 - Aurkezpen pedagogiko osoa berreskuratu da.
 - Hiru soluzioen diagramak eta blokeoen azalpen operatiboak gehitu dira.

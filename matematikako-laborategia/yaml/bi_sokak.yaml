@@ -1,98 +1,110 @@
-# Matematikako Laborategia — jarduera
-# YAML hau da jardueraren iturri nagusia.
-
-id: "bi-sokak"
-bertsioa: "0.6.3"
-izena: "Bi sokak"
-
+id: bi-sokak
+bertsioa: 0.1.2
+izena: Bi sokak
 fitxa_teknikoa:
-  deskribapen_laburra: >
-    Bi sokak 60 minututan erretzen dira, baina ez abiadura konstantean.
-    Bi sokak eta sua bakarrik erabiliz, 45 minutu zehazki neurtu behar dira.
-  jarduera_mota: "Erronka"
+  deskribapen_laburra: 'Bi sokak 60 minututan erretzen dira, baina ez abiadura konstantean. Bi sokak eta sua bakarrik erabiliz, 45 minutu zehazki neurtu behar dira.
+
+    '
+  jarduera_mota: Erronka
   fasea:
-    - "Kultura sortzea"
-  denboralizazioa: "20–30 min"
-  irekiera_maila: "Itxia"
-  zailtasuna: "Ertaina"
-  taldekatzea: "Ausazko 3ko taldeak"
+  - Kultura sortzea
+  denboralizazioa: 20–30 min
+  irekiera_maila: Itxia
+  zailtasuna: Ertaina
+  taldekatzea: Ausazko 3ko taldeak
   gaiak:
-    - "Denbora"
-    - "Logika"
+  - Denbora
+  - Logika
   pentsatzeko_tresnak:
-    - "Zer dakigu ziur?"
-    - "Suposizioak berrikustea"
+  - Zer dakigu ziur?
+  - Suposizioak berrikustea
   konpetentziak:
-    - kodea: "1.1"
-      sakontasuna: 2
-      nola_lantzen_da: "Baldintzak eta erabil daitekeen informazioa zuzen interpretatzea."
-    - kodea: "1.2"
-      sakontasuna: 3
-      nola_lantzen_da: "Estrategiak probatu, baztertu eta informazio ziurra konbinatzea."
-    - kodea: "5.1"
-      sakontasuna: 2
-      nola_lantzen_da: "Blokeoaren aurrean estrategia aldatzea."
-    - kodea: "5.2"
-      sakontasuna: 1
-      nola_lantzen_da: "Taldean ideiak kontrastatzea."
-
+  - kodea: '1.1'
+    sakontasuna: 2
+    nola_lantzen_da: Baldintzak eta erabil daitekeen informazioa zuzen interpretatzea.
+  - kodea: '1.2'
+    sakontasuna: 3
+    nola_lantzen_da: Estrategiak probatu, baztertu eta informazio ziurra konbinatzea.
+  - kodea: '5.1'
+    sakontasuna: 2
+    nola_lantzen_da: Blokeoaren aurrean estrategia aldatzea.
+  - kodea: '5.2'
+    sakontasuna: 1
+    nola_lantzen_da: Taldean ideiak kontrastatzea.
 jardueraren_aurkezpena:
-  helburua: >
-    Informazio osoa ez dugunean ere zer kontrolatu dezakegun identifikatzea.
-  azalpen_nagusia: |
-    Sokaren erdiak ez du zertan 30 minutu iraun. Baliteke lehen erdia bost minututan
-    erretzea eta beste erdiak 55 behar izatea. Horregatik, luzera denbora bihurtzeko
-    ohiko intuizioa ezin da erabili.
+  helburua: 'Informazio osoa ez dugunean ere zer kontrolatu dezakegun identifikatzea.
 
-    Ikasleek maiz sokaren hiru laurdenak erabiltzea edo erdian marka egitea proposatzen
-    dute. Galdera erabilgarria da: «Nola dakizu zati horrek denbora hori behar duela?»
+    '
+  azalpen_nagusia: 'Bi soken erronkak informazio ez-osoarekin arrazoitzeko ohitura oso zehatza lantzen du: ez dakiguna kontrolatzen saiatu beharrean, ziurtasunez dakiguna identifikatzea. Baldintza erabakigarria da sokak ez direla abiadura konstantean erretzen. Baldintza hori apaingarri gisa irakurtzen bada, ia soluzio oker guztiak agertzen dira.
 
-    Aldaketa kontzeptuala «Zer dakigu ziur?» galdetzean dator. Soka bat bi muturretatik
-    piztuta, 30 minututan amaituko da, nahiz eta ez jakin su-fronteak non elkartuko diren.
 
-    0. minutuan lehen soka bi muturretatik pizten da eta bigarrena mutur batetik.
-    30. minutuan lehenengoa amaitzen da eta bigarrenaren beste muturra pizten da.
-    Geratzen den zatia 15 minututan amaitzen da: guztira 45 minutu.
-  eramateko_ideia: >
-    Informazio ezezagunaren barruan ere bada ziurtasunez kontrola daitekeen zerbait.
+    Ohiko proposamenak soka erditik markatzea, hiru laurdenak hartzea edo luzeraren proportzioak denboraren proportzio bihurtzea dira. Baina soka baten lehen erdiak 5 minutu eta bigarrenak 55 minutu iraun ditzake. Beraz, luzeraren erdia ez da 30 minutuko erlojua. Irakaslearen galdera erabilgarriena ez da «oker dago», baizik eta «Nola dakizu zati horrek denbora hori behar duela?». Horrela ikasleak bere hipotesi ezkutua ikusi behar du.
 
+
+    Aldaketa kontzeptuala «Zer dakigu ziur?» galderarekin dator. Soka oso bat mutur batetik piztuta 60 minututan amaitzen dela dakigu. Bi muturretatik batera pizten badugu, bi su-fronteek soka osoa kontsumitzen dute eta 30 minututan amaitzen da, nahiz eta ez dakigun non elkartuko diren. Ez dugu erretze-abiadura ezagutu behar.
+
+
+    0. minutuan lehen soka bi muturretatik eta bigarrena mutur bakarretik pizten dira. Lehen soka 30. minutuan amaitzen denean, badugu 30 minutuko seinale fidagarria. Une horretan bigarren sokaren beste muturra pizten dugu. Bigarren sokak, mutur bakarretik jarraituko balu, beste 30 minutuko erretze-denbora izango luke; bi muturretatik erretzen denez, geratzen den erretze-lana 15 minututan amaitzen da. Guztira 45 minutu.
+
+
+    Azken azalpen horretan komeni da azpimarratzea «geratzen den sokaren erdia» esatea okerra izan daitekeela: 30 minuturen ondoren geratzen den luzera ez dugu ezagutzen. Ezagutzen duguna geratzen den erretze-denbora da. Jardueraren indarra bereizketa horretan dago.
+
+
+    Bateratzean, soluzioa baino gehiago, erabilitako tresna izendatu daiteke: «Zer dakigu ziur?». Baldintza irregular baten aurrean ere badira aldaezinak edo bermeak. Hedapen moduan, beste denbora zehatz batzuk neurtu daitezkeen aztertzeak ikasle azkarrak soluzioa kopiatzetik egitura aztertzera eramaten ditu.'
+  eramateko_ideia: 'Informazio ezezagunaren barruan ere bada ziurtasunez kontrola daitekeen zerbait.
+
+    '
+  ikasleen_ibilbide_tipikoa:
+  - Luzera eta denbora proportzionalak direla suposatzen duten proposamenak agertzen dira.
+  - «Ez da abiadura konstantean erretzen» baldintzak proposamen horiek baliogabetzen ditu.
+  - Taldeak ziurtasunez dakiten informazioa isolatzen hasten dira.
+  - Bi muturretatik pizteak 30 minutuko seinale fidagarria sortzen du.
+  - Bigarren sokarekin seinale hori konbinatuta 45 minutu lortzen dira.
+  bateratze_eztabaida: &id001
+  - Nola dakizu soka-zati horrek denbora hori behar duela?
+  - Zer dakigu ziur, erretze-abiadura ezagutu gabe?
+  - Soka bat bi muturretatik pizten badugu, zer gertatzen da?
+  - 30 minutu neurtzeko gai bagara, nola erabil dezakegu beste soka?
+  - 30. minutuan bigarren sokatik geratzen den luzera ezagutzen al dugu? Zer ezagutzen dugu?
 irakaslearen_fitxa:
-  jardueraren_deskribapena: >
-    Bi soketako bakoitzak 60 minutu behar ditu erabat erretzeko, baina ez dute
-    abiadura konstantean erretzen. 45 minutu neurtu behar dira.
-  aurkezpena: >
-    Bi soka ditugu. Soka bakoitzak 60 minutu behar ditu guztiz erretzeko,
-    baina ez dira abiadura konstantean erretzen. Nola neur ditzakegu zehazki 45 minutu?
-  denboralizazioa:
-    - tartea: "0–3 min"
-      fasea: "Aurkezpena"
-      azalpena: "Erronka eman."
-    - tartea: "3–12 min"
-      fasea: "Esplorazioa"
-      azalpena: "Luzera-denbora suposizioak behatu."
-    - tartea: "12–18 min"
-      fasea: "Pistak"
-      azalpena: "Pista-mailak behar denean."
-    - tartea: "18–25 min"
-      fasea: "Bateratzea"
-      azalpena: "«Zer dakigu ziur?» ideia landu."
-  pista_mailak:
-    - "Soka bat mutur batetik piztuta, zer dakigu ziur?"
-    - "Eta bi muturretatik pizten badugu?"
-    - "30 minutu neurtzeko gai bagara, nola erabil dezakegu beste soka?"
-  soluzioak:
-    - izena: "45 minutuko denbora-diagrama"
-      irudiak:
-        - "../assets/bi_sokak.svg"
-  hedapenak:
-    - "Zein beste denbora zehatz neur daitezke bi sokekin?"
-    - "40 minutu? 50 minutu? Zergatik?"
+  jardueraren_deskribapena: 'Bi soketako bakoitzak 60 minutu behar ditu erabat erretzeko, baina ez dute abiadura konstantean erretzen. 45 minutu neurtu behar dira.
 
+    '
+  aurkezpena: 'Bi soka ditugu. Soka bakoitzak 60 minutu behar ditu guztiz erretzeko, baina ez dira abiadura konstantean erretzen. Nola neur ditzakegu zehazki 45 minutu?
+
+    '
+  denboralizazioa:
+  - tartea: 0–3 min
+    fasea: Aurkezpena
+    azalpena: Erronka eman.
+  - tartea: 3–12 min
+    fasea: Esplorazioa
+    azalpena: Luzera-denbora suposizioak behatu.
+  - tartea: 12–18 min
+    fasea: Pistak
+    azalpena: Pista-mailak behar denean.
+  - tartea: 18–25 min
+    fasea: Bateratzea
+    azalpena: «Zer dakigu ziur?» ideia landu.
+  pista_mailak:
+  - Soka bat mutur batetik piztuta, zer dakigu ziur?
+  - Eta bi muturretatik pizten badugu?
+  - 30 minutu neurtzeko gai bagara, nola erabil dezakegu beste soka?
+  soluzioak:
+  - izena: 45 minutuko denbora-diagrama
+    irudiak:
+    - ../assets/bi_sokak.svg
+    azalpena: 't=0: lehen soka bi muturretatik eta bigarrena mutur batetik piztu. t=30: lehen soka amaitzen da; une horretan bigarren sokaren beste muturra piztu. Bigarren sokari mutur bakarretik beste 30 minutuko erretze-denbora geratuko litzaioke; bi muturretatik, 15 minutu. t=45: amaitu. Ez dakigu 30. minutuan zenbat luzera geratzen den, eta ez dugu jakin behar.'
+  hedapenak:
+  - Zein beste denbora zehatz neur daitezke bi sokekin?
+  - 40 minutu? 50 minutu? Zergatik?
+  galdera_erabilgarriak: *id001
+  amaierako_bateratzea: Bereizi esplizituki «geratzen den luzera» eta «geratzen den erretze-denbora». Lehenengoa ezezaguna da; bigarrena ziurtasunez ezagutzen dugu. Hortik atera «Zer dakigu ziur?» pentsatzeko tresna.
 ikaslearen_fitxa:
   beharrezkoa: false
-  aukera: >
-    Nahi izanez gero, A5 txartel soil bat erabil daiteke enuntziatuarekin.
+  aukera: 'Nahi izanez gero, A5 txartel soil bat erabil daiteke enuntziatuarekin.
 
+    '
 loturak:
   aurretik_egitekoak: []
   ondoren_egitekoak: []

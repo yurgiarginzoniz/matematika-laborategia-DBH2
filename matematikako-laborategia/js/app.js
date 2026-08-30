@@ -150,15 +150,14 @@ function renderActivityPage(){
   </div>
   <section id="tech" class="tabpane active">
     <div class="card"><h2>Deskribapen laburra</h2><p>${esc(ft.deskribapen_laburra)}</p></div>
-    <div class="meta section">
-      <div class="box"><small>Jarduera mota</small><strong>${esc(ft.jarduera_mota)}</strong></div>
-      <div class="box"><small>Fasea</small><strong>${esc((ft.fasea||[]).join(", "))}</strong></div>
-      <div class="box"><small>Denboralizazioa</small><strong>${esc(ft.denboralizazioa)}</strong></div>
-      <div class="box"><small>Irekiera-maila</small><strong>${esc(ft.irekiera_maila)}</strong></div>
-      <div class="box"><small>Zailtasuna</small><strong>${esc(ft.zailtasuna)}</strong></div>
-      <div class="box"><small>Taldekatzea</small><strong>${esc(ft.taldekatzea)}</strong></div>
-      <div class="box"><small>Gaiak</small><strong>${esc((ft.gaiak||[]).join(" · "))}</strong></div>
-      <div class="box"><small>Pentsatzeko tresnak</small><strong>${esc((ft.pentsatzeko_tresnak||[]).join(" · "))}</strong></div>
+    <div class="section summary-sheet">
+      <h2>Laburpen-fitxa</h2>
+      <div class="summary-table-wrap"><table class="summary-table"><tbody>
+        <tr><th>Jarduera mota:</th><td>${esc(ft.jarduera_mota)}</td><th>Fasea:</th><td>${esc((ft.fasea||[]).join(", "))}</td></tr>
+        <tr><th>Denboralizazioa:</th><td>${esc(ft.denboralizazioa)}</td><th>Irekiera-maila:</th><td>${esc(ft.irekiera_maila)}</td></tr>
+        <tr><th>Zailtasuna:</th><td>${esc(ft.zailtasuna)}</td><th>Taldekatzea:</th><td>${esc(ft.taldekatzea)}</td></tr>
+        <tr><th>Gaiak:</th><td>${esc((ft.gaiak||[]).join(" · "))}</td><th>Pentsatzeko tresnak:</th><td>${esc((ft.pentsatzeko_tresnak||[]).join(" · "))}</td></tr>
+      </tbody></table></div>
     </div>
     <div class="section"><h2>Konpetentziak</h2>${renderCompetencies(ft.konpetentziak)}</div>
   </section>

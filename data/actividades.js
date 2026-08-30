@@ -1,7 +1,7 @@
 window.LAB_JARDUERAK = [
   {
     "id": "100-ateak",
-    "bertsioa": "0.1.4",
+    "bertsioa": "0.1.5",
     "izena": "100 ateak",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "100 ate ireki eta ixteko prozesu errepikatu batean amaieran zein geratzen diren irekita aurkitu eta karratu perfektuekin duten lotura azaltzea.",
@@ -100,8 +100,95 @@ window.LAB_JARDUERAK = [
       ],
       "soluzioak": [
         {
-          "izena": "Karratu perfektuak",
-          "azalpena": "n. atea n-ren zatitzaile bakoitzeko behin aldatzen da. Irekita geratzeko aldaketa kopurua bakoitia izan behar da. Zatitzaileak d·(n/d)=n bikoteka datoz; karratu perfektuetan erro karratua bere buruarekin parekatzen da eta zatitzaile kopurua bakoitia da. Beraz 1,4,9,16,25,36,49,64,81,100 geratzen dira irekita."
+          "izena": "12 ateko adibide txikia",
+          "taula": {
+            "zutabeak": [
+              "Atea",
+              "Aldatzen duten txandak",
+              "Aldaketa kopurua",
+              "Amaieran"
+            ],
+            "errenkadak": [
+              [
+                "1",
+                "1",
+                "1",
+                "Irekita"
+              ],
+              [
+                "2",
+                "1, 2",
+                "2",
+                "Itxita"
+              ],
+              [
+                "3",
+                "1, 3",
+                "2",
+                "Itxita"
+              ],
+              [
+                "4",
+                "1, 2, 4",
+                "3",
+                "Irekita"
+              ],
+              [
+                "5",
+                "1, 5",
+                "2",
+                "Itxita"
+              ],
+              [
+                "6",
+                "1, 2, 3, 6",
+                "4",
+                "Itxita"
+              ],
+              [
+                "7",
+                "1, 7",
+                "2",
+                "Itxita"
+              ],
+              [
+                "8",
+                "1, 2, 4, 8",
+                "4",
+                "Itxita"
+              ],
+              [
+                "9",
+                "1, 3, 9",
+                "3",
+                "Irekita"
+              ],
+              [
+                "10",
+                "1, 2, 5, 10",
+                "4",
+                "Itxita"
+              ],
+              [
+                "11",
+                "1, 11",
+                "2",
+                "Itxita"
+              ],
+              [
+                "12",
+                "1, 2, 3, 4, 6, 12",
+                "6",
+                "Itxita"
+              ]
+            ]
+          },
+          "azalpena": "Taulak erakusten du ate bat bere zenbakiaren zatitzaile bakoitzeko behin aldatzen dela. Irekita geratzeko aldaketa-kopuruak bakoitia izan behar du."
+        },
+        {
+          "izena": "Zergatik karratu perfektuak?",
+          "diagram_text": "12. atea → 1, 2, 3, 4, 6, 12 → 12ren zatitzaileak → 6 aldaketa → itxita\n\n9. atea → 1, 3, 9 → 9ren zatitzaileak → 3 aldaketa → irekita\n\nZatitzaileak normalean bikoteka datoz: d eta n/d. Karratu perfektuetan erro karratua bere buruarekin parekatzen da; horregatik zatitzaile kopurua bakoitia da.",
+          "azalpena": "Beraz, 100 aterekin irekita geratzen direnak karratu perfektuak dira: 1, 4, 9, 16, 25, 36, 49, 64, 81 eta 100."
         }
       ],
       "ebaluazioan_zer_behatu": [
@@ -116,15 +203,181 @@ window.LAB_JARDUERAK = [
     },
     "ikaslearen_fitxa": {
       "beharrezkoa": true,
-      "titulua": "100 ateak",
+      "titulua": "100 ateak — Ikerketa-fitxa",
       "blokeak": [
         {
           "mota": "enuntziatua",
-          "testua": "100 ate itxita daude. Pertsona bakoitzak bere zenbakiaren multiplo diren ateak aldatzen ditu. Zein geratuko dira irekita?"
+          "testua": "100 ate daude, hasieran guztiak itxita. 1. pertsonak ate guztiak aldatzen ditu; 2. pertsonak 2ren multiploak; 3.ak 3ren multiploak; eta horrela 100. pertsonaraino. Zein ate geratuko dira irekita amaieran? Zergatik?"
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "1. Ez hasi 100 ateekin"
         },
         {
           "mota": "testua",
-          "testua": "Hasi ate gutxiagorekin. Antolatu zuen datuak eta idatzi zuen aierua eta azalpena."
+          "testua": "Lehenengo, egin esperimentua 12 aterekin. Idatzi txanda bakoitzean zein ate aldatzen diren."
+        },
+        {
+          "mota": "taula_datuak",
+          "zutabeak": [
+            "Txanda",
+            "Zein ate aldatzen dira?"
+          ],
+          "errenkadak": [
+            [
+              "1",
+              "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12"
+            ],
+            [
+              "2",
+              "2, 4, 6, 8, 10, 12"
+            ],
+            [
+              "3",
+              ""
+            ],
+            [
+              "4",
+              ""
+            ],
+            [
+              "5",
+              ""
+            ],
+            [
+              "6",
+              ""
+            ],
+            [
+              "7",
+              ""
+            ],
+            [
+              "8",
+              ""
+            ],
+            [
+              "9",
+              ""
+            ],
+            [
+              "10",
+              ""
+            ],
+            [
+              "11",
+              ""
+            ],
+            [
+              "12",
+              ""
+            ]
+          ]
+        },
+        {
+          "mota": "galdera",
+          "testua": "Amaieran irekita geratu diren ateak:"
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "2. Bilatu patroia"
+        },
+        {
+          "mota": "testua",
+          "testua": "Orain 20 aterekin egin dezakezue, baina ez da beharrezkoa txanda guztiak idaztea. Erregistratu amaierako ate irekiak."
+        },
+        {
+          "mota": "galdera",
+          "testua": "Ikusten al duzue patroiren bat?"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Patroia aurkitzea nahikoa al da 100 aterekin ere gertatuko dela ziurtatzeko?"
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "3. Ez begiratu ate guztiei. Aukeratu ate bakarra"
+        },
+        {
+          "mota": "taula_datuak",
+          "zutabeak": [
+            "Atea",
+            "Noiz aldatzen da?",
+            "Zenbat aldiz?",
+            "Amaieran"
+          ],
+          "errenkadak": [
+            [
+              "6",
+              "1, 2, 3, 6",
+              "4",
+              "Itxita"
+            ],
+            [
+              "8",
+              "",
+              "",
+              ""
+            ],
+            [
+              "9",
+              "",
+              "",
+              ""
+            ],
+            [
+              "12",
+              "",
+              "",
+              ""
+            ],
+            [
+              "16",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "mota": "galdera",
+          "testua": "Zer dute komunean ate bat aldatzen duten txanda-zenbakiek?"
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "4. Orain, azalpena"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Ate bat irekita geratzeko, zenbat aldiz aldatu behar da: kopuru bikoitia ala bakoitia?"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Zein ate-zenbakik dute aldaketa kopuru bakoitia?"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Zergatik gertatzen da hori? Egin marrazki bat, adibide bat edo azalpen bat."
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "5. Itzuli hasierako erronkara"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Zein ate geratuko dira irekita 100 ateekin?"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Nola dakizue?"
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "Gure ikerketatik eramateko ideia"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Zer egin dugu patroia azalpen bihurtzeko?"
         }
       ]
     },
@@ -136,7 +389,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "6-pospoloak",
-    "bertsioa": "0.1.4",
+    "bertsioa": "0.1.5",
     "izena": "6 pospoloen erronka",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Sei pospolo erabiliz lau triangelu aldeberdin berdin eraikitzeko erronka. Soluzio desberdinek ikasleek enuntziatuari gehitzen dizkioten baldintza ez-esplizituak agerian uzten dituzte.\n",
@@ -348,7 +601,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "9-puntuak",
-    "bertsioa": "0.1.4",
+    "bertsioa": "0.1.5",
     "izena": "9 puntuak, 4 zuzen",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "3×3 sareko bederatzi puntuak lau segmentu zuzen eta jarraituz lotzea, arkatza altxatu gabe. Ohiko oztopoa ikasleek beren kabuz ezartzen duten karratu ikusezina da.\n",
@@ -492,7 +745,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "bi-sokak",
-    "bertsioa": "0.1.4",
+    "bertsioa": "0.1.5",
     "izena": "Bi sokak",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Bi sokak 60 minututan erretzen dira, baina ez abiadura konstantean. Bi sokak eta sua bakarrik erabiliz, 45 minutu zehazki neurtu behar dira.\n",
@@ -618,7 +871,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "domino-taula-mutilatua",
-    "bertsioa": "0.1.4",
+    "bertsioa": "0.1.5",
     "izena": "Domino-taula mutilatua",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Kontrako bi izkinak kendutako xake-taula dominoekin estali daitekeen erabaki eta ezintasuna koloreztatze bidez frogatzea.",
@@ -753,7 +1006,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "eskuak-ematea",
-    "bertsioa": "0.1.4",
+    "bertsioa": "0.1.5",
     "izena": "Zenbat aldiz emango diogu eskua elkarri?",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Pertsona talde batean denek elkarri behin eskua ematen diotenean zenbat esku-emate gertatzen diren ikertzea; kasu txikietatik arau orokor baterantz.\n",
@@ -896,7 +1149,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "mobiusen-zinta",
-    "bertsioa": "0.1.4",
+    "bertsioa": "0.1.5",
     "izena": "Möbiusen zinta",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Paperezko zinta bati bira erdi eman, itsatsi eta moztu aurretik emaitza iragartzea; ondoren esperimentua eta azalpena alderatzea.",
@@ -1046,7 +1299,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "nim",
-    "bertsioa": "0.1.4",
+    "bertsioa": "0.1.5",
     "izena": "Nim: irabazteko estrategia",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Objektuak txandaka kenduz jokatzen den joko batean posizio irabazleak eta galtzaileak aurkitu eta estrategia orokor bat eraikitzea.",
@@ -1177,7 +1430,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "txokolate-tableta",
-    "bertsioa": "0.1.4",
+    "bertsioa": "0.1.5",
     "izena": "Txokolate-tableta",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Txokolate-tableta baten laukitxo guztiak banantzeko zenbat haustura behar diren aztertzea, eta estrategia desberdinek kopurua aldatzen duten erabakitzea.",
@@ -1298,7 +1551,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "zenbat-piano",
-    "bertsioa": "0.1.4",
+    "bertsioa": "0.1.5",
     "izena": "Zenbat piano daude Bilbon?",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Daturik eman gabe, Bilbon zenbat piano dauden estimatu behar dute. Helburua ez da zenbaki «zuzena» asmatzea, baizik eta arrazoizko eredua eraiki eta defendatzea.\n",

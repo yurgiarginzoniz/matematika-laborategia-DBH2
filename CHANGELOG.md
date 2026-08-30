@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 0.1.5 — Gida, nabigazioa eta 100 ateak
+- `Irakaslearen gida` osorik berreraiki da, laborategiaren filosofia, ikasturtearen arkitektura, esku-hartze eskailera, pentsatzeko tresnak, bateratzea, ebaluazioa eta ordezko irakaslearentzako gida barne.
+- Jarduera-orri guztietan `← Jarduera-bankura itzuli` nabigazioa gehitu da.
+- `100 ateak` jardueraren ikasle-fitxa ikerketa-fitxa gidatu bihurtu da.
+- `100 ateak` irakaslearen fitxan 12 ateko taula eta zatitzaileen azalpen bisuala gehitu dira.
+- Footerreko bertsio bikoizketa kendu eta bertsio bakarra erabiltzeko prestatu da.
+- `site.json` ez da update ZIP honetan sartzen, instalazio bakoitzaren egile-konfigurazioa ez gainidazteko.
+
+
 ## 0.1.4 — Jarduera-bankua zabaltzea
 - Bost jarduera berri: Txokolate-tableta, Nim, 100 ateak, Domino-taula mutilatua eta Möbiusen zinta.
 - Jarduera berriek aurkezpen pedagogiko zabala, irakaslearen gida, konpetentziak, galderak, soluzioak eta hedapenak dituzte.

@@ -98,3 +98,8 @@ footer{max-width:var(--max);margin:auto;padding:25px 22px 45px;color:var(--muted
 .summary-table th{white-space:nowrap;font-weight:700;width:1%}
 .summary-table td{min-width:150px}
 @media(max-width:720px){.summary-table th,.summary-table td{padding:9px 10px}.summary-table{font-size:.94rem}}
+
+.activity-back{margin:0 0 14px}
+.activity-back a{font-weight:750;text-decoration:none}
+.activity-back a:hover{text-decoration:underline}
+.text-diagram{white-space:pre-wrap;font:inherit;line-height:1.7;margin:0}

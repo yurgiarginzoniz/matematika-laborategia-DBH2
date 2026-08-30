@@ -3,8 +3,9 @@ const SITE = {
   name: "Matematikako Laborategia",
   author: "[EGILEAREN IZENA / NOMBRE DEL AUTOR]",
   ai: "OpenAI ChatGPT",
-  license: "CC BY-NC-SA 4.0 · v0.1.4",
+  license: "CC BY-NC-SA 4.0",
   licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  version: "0.1.5",
   version: "0.1.3"
 };
 
@@ -92,7 +93,13 @@ function renderTeacher(a){
   if(t.soluzioak?.length){
     h+=`<h2>Soluzioa / orientabidea</h2>`;
     for(const s of t.soluzioak){
-      h+=`<div class="example"><h3>${esc(s.izena)}</h3>${s.azalpena?paras(s.azalpena):""}`;
+      h+=`<div class="example"><h3>${esc(s.izena)}</h3>`;
+      if(s.taula){
+        h+=`<div class="matrix-wrap"><table><thead><tr>${(s.taula.zutabeak||[]).map(z=>`<th>${esc(z)}</th>`).join("")}</tr></thead><tbody>`+
+        (s.taula.errenkadak||[]).map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("")+`</tbody></table></div>`;
+      }
+      if(s.diagram_text) h+=`<div class="callout idea"><pre class="text-diagram">${esc(s.diagram_text)}</pre></div>`;
+      if(s.azalpena) h+=paras(s.azalpena);
       if(s.irudiak?.length){
         for(const img of s.irudiak){
           const path=img.replace(/^\.\.\//,"");
@@ -115,7 +122,13 @@ function renderStudent(a){
   let h=`<div class="print-actions no-print"><button class="button secondary" onclick="printSection('student')">Ikaslearen fitxa inprimatu / PDF</button></div><div class="print-sheet"><div class="eyebrow">Matematikako Laborategia</div><h1>${esc(st.titulua||a.izena)}</h1>`;
   for(const b of (st.blokeak||[])){
     if(b.mota==="enuntziatua") h+=`<div class="callout">${esc(b.testua)}</div>`;
+    else if(b.mota==="azpiizenburua") h+=`<h2>${esc(b.testua)}</h2>`;
+    else if(b.mota==="testua") h+=`<p>${esc(b.testua)}</p>`;
     else if(b.mota==="galdera") h+=`<p><strong>${esc(b.testua)}</strong></p><div class="line"></div>`;
+    else if(b.mota==="taula_datuak"){
+      h+=`<table><thead><tr>${(b.zutabeak||[]).map(z=>`<th>${esc(z)}</th>`).join("")}</tr></thead><tbody>`+
+      (b.errenkadak||[]).map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("")+`</tbody></table>`;
+    }
     else if(b.mota==="irudia"){
       const path=(b.fitxategia||"").replace(/^\.\.\//,"");
       h+=`<div class="figure"><img src="${esc(path)}" alt=""></div>`;
@@ -141,6 +154,7 @@ function renderActivityPage(){
   if(!a){ root.innerHTML=`<div class="card"><h1>Jarduera ez da aurkitu</h1><p>ID: ${esc(id)}</p></div>`; return; }
   const ft=a.fitxa_teknikoa||{};
   root.innerHTML=`
+  <div class="activity-back no-print"><a href="bankua.html">← Jarduera-bankura itzuli</a></div>
   <div class="page-head"><div><div class="eyebrow">${esc(ft.jarduera_mota||"")} · ${esc((ft.fasea||[]).join(", "))}</div><h1>${esc(a.izena)}</h1></div>
   <div class="pills"><span class="pill type">${esc(ft.jarduera_mota)}</span><span class="pill">${esc(ft.denboralizazioa)}</span><span class="pill">${esc(ft.irekiera_maila)}</span></div></div>
   <div class="tabs" id="activityTabs">

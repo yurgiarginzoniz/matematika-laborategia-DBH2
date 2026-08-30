@@ -1,113 +1,116 @@
-# Matematikako Laborategia — jarduera
-# YAML hau da jardueraren iturri nagusia.
-
-id: "eskuak-ematea"
-bertsioa: "0.6.3"
-izena: "Zenbat aldiz emango diogu eskua elkarri?"
-
+id: eskuak-ematea
+bertsioa: 0.1.2
+izena: Zenbat aldiz emango diogu eskua elkarri?
 fitxa_teknikoa:
-  deskribapen_laburra: >
-    Pertsona talde batean denek elkarri behin eskua ematen diotenean zenbat
-    esku-emate gertatzen diren ikertzea; kasu txikietatik arau orokor baterantz.
-  jarduera_mota: "Ikerketa"
+  deskribapen_laburra: 'Pertsona talde batean denek elkarri behin eskua ematen diotenean zenbat esku-emate gertatzen diren ikertzea; kasu txikietatik arau orokor baterantz.
+
+    '
+  jarduera_mota: Ikerketa
   fasea:
-    - "Pentsatzeko tresnak garatzea"
-  denboralizazioa: "1 saio"
-  irekiera_maila: "Erdi-irekia"
-  zailtasuna: "Ertaina"
-  taldekatzea: "Ausazko 3ko taldeak"
+  - Pentsatzeko tresnak garatzea
+  denboralizazioa: 1 saio
+  irekiera_maila: Erdi-irekia
+  zailtasuna: Ertaina
+  taldekatzea: Ausazko 3ko taldeak
   gaiak:
-    - "Patroiak"
-    - "Zenbaketa"
-    - "Orokortzea"
+  - Patroiak
+  - Zenbaketa
+  - Orokortzea
   pentsatzeko_tresnak:
-    - "Kasu sinpleagoak aztertzea"
-    - "Patroiak bilatzea"
-    - "Taula sistematikoa egitea"
+  - Kasu sinpleagoak aztertzea
+  - Patroiak bilatzea
+  - Taula sistematikoa egitea
   konpetentziak:
-    - kodea: "1.1"
-      sakontasuna: 2
-      nola_lantzen_da: "Egoera ulertu eta informazioa antolatzea."
-    - kodea: "1.2"
-      sakontasuna: 2
-      nola_lantzen_da: "Zenbaketa-estrategiak garatu eta alderatzea."
-    - kodea: "3.1"
-      sakontasuna: 3
-      nola_lantzen_da: "Patroia identifikatzea."
-    - kodea: "3.2"
-      sakontasuna: 2
-      nola_lantzen_da: "Kasu partikularretatik aieru orokorra formulatu eta egiaztatzea."
-    - kodea: "5.2"
-      sakontasuna: 2
-      nola_lantzen_da: "Taldeko irudikapen desberdinak konparatzea."
-
+  - kodea: '1.1'
+    sakontasuna: 2
+    nola_lantzen_da: Egoera ulertu eta informazioa antolatzea.
+  - kodea: '1.2'
+    sakontasuna: 2
+    nola_lantzen_da: Zenbaketa-estrategiak garatu eta alderatzea.
+  - kodea: '3.1'
+    sakontasuna: 3
+    nola_lantzen_da: Patroia identifikatzea.
+  - kodea: '3.2'
+    sakontasuna: 2
+    nola_lantzen_da: Kasu partikularretatik aieru orokorra formulatu eta egiaztatzea.
+  - kodea: '5.2'
+    sakontasuna: 2
+    nola_lantzen_da: Taldeko irudikapen desberdinak konparatzea.
 jardueraren_aurkezpena:
-  helburua: >
-    Ikerketa matematikoaren zikloa modu irisgarrian bizitzea: kasu txikiak,
-    datuak antolatu, patroia aurkitu, orokortu eta zergatik funtzionatzen duen azaldu.
-  azalpen_nagusia: |
-    Bi pertsonarekin esku-emate bakarra dago; hirurekin hiru; laurekin sei.
-    Hasieran ikasleek antzeztu, puntuak marraztu edo zerrendak egin ditzakete.
+  helburua: 'Ikerketa matematikoaren zikloa modu irisgarrian bizitzea: kasu txikiak, datuak antolatu, patroia aurkitu, orokortu eta zergatik funtzionatzen duen azaldu.
 
-    Pertsona kopurua handitzean, zenbaketa zuzena neketsua bihurtzen da eta
-    sistematizatzeko beharra sortzen da. Pertsona berri bakoitzak aurreko pertsona
-    guztiekin ematen du eskua, eta horrek 1, 3, 6, 10, 15... segida iradokitzen du.
+    '
+  azalpen_nagusia: 'Esku-emateen ikerketa kasu txikietatik egitura orokor batera igarotzeko jarduera irisgarria da. Egoera ulertzeko erraza da eta hasieran gorputzez antzeztu daiteke; hala ere, pertsona kopurua handitzean zenbaketa zuzena deseroso bihurtzen da. Hor sortzen da matematikaren beharra: informazioa antolatzea eta egitura bilatzea.
 
-    Beste ikuspegi batek n(n−1) zenbaketa ematen du, baina esku-emate bakoitza bi aldiz
-    zenbatzen du. Horregatik agertzen da n(n−1)/2.
 
-    Formula aurkitzea ez da amaiera. Galdera nagusia da zergatik izan behar duen
-    zuzena edozein n-rako.
-  eramateko_ideia: >
-    Kasu partikularrak sistematikoki aztertzeak patroi bat iradoki dezake;
-    hurrengo urratsa patroia orokortzea eta azaltzea da.
+    Bi pertsonarekin esku-emate bakarra dago; hirurekin 3; laurekin 6; bostekin 10. Ikasleek zerrendak, puntuak eta loturak, marrazkiak edo taulak erabil ditzakete. Irakasleak ez luke taula edo formula hasieratik eman behar: irudikapen sistematiko baten beharra ikasleen lanetik sortzea interesatzen zaigu. Galdera emankorra da «Nola ziurtatzen duzue ez duzuela esku-ematerik errepikatu edo ahaztu?».
 
+
+    Datuak 1, 3, 6, 10, 15... bihurtzen direnean patroia ikus daiteke: pertsona berri bat gehitzean aurreko guztiekin ematen du eskua. Horregatik gehikuntzak 1, 2, 3, 4... dira. Ikuspegi honek 1+2+...+(n−1) adierazpenera eramaten du eta formula ez da magia: pertsonak banan-banan sartzean gertatzen denaren laburpena da.
+
+
+    Bigarren justifikazio batek beste egitura bat erakusten du. n pertsonetako bakoitzak beste n−1 pertsona ditu; horrek n(n−1) kontaktu zenbatzen ditu. Baina A-k B-rekin emandako eskua eta B-k A-rekin emandakoa esku-emate bera dira, eta, beraz, dena bi aldiz zenbatu dugu. Hortik n(n−1)/2. Bi azalpenak alderatzea formula bera bi modutan ulertzeko aukera da.
+
+
+    Jardueraren une garrantzitsua formula agertzen denean dator. «1, 3, 6, 10 ikusi eta formula asmatu dut» ez da oraindik justifikazioa. Kasu partikularrek aierua sortzen laguntzen dute; azalpenak erakusten du zergatik funtzionatu behar duen edozein n-rako. Horixe da ikerketatik eramateko ideia nagusia.'
+  eramateko_ideia: 'Kasu partikularrak sistematikoki aztertzeak patroi bat iradoki dezake; hurrengo urratsa patroia orokortzea eta azaltzea da.
+
+    '
+  ikasleen_ibilbide_tipikoa:
+  - Kasu txikiak antzeztu edo marrazten dituzte.
+  - Zenbaketa handitzean errepikapenak eta hutsuneak saihesteko antolaketa behar dute.
+  - 1, 3, 6, 10, 15... patroia agertzen da.
+  - Talde batzuek araua hitzez ematen dute eta beste batzuek formula bilatzen dute.
+  - Amaieran formula aurkitzea eta formula justifikatzea bereizten dira.
+  bateratze_eztabaida: &id001
+  - Nola dakizue esku-emate guztiak behin bakarrik zenbatu dituzuela?
+  - Pertsona berri bat sartzen denean, zenbat esku-emate berri sortzen dira?
+  - Zuen patroia 100 pertsonarekin ere egia izango dela nola dakizue?
+  - n(n−1) zer ari da zenbatzen? Zergatik zatitu behar dugu bitan?
+  - Bi azalpenetatik zein da zuentzat argiagoa, eta zergatik?
 irakaslearen_fitxa:
-  jardueraren_deskribapena: >
-    Ikasleek pertsona kopuru txikiekin hasten dute ikerketa eta edozein n-rako
-    esku-emate kopurua azaltzeko arau bat proposatzen saiatzen dira.
-  aurkezpena: >
-    Gela batean pertsona guztiek elkarri behin eskua ematen badiote,
-    zenbat esku-emate gertatzen dira?
-  denboralizazioa:
-    - tartea: "15 min"
-      fasea: "Esplorazioa"
-      azalpena: "Kasu txikiak eta antolaketa propioa."
-    - tartea: "20 min"
-      fasea: "Patroia"
-      azalpena: "Pertsona berri bat gehitzean zer gertatzen den."
-    - tartea: "15 min"
-      fasea: "Bateratzea"
-      azalpena: "Irudikapenak eta arauak alderatu."
-    - tartea: "5 min"
-      fasea: "Itxiera"
-      azalpena: "Tresnak izendatu."
-  galdera_erabilgarriak:
-    - "Zer gertatzen da 2, 3 edo 4 pertsonarekin?"
-    - "Nola antola ditzakezue emaitzak?"
-    - "Zer gehitzen da pertsona berri bat sartzean?"
-    - "Nola justifikatuko zenukete zuen araua?"
-  soluzioak:
-    - izena: "Arau orokorra"
-      azalpena: "n(n−1)/2"
-  ebaluazioan_zer_behatu:
-    - "Kasuak modu sistematikoan antolatzen dituzten."
-    - "Patroia identifikatzen duten."
-    - "Arau orokorra justifikatzen duten."
+  jardueraren_deskribapena: 'Ikasleek pertsona kopuru txikiekin hasten dute ikerketa eta edozein n-rako esku-emate kopurua azaltzeko arau bat proposatzen saiatzen dira.
 
+    '
+  aurkezpena: 'Gela batean pertsona guztiek elkarri behin eskua ematen badiote, zenbat esku-emate gertatzen dira?
+
+    '
+  denboralizazioa:
+  - tartea: 15 min
+    fasea: Esplorazioa
+    azalpena: Kasu txikiak eta antolaketa propioa.
+  - tartea: 20 min
+    fasea: Patroia
+    azalpena: Pertsona berri bat gehitzean zer gertatzen den.
+  - tartea: 15 min
+    fasea: Bateratzea
+    azalpena: Irudikapenak eta arauak alderatu.
+  - tartea: 5 min
+    fasea: Itxiera
+    azalpena: Tresnak izendatu.
+  galdera_erabilgarriak: *id001
+  soluzioak:
+  - izena: 1. Pertsona berria gehitzea
+    azalpena: 2, 3, 4, 5... pertsonentzat 1, 3, 6, 10... esku-emate daude. Pertsona berri bakoitzak aurreko guztiekin ematen du eskua; gehikuntzak 1, 2, 3, ..., n−1 dira. Beraz, guztira 1+2+...+(n−1).
+  - izena: 2. Bi aldiz zenbatzea
+    azalpena: 'Pertsona bakoitzak beste n−1 pertsonekin du kontaktua: n(n−1). Baina A–B eta B–A esku-emate bera dira; esku-emate bakoitza bi aldiz zenbatu dugu. Beraz, n(n−1)/2.'
+  ebaluazioan_zer_behatu:
+  - Kasuak modu sistematikoan antolatzen dituzten.
+  - Patroia identifikatzen duten.
+  - Arau orokorra justifikatzen duten.
+  amaierako_bateratzea: Ez amaitu formula arbelean idaztearekin. Alderatu bi justifikazioak eta galdetu zer azaltzen duen bakoitzak. Formula aurkitzea eta formula edozein n-rako zergatik den zuzena azaltzea bereizi.
 ikaslearen_fitxa:
   beharrezkoa: true
-  titulua: "Zenbat aldiz emango diogu eskua elkarri?"
+  titulua: Zenbat aldiz emango diogu eskua elkarri?
   blokeak:
-    - mota: "enuntziatua"
-      testua: >
-        Gela batean pertsona guztiek elkarri behin eskua ematen badiote,
-        zenbat esku-emate gertatzen dira?
-    - mota: "taula"
-      zutabeak:
-        - "Pertsona kopurua"
-        - "Esku-emate kopurua"
+  - mota: enuntziatua
+    testua: 'Gela batean pertsona guztiek elkarri behin eskua ematen badiote, zenbat esku-emate gertatzen dira?
 
+      '
+  - mota: taula
+    zutabeak:
+    - Pertsona kopurua
+    - Esku-emate kopurua
 loturak:
   aurretik_egitekoak: []
   ondoren_egitekoak: []

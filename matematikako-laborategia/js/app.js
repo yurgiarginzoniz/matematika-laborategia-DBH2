@@ -4,7 +4,8 @@ const SITE = {
   author: "[EGILEAREN IZENA / NOMBRE DEL AUTOR]",
   ai: "OpenAI ChatGPT",
   license: "CC BY-NC-SA 4.0",
-  licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  version: "0.1.3"
 };
 
 function esc(v){ return (v ?? "").toString().replace(/[&<>"']/g, m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m])); }
@@ -23,7 +24,7 @@ function footerHTML(){
   return `<footer class="site-footer">
   <div><strong>${SITE.name}</strong></div>
   <div>Egilea / Autor: ${esc(SITE.author)} · Adimen artifizialaren laguntzarekin / Con asistencia de IA: ${esc(SITE.ai)}</div>
-  <div><a href="lizentzia.html">${SITE.license}</a></div>
+  <div><a href="lizentzia.html">${SITE.license}</a> · <span class="site-version">v${SITE.version}</span></div>
   </footer>`;
 }
 

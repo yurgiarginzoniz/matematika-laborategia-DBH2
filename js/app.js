@@ -1,10 +1,11 @@
 
 const SITE = {
   name: "Matematikako Laborategia",
-  author: "Yurgi Arginzoniz",
+  author: "[EGILEAREN IZENA / NOMBRE DEL AUTOR]",
   ai: "OpenAI ChatGPT",
   license: "CC BY-NC-SA 4.0",
-  licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  version: "0.1.3"
 };
 
 function esc(v){ return (v ?? "").toString().replace(/[&<>"']/g, m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m])); }
@@ -23,7 +24,7 @@ function footerHTML(){
   return `<footer class="site-footer">
   <div><strong>${SITE.name}</strong></div>
   <div>Egilea / Autor: ${esc(SITE.author)} · Adimen artifizialaren laguntzarekin / Con asistencia de IA: ${esc(SITE.ai)}</div>
-  <div><a href="lizentzia.html">${SITE.license}</a></div>
+  <div><a href="lizentzia.html">${SITE.license}</a> · <span class="site-version">v${SITE.version}</span></div>
   </footer>`;
 }
 
@@ -50,17 +51,17 @@ function renderPresentation(a){
   const p=a.jardueraren_aurkezpena||{};
   let h=`<div class="editorial"><h2>Jarduera ulertzeko</h2>`;
   if(p.helburua) h+=`<p class="lead">${esc(p.helburua)}</p>`;
-  h+=paras(p.azalpen_nagusia);
+  h+=paras(p.azalpen_nagusia); if(p.ikasleen_ibilbide_tipikoa?.length) h+=`<h2>Ikasleen ibilbide tipikoa</h2>${bullets(p.ikasleen_ibilbide_tipikoa)}`; if(p.ohiko_blokeoak?.length){h+=`<h2>Ohiko blokeoak</h2>`;p.ohiko_blokeoak.forEach(b=>h+=`<div class="example"><h3>${esc(b.suposizioa)}</h3><p>${esc(b.zergatik_interesgarria)}</p></div>`);}
   if(p.soluzioen_irakurketa?.length){
     h+=`<h2>Soluzioek zer erakusten dute?</h2>`;
     for(const s of p.soluzioen_irakurketa){
-      h+=`<div class="example"><h3>${esc(s.izena)}</h3><p>${esc(s.azalpena)}</p>`;
+      h+=`<div class="example"><h3>${esc(s.izena)}</h3>${s.irudia?`<div class="figure solution-figure"><img src="${esc(s.irudia)}" alt="${esc(s.izena)}"></div>`:""}<p>${esc(s.azalpena)}</p>`;
       if(s.zer_apurtzen_du) h+=`<p><strong>Zer apurtzen du?</strong> ${esc(s.zer_apurtzen_du)}</p>`;
       if(s.irakaslearen_galdera) h+=`<div class="callout quote"><strong>${esc(s.irakaslearen_galdera)}</strong></div>`;
       h+=`</div>`;
     }
   }
-  if(p.eramateko_ideia) h+=`<div class="callout idea"><strong>Eramateko ideia:</strong> ${esc(p.eramateko_ideia)}</div>`;
+  if(p.bateratze_eztabaida?.length) h+=`<h2>Bateratzeko eztabaida</h2>${bullets(p.bateratze_eztabaida)}`; if(p.eramateko_ideia) h+=`<div class="callout idea"><strong>Eramateko ideia:</strong> ${esc(p.eramateko_ideia)}</div>`;
   return h+`</div>`;
 }
 
@@ -82,7 +83,7 @@ function renderTeacher(a){
   if(solInterp?.length){
     h+=`<h2>Soluzioak eta apurtzen dituzten suposizioak</h2>`;
     solInterp.forEach(s=>{
-      h+=`<div class="example"><h3>${esc(s.izena)}</h3><p>${esc(s.azalpena)}</p>`;
+      h+=`<div class="example"><h3>${esc(s.izena)}</h3>${s.irudia?`<div class="figure solution-figure"><img src="${esc(s.irudia)}" alt="${esc(s.izena)}"></div>`:""}<p>${esc(s.azalpena)}</p>`;
       if(s.zer_apurtzen_du) h+=`<p><strong>Apurtzen duen suposizioa:</strong> ${esc(s.zer_apurtzen_du)}</p>`;
       if(s.irakaslearen_galdera) h+=`<p><strong>Bateratzeko galdera:</strong> ${esc(s.irakaslearen_galdera)}</p>`;
       h+=`</div>`;
@@ -101,7 +102,7 @@ function renderTeacher(a){
       h+=`</div>`;
     }
   }
-  if(t.hedapenak) h+=`<h2>Hedapenak</h2>${bullets(t.hedapenak)}`;
+  if(t.amaierako_bateratzea) h+=`<h2>Amaierako bateratzea</h2>${paras(t.amaierako_bateratzea)}`; if(t.hedapenak) h+=`<h2>Hedapenak</h2>${bullets(t.hedapenak)}`;
   if(t.ebaluazioan_zer_behatu) h+=`<h2>Ebaluazioan zer behatu</h2>${bullets(t.ebaluazioan_zer_behatu)}`;
   return h+`</div>`;
 }
@@ -150,15 +151,14 @@ function renderActivityPage(){
   </div>
   <section id="tech" class="tabpane active">
     <div class="card"><h2>Deskribapen laburra</h2><p>${esc(ft.deskribapen_laburra)}</p></div>
-    <div class="meta section">
-      <div class="box"><small>Jarduera mota</small><strong>${esc(ft.jarduera_mota)}</strong></div>
-      <div class="box"><small>Fasea</small><strong>${esc((ft.fasea||[]).join(", "))}</strong></div>
-      <div class="box"><small>Denboralizazioa</small><strong>${esc(ft.denboralizazioa)}</strong></div>
-      <div class="box"><small>Irekiera-maila</small><strong>${esc(ft.irekiera_maila)}</strong></div>
-      <div class="box"><small>Zailtasuna</small><strong>${esc(ft.zailtasuna)}</strong></div>
-      <div class="box"><small>Taldekatzea</small><strong>${esc(ft.taldekatzea)}</strong></div>
-      <div class="box"><small>Gaiak</small><strong>${esc((ft.gaiak||[]).join(" · "))}</strong></div>
-      <div class="box"><small>Pentsatzeko tresnak</small><strong>${esc((ft.pentsatzeko_tresnak||[]).join(" · "))}</strong></div>
+    <div class="section summary-sheet">
+      <h2>Laburpen-fitxa</h2>
+      <div class="summary-table-wrap"><table class="summary-table"><tbody>
+        <tr><th>Jarduera mota:</th><td>${esc(ft.jarduera_mota)}</td><th>Fasea:</th><td>${esc((ft.fasea||[]).join(", "))}</td></tr>
+        <tr><th>Denboralizazioa:</th><td>${esc(ft.denboralizazioa)}</td><th>Irekiera-maila:</th><td>${esc(ft.irekiera_maila)}</td></tr>
+        <tr><th>Zailtasuna:</th><td>${esc(ft.zailtasuna)}</td><th>Taldekatzea:</th><td>${esc(ft.taldekatzea)}</td></tr>
+        <tr><th>Gaiak:</th><td>${esc((ft.gaiak||[]).join(" · "))}</td><th>Pentsatzeko tresnak:</th><td>${esc((ft.pentsatzeko_tresnak||[]).join(" · "))}</td></tr>
+      </tbody></table></div>
     </div>
     <div class="section"><h2>Konpetentziak</h2>${renderCompetencies(ft.konpetentziak)}</div>
   </section>

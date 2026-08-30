@@ -50,41 +50,80 @@ window.LAB_JARDUERAK = [
       ]
     },
     "jardueraren_aurkezpena": {
-      "helburua": "Jarduera hau ez da soilik konfigurazio bat aurkitzeko erronka. Bere balio nagusia problemak irakurtzean geuk gehitzen ditugun baldintza inplizituak agerian uztean dago.\n",
-      "azalpen_nagusia": "Ikasle gehienek pospoloak mahai gainean jartzen hasten dira eta, ia konturatu gabe,\nfigura laua izan behar dela onartzen dute. Gainera, pospoloak beren muturretan\nelkartu behar direla eta «lau triangelu» esateak «zehazki lau» esan nahi duela\npentsatu ohi dute.\n\nHasierako konfigurazio lauak eta blokeoa ez dira jardueraren porrota: jardueraren\nmaterial didaktiko nagusietako bat dira. Irakasleak ez luke berehala «pentsatu hiru\ndimentsiotan» edo antzeko pistarik eman behar. Askoz interesgarriagoa da galdetzea:\n«Zer dakigu benetan? Zer hartu dugu ziurtzat?»\n\nLehen soluzioa aurkitzea ez da jardueraren amaiera. Beste konfigurazio batzuk bilatu\neta soluzio bakoitzak zer suposizio inplizitu apurtzen duen aztertzea da jardueraren\nbenetako aberastasuna.\n",
+      "helburua": "Erronka txiki baten bidez ikusaraztea oztopoa ez dela beti kalkulua: askotan geuk, oharkabean, enuntziatuak ez dituen baldintzak gehitzen dizkiogu problemari.",
+      "azalpen_nagusia": "Sei pospoloekin lau triangelu aldeberdin berdin osatzeko erronkak enuntziatu oso laburra du. Ikasleek berehala ulertzen dute zeregina eta ia denak hasten dira probatzen. Sarrera baxuko erronka da, baina atzean problema bat interpretatzeari buruzko ideia sakona dago.\n\nOhiko hasiera pospoloak mahai gainean jartzea da. Triangeluak planoan eraikitzen dituzte, pospoloak muturretatik lotzen dituzte eta konfigurazioen aldaerak probatzen dituzte. Une honetan ez da komeni «3Dn pentsatu» edo antzeko pistarik ematea. Blokeoa bera jardueraren parte da: ikasleak, konturatu gabe, problema nola interpretatu erabakitzen ari dira.\n\n«Ezin da» edo «sei ez dira nahikoa» bezalako esaldiak aukera didaktikoak dira. Irakasleak «Zer dakigu ziur?», «Zer hartu duzue ziurtzat?» edo «Enuntziatuak benetan esaten al du hori?» galdetu dezake. Helburua ez da pista mozorrotu bat ematea, enuntziatuko baldintzak eta guk gehitutakoak bereiztea baizik.\n\nLehen soluzioa agertzean jarduera ez da amaitzen. «Beste modu batean ere egin daiteke?» galdetzeak bigarren fasea irekitzen du. Hiru soluzio-familiek hiru suposizio ezkutu desberdin uzten dituzte agerian: tetraedroak figura laua izan behar dela; soluzio lauak pospoloak muturretan bakarrik elkartu eta triangeluaren aldeak pospolo osoak izan behar direla; Daviden izarrak «lau» hitzak «zehazki lau» esan behar duela.\n\nAmaieran ez da nahikoa trikimailuak erakustea. Hiru irudien aurrean galdera bera egin behar da: «Zer baldintza gehitu diogu guk enuntziatuari soluzio hau ez ikusteko?». Hor dago transferentzia: problema batean trabatuta gaudenean, agian ez dugu beste saiakera bat behar, baizik eta erabiltzen ari garen interpretazioa berrikusi.\n\nEramateko tresna zehatza da: «Baldintza hori problemak dio, ala nik jarri dut?». Ideia hori geroago 9 puntuen erronkan, geometrian, modelizazioan eta beste problema askotan berrerabili daiteke.",
+      "ikasleen_ibilbide_tipikoa": [
+        "Planoan hasten dira, pospoloak muturretatik lotuz.",
+        "Konfigurazio asko probatu arren antzeko muga berera iristen dira.",
+        "Zenbait ikaslek «sei ez dira nahikoa» ondorioztatzen dute.",
+        "Norbaitek interpretazio bat hausten duenean, problema ulertzeko modua aldatzen da.",
+        "Lehen soluzioaren ondoren beste biak bilatzeak estrategia-aldaketa kontziente bihurtzen du."
+      ],
+      "ohiko_blokeoak": [
+        {
+          "suposizioa": "Figura planoan egon behar da.",
+          "zergatik_interesgarria": "Materiala mahai gainean egoteak iradokitzen du, baina enuntziatuak ez du esaten."
+        },
+        {
+          "suposizioa": "Pospoloak muturretan bakarrik elkartu daitezke.",
+          "zergatik_interesgarria": "Eraikuntza-ohitura bat problemaren baldintza bihurtzen dugu."
+        },
+        {
+          "suposizioa": "Triangelu baten alde bakoitza pospolo oso bat da.",
+          "zergatik_interesgarria": "Objektu fisikoa eta interesatzen zaigun segmentua identifikatzen ditugu."
+        },
+        {
+          "suposizioa": "Lau triangelu esan nahi du zehazki lau.",
+          "zergatik_interesgarria": "Hizkuntzaren interpretazio bat baldintza matematiko bihurtzen dugu."
+        }
+      ],
       "soluzioen_irakurketa": [
         {
           "izena": "Tetraedroa",
+          "irudia": "assets/6_pospoloak/tetraedroa.svg",
+          "azalpena": "Sei pospoloak tetraedro baten sei ertzak dira. Lau aurpegiak triangelu aldeberdin berdinak dira.",
           "zer_apurtzen_du": "«Planoan egon behar du» suposizioa.",
-          "azalpena": "Sei pospoloak tetraedro erregular baten sei ertzak dira eta lau aurpegiak triangelu aldeberdin berdinak dira.\n",
-          "irakaslearen_galdera": "Non esan dugu figura laua izan behar dela?"
+          "irakaslearen_galdera": "Non esan dugu figura laua izan behar dela?",
+          "aurretik_ez_esateko": "Ez aipatu espazioa, 3D edo tetraedroa ikasleek aukera hori ikusteko denbora izan arte."
         },
         {
-          "izena": "Soluzio laua",
-          "zer_apurtzen_du": "«Pospoloak muturretan bakarrik elkartu daitezke» suposizioa.",
-          "azalpena": "Pospolo baten zati bat triangelu baten alde izan daiteke; pospolo oso baten muturra ez da nahitaez triangelu baten erpina.\n",
-          "irakaslearen_galdera": "Triangelu baten aldea pospolo oso bat izan behar al da?"
+          "izena": "Soluzio laua: erdiko triangelua",
+          "irudia": "assets/6_pospoloak/triangelu_laua.svg",
+          "azalpena": "Kanpoko hiru pospolok triangelu aldeberdin handia osatzen dute. Beste hirurak triangelu medialaren aldeekin lerrokatzen dira, segmentu horien erdian kokatuta eta haietatik harago luzatuta. Kanpoko triangelua lau triangelu aldeberdin berdinetan banatzen da.",
+          "zer_apurtzen_du": "«Pospoloak muturretan bakarrik elkartu daitezke» eta «triangeluaren aldeak pospolo osoak izan behar dira» suposizioak.",
+          "irakaslearen_galdera": "Triangelu baten aldea pospolo oso bat izan behar al da?",
+          "aurretik_ez_esateko": "Ez esan pospoloak erdian ukitu edo segmentu bat baino harago luzatu daitezkeenik."
         },
         {
-          "izena": "David izarra",
-          "zer_apurtzen_du": "«Lau» esan nahi du «zehazki lau» suposizioa.",
-          "azalpena": "Bi triangelu aldeberdin gurutzatuta sei triangelu txiki eta hexagono zentral bat agertzen dira.\n",
-          "irakaslearen_galdera": "Enuntziatuak dio lau baino gehiago ezin direla egon?"
+          "izena": "Daviden izarra",
+          "irudia": "assets/6_pospoloak/david_izarra.svg",
+          "azalpena": "Hiru pospoloko bi triangelu aldeberdin gainjartzen dira. Sei triangelu txiki agertzen dira; enuntziatuak ez du esaten lau bakarrik egon behar direnik.",
+          "zer_apurtzen_du": "«Lau esan nahi du zehazki lau» suposizioa.",
+          "irakaslearen_galdera": "Enuntziatuak dio lau baino gehiago ezin direla egon?",
+          "aurretik_ez_esateko": "Ez galdetu hasieran «lau bakarrik esan al dut?»; ia soluzioa ematea litzateke."
         }
       ],
-      "eramateko_ideia": "Beste problema batean blokeatzen direnean, ikasleek beren buruari galdetzea: «Baldintza hori problemak dio, ala nik jarri dut?»\n"
+      "bateratze_eztabaida": [
+        "Zer hartu duzue ziurtzat hasieran?",
+        "Enuntziatuak benetan esaten al du hori?",
+        "Zer baldintza gehitu diogu guk enuntziatuari soluzio bakoitza ez ikusteko?",
+        "Saiakera asko egitea eta estrategia aldatzea gauza bera al dira?",
+        "Beste problema batean trabatuta zaudetenean, nola antzeman dezakezue antzeko suposizio ezkutu bat?"
+      ],
+      "eramateko_ideia": "Blokeatuta nagoenean: «Baldintza hori problemak dio, ala nik jarri dut?»"
     },
     "irakaslearen_fitxa": {
-      "jardueraren_deskribapena": "3ko taldeetan, ikasleek sei pospolorekin lau triangelu aldeberdin berdin eraikitzeko konfigurazioak bilatzen dituzte. Ez da argitzen figura planoa izan behar den, pospoloak muturretan elkartu behar diren edo zehazki lau triangelu izan behar diren.\n",
+      "jardueraren_deskribapena": "Ikasleei sei pospolo ematen zaizkie eta lau triangelu aldeberdin berdin osatzeko eskatzen zaie. Hasieran taldeek libreki probatzen dute, interpretazioari buruzko pistarik gabe. Helburua ez da soluzio bakarra aurkitzea: hiru soluzio-familia kontrastatzea eta bakoitzak enuntziatuari gehitutako zein baldintza hausten duen esplizitatzea da. Lehen soluzioa aurkitzen duen taldea ez dago amaituta: beste konfigurazio bat bilatu, justifikatu eta zein suposizio aldatu duen identifikatu behar du.",
       "prestaketa": [
         "6 pospolo edo zotz talde bakoitzeko.",
         "Enuntziatua proiektatzeko aukera."
       ],
       "aurkezpena": "Sei pospolo dituzue. Lau triangelu aldeberdin berdin eraiki behar dituzue seiak erabiliz.\n",
       "ez_esatekoak": [
-        "Ez esan trikimailua dela.",
-        "Ez esan figura laua edo espaziala dela.",
-        "Ez esan pospoloak nola elkartu behar diren."
+        "Ez esan «3Dn pentsatu», «altxatu mahaitik» edo «tetraedroa».",
+        "Ez esan pospoloak muturretan elkartu behar diren ala ez.",
+        "Ez esan «lau» zehazki lau den ala gutxienez lau izan daitekeen.",
+        "Ez aurkeztu lehen soluzioa jardueraren amaiera balitz bezala."
       ],
       "denboralizazioa": [
         {
@@ -109,30 +148,42 @@ window.LAB_JARDUERAK = [
         }
       ],
       "galdera_erabilgarriak": [
+        "Zer dakigu ziur enuntziatutik?",
         "Zer hartu duzue ziurtzat?",
         "Enuntziatuak benetan esaten al du hori?",
-        "Beste modu batean irudika daiteke?",
-        "Lehen soluzioa aurkitu ondoren: beste bat egon daiteke?"
+        "Zuen azken bost saiakerek zer zuten komunean?",
+        "Beste saiakera bat egiten ari zarete, ala problema beste modu batean interpretatzen?",
+        "Lehen soluzioa zuzena bada, zer beste baldintza berrikusi genezake?"
       ],
       "soluzioak": [
         {
-          "izena": "Tetraedroa",
+          "izena": "1. Tetraedroa — planoaren blokeoa",
           "irudiak": [
-            "../assets/tetraedroa.svg"
-          ]
+            "assets/6_pospoloak/tetraedroa.svg"
+          ],
+          "azalpena": "Sei pospoloak tetraedroaren sei ertzak dira; lau aurpegiak triangelu aldeberdin berdinak dira.\n\nBLOKEOA: figura mahai gainean geratu behar dela suposatzea.\n\nEZ DESBLOKEATU HONELA: «Pentsatu 3Dn».\n\nGALDERA: «Non esan dugu figura laua izan behar dela?»"
         },
         {
-          "izena": "Hiru soluzio nagusiak",
+          "izena": "2. Soluzio laua — muturren eta alde osoaren blokeoa",
           "irudiak": [
-            "../assets/6_pospoloak_hiru_soluzioak.png"
-          ]
+            "assets/6_pospoloak/triangelu_laua.svg"
+          ],
+          "azalpena": "Kanpoko hiru pospolok triangelu handia osatzen dute; barruko hirurak triangelu medialaren aldeekin lerrokatzen dira eta haietatik harago luzatzen dira.\n\nBLOKEOA: pospoloak muturretan bakarrik elkartu daitezkeela eta triangeluaren aldeak pospolo osoak izan behar direla suposatzea.\n\nEZ DESBLOKEATU HONELA: «Erabili pospolo baten zati bat».\n\nGALDERA: «Triangelu baten aldea pospolo oso bat izan behar al da?»"
+        },
+        {
+          "izena": "3. Daviden izarra — «zehazki lau» blokeoa",
+          "irudiak": [
+            "assets/6_pospoloak/david_izarra.svg"
+          ],
+          "azalpena": "Bi triangelu aldeberdin gainjartzean sei triangelu txiki agertzen dira.\n\nBLOKEOA: «lau triangelu» automatikoki «zehazki lau» bezala interpretatzea.\n\nEZ DESBLOKEATU HONELA: «Lau bakarrik esan al dut?».\n\nGALDERA: «Enuntziatuak dio lau baino gehiago ezin direla egon?»"
         }
       ],
       "ebaluazioan_zer_behatu": [
         "Enuntziatuaren baldintzak eta beren suposizioak bereizten dituzten.",
         "Blokeoaren aurrean estrategia aldatzen duten.",
         "Soluzioa ahoz justifikatzeko gai diren."
-      ]
+      ],
+      "amaierako_bateratzea": "Jarri hiru diagramak batera eta egin galdera bera hirurekin: «Zer baldintza gehitu diogu guk enuntziatuari soluzio hau ez ikusteko?». Arbelean hiru zutabe egin daitezke: SOLUZIOA / GUK GEHITUTAKO BALDINTZA / ENUNTZIATUAK DIO? Amaieran formulatu: «Problema batean blokeatzen garenean, beste saiakera bat egin aurretik, gure baldintzak berrikusi ditzakegu»."
     },
     "ikaslearen_fitxa": {
       "beharrezkoa": true,
@@ -162,7 +213,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "9-puntuak",
-    "bertsioa": "0.6.3",
+    "bertsioa": "0.1.2",
     "izena": "9 puntuak, 4 zuzen",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "3×3 sareko bederatzi puntuak lau segmentu zuzen eta jarraituz lotzea, arkatza altxatu gabe. Ohiko oztopoa ikasleek beren kabuz ezartzen duten karratu ikusezina da.\n",
@@ -207,8 +258,32 @@ window.LAB_JARDUERAK = [
     },
     "jardueraren_aurkezpena": {
       "helburua": "Jarduerak ikasleek enuntziatuan ez dagoen muga bat nola sortzen duten ikusarazten du: segmentuak puntuek iradokitzen duten karratuaren barruan mantendu behar direla.\n",
-      "azalpen_nagusia": "Lehen saiakeretan segmentuak 3×3 puntuen «kutxaren» barruan geratzen dira.\nIkasleek konbinazio ugari probatzen dituzte eta sarritan zortzi puntu lotzea\nedo bosgarren segmentua behar izatea lortzen dute.\n\nErrepikapen hori interesgarria da: ez da estrategia berririk probatzen ari,\nmuga beraren barruan aukera desberdinak baizik.\n\n«Kutxatik kanpo pentsatu» esatea ez da komeni hasieran, aurkikuntza nagusia\noparitzen duelako. Laguntza hobea da enuntziatura itzultzea:\n«Non dio segmentuek puntuen artean geratu behar dutela?»\n\nSoluzioa aurkitu ondoren, interesgarriena da ikasleek identifikatzea zer aldatu\nduten aurreko saiakerekiko eta zein arau inplizitu kendu duten.\n",
-      "eramateko_ideia": "Saiakera asko egitea ez da estrategia aldatzea. Batzuetan aurrera egiteko problemari geuk jarritako muga ikusezina identifikatu behar dugu.\n"
+      "azalpen_nagusia": "Bederatzi puntuen erronkak oso material gutxirekin pentsatzeko ohitura garrantzitsu bat lantzen du: marrazki batek iradokitzen duen muga ez da zertan problemaren baldintza izan. 3×3 sareak karratu baten itxura du, baina enuntziatuak ez du karraturik aipatzen.\n\nIkasleen lehen saiakerak ia beti puntuen kanpo-perimetroaren barruan geratzen dira. Lerro horizontalak, bertikalak eta diagonalak konbinatzen dituzte, eta sarritan zortzi puntu estaltzea edo bosgarren segmentua behar izatea lortzen dute. Horrek frustrazioa sor dezake, baina didaktikoki oso une baliotsua da: konfigurazio desberdinak probatzen ari dira, baina estrategia bera mantentzen dute, segmentuak «karratu ikusezinaren» barruan uztea.\n\nHorregatik, hasieran ez da komeni «kutxatik kanpo pentsatu» esatea. Esaldi ezaguna izan arren, jardueraren aurkikuntza nagusia oparitzen du. Interbentzio hobeak enuntziatura itzultzen dira: «Zer baldintza dio?», «Segmentuen muturrak puntu batean amaitu behar direla dio?», «Marrazkian ikusten duzuen karratua problemaren parte da?». Galdera horiek ez dute norabide geometrikoa ematen; ikasleei beren interpretazioa aztertzeko eskatzen diete.\n\nLau segmentuko ibilbide zuzen batek sarearen mugetatik kanpora luzatu behar du. Soluzioa aurkitutakoan, interes pedagogikoa ez dago irudia kopiatzean, aurreko saiakerekin alderatzean baizik. Zer aldatu da? Segmentu batzuk kanpoko puntuetatik harago luzatu dira eta lerro baten amaiera ez da zertan puntu batean egon. Ikasle batek «kanpora atera gara» esaten badu, irakasleak zehaztu dezake: «Zein arau hautsi dugu? Enuntziatuko arau bat ala geuk asmatutakoa?».\n\nJarduera honek 6 pospoloen erronkarekin lotura naturala du. Bietan blokeoa ez da kalkulu falta, baizik eta irudikapenak iradokitako baldintza bat. Eraman beharreko ideia ez da slogan bat, tresna operatiboa baizik: saiakera asko egiteak ez du esan nahi estrategia aldatzen ari garenik. Batzuetan estrategia aldatzea erabiltzen ari garen muga bera zalantzan jartzea da.",
+      "eramateko_ideia": "Saiakera asko egitea ez da estrategia aldatzea. Batzuetan aurrera egiteko problemari geuk jarritako muga ikusezina identifikatu behar dugu.\n",
+      "ikasleen_ibilbide_tipikoa": [
+        "Lehen marrazkiek 3×3 sarearen barruan geratzeko joera dute.",
+        "Taldeek gero eta konbinazio gehiago egiten dituzte, baina muga bera mantentzen dute.",
+        "«Lau zuzenekin ezin da» ondorioa ager daiteke.",
+        "Enuntziatua berrirakurtzeak muga ikusezina identifikatzeko aukera ematen du.",
+        "Soluzioaren ondoren, saiakera berria eta estrategia-aldaketa bereizten dira."
+      ],
+      "ohiko_blokeoak": [
+        {
+          "suposizioa": "Segmentuek puntuek osatzen duten karratuaren barruan geratu behar dute.",
+          "zergatik_interesgarria": "Karratua ikusmenak sortzen du; ez dago enuntziatuan."
+        },
+        {
+          "suposizioa": "Segmentu bakoitza puntu batean hasi eta amaitu behar da.",
+          "zergatik_interesgarria": "Puntuak lotzeko objektuak direla interpretatzen dugu, baina zuzenki-segmentua puntuetatik harago luza daiteke."
+        }
+      ],
+      "bateratze_eztabaida": [
+        "Zer baldintza dio benetan enuntziatuak?",
+        "Non ikusten duzue karratua? Enuntziatuan ala zuen buruan?",
+        "Zuen azken saiakerek zer zuten komunean?",
+        "Saiakera berria egin duzue, ala estrategia aldatu?",
+        "Zer arau kendu behar izan duzue soluzioa ikusteko?"
+      ]
     },
     "irakaslearen_fitxa": {
       "jardueraren_deskribapena": "Talde bakoitzak bederatzi puntuak lau segmentu zuzen eta jarraituz lotu behar ditu, arkatza paperetik altxatu gabe.\n",
@@ -236,23 +311,27 @@ window.LAB_JARDUERAK = [
         }
       ],
       "galdera_erabilgarriak": [
-        "Zer baldintza dio enuntziatuak?",
-        "Zer baldintza gehitu dugu guk?",
-        "Saiakera huts batek zer informazio eman dizue?"
+        "Zer baldintza dio benetan enuntziatuak?",
+        "Non ikusten duzue karratua? Enuntziatuan ala zuen buruan?",
+        "Zuen azken saiakerek zer zuten komunean?",
+        "Saiakera berria egin duzue, ala estrategia aldatu?",
+        "Zer arau kendu behar izan duzue soluzioa ikusteko?"
       ],
       "soluzioak": [
         {
           "izena": "Lau segmentuko soluzioa",
           "irudiak": [
             "../assets/9_puntuak_soluzioa.svg"
-          ]
+          ],
+          "azalpena": "Ibilbide posible bat, 3×3 sareko puntuak (0,0)–(2,2) koordenatuetan hartuta: (−1,−1) → (2,2) → (−1,2) → (2,−1) → (2,1). Lau segmentuek bederatzi puntuak estaltzen dituzte eta zenbait segmentu sareak iradokitzen duen karratutik kanpora luzatzen dira."
         }
       ],
       "ebaluazioan_zer_behatu": [
         "Suposizio ezkutua identifikatzen duten.",
         "Estrategia aldatzen duten.",
         "Soluzioa azaltzeko gai diren."
-      ]
+      ],
+      "amaierako_bateratzea": "Ez erabili «kutxatik kanpo pentsatu» ondorio bakar gisa. Zehaztu zer muga zen ikusezina eta alderatu saiakera berria egitea estrategia aldatzearekin. Eraman beharreko galdera: «Baldintza hori problemak dio, ala guk jarri dugu?»."
     },
     "ikaslearen_fitxa": {
       "beharrezkoa": true,
@@ -278,7 +357,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "bi-sokak",
-    "bertsioa": "0.6.3",
+    "bertsioa": "0.1.2",
     "izena": "Bi sokak",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Bi sokak 60 minututan erretzen dira, baina ez abiadura konstantean. Bi sokak eta sua bakarrik erabiliz, 45 minutu zehazki neurtu behar dira.\n",
@@ -323,8 +402,22 @@ window.LAB_JARDUERAK = [
     },
     "jardueraren_aurkezpena": {
       "helburua": "Informazio osoa ez dugunean ere zer kontrolatu dezakegun identifikatzea.\n",
-      "azalpen_nagusia": "Sokaren erdiak ez du zertan 30 minutu iraun. Baliteke lehen erdia bost minututan\nerretzea eta beste erdiak 55 behar izatea. Horregatik, luzera denbora bihurtzeko\nohiko intuizioa ezin da erabili.\n\nIkasleek maiz sokaren hiru laurdenak erabiltzea edo erdian marka egitea proposatzen\ndute. Galdera erabilgarria da: «Nola dakizu zati horrek denbora hori behar duela?»\n\nAldaketa kontzeptuala «Zer dakigu ziur?» galdetzean dator. Soka bat bi muturretatik\npiztuta, 30 minututan amaituko da, nahiz eta ez jakin su-fronteak non elkartuko diren.\n\n0. minutuan lehen soka bi muturretatik pizten da eta bigarrena mutur batetik.\n30. minutuan lehenengoa amaitzen da eta bigarrenaren beste muturra pizten da.\nGeratzen den zatia 15 minututan amaitzen da: guztira 45 minutu.\n",
-      "eramateko_ideia": "Informazio ezezagunaren barruan ere bada ziurtasunez kontrola daitekeen zerbait.\n"
+      "azalpen_nagusia": "Bi soken erronkak informazio ez-osoarekin arrazoitzeko ohitura oso zehatza lantzen du: ez dakiguna kontrolatzen saiatu beharrean, ziurtasunez dakiguna identifikatzea. Baldintza erabakigarria da sokak ez direla abiadura konstantean erretzen. Baldintza hori apaingarri gisa irakurtzen bada, ia soluzio oker guztiak agertzen dira.\n\nOhiko proposamenak soka erditik markatzea, hiru laurdenak hartzea edo luzeraren proportzioak denboraren proportzio bihurtzea dira. Baina soka baten lehen erdiak 5 minutu eta bigarrenak 55 minutu iraun ditzake. Beraz, luzeraren erdia ez da 30 minutuko erlojua. Irakaslearen galdera erabilgarriena ez da «oker dago», baizik eta «Nola dakizu zati horrek denbora hori behar duela?». Horrela ikasleak bere hipotesi ezkutua ikusi behar du.\n\nAldaketa kontzeptuala «Zer dakigu ziur?» galderarekin dator. Soka oso bat mutur batetik piztuta 60 minututan amaitzen dela dakigu. Bi muturretatik batera pizten badugu, bi su-fronteek soka osoa kontsumitzen dute eta 30 minututan amaitzen da, nahiz eta ez dakigun non elkartuko diren. Ez dugu erretze-abiadura ezagutu behar.\n\n0. minutuan lehen soka bi muturretatik eta bigarrena mutur bakarretik pizten dira. Lehen soka 30. minutuan amaitzen denean, badugu 30 minutuko seinale fidagarria. Une horretan bigarren sokaren beste muturra pizten dugu. Bigarren sokak, mutur bakarretik jarraituko balu, beste 30 minutuko erretze-denbora izango luke; bi muturretatik erretzen denez, geratzen den erretze-lana 15 minututan amaitzen da. Guztira 45 minutu.\n\nAzken azalpen horretan komeni da azpimarratzea «geratzen den sokaren erdia» esatea okerra izan daitekeela: 30 minuturen ondoren geratzen den luzera ez dugu ezagutzen. Ezagutzen duguna geratzen den erretze-denbora da. Jardueraren indarra bereizketa horretan dago.\n\nBateratzean, soluzioa baino gehiago, erabilitako tresna izendatu daiteke: «Zer dakigu ziur?». Baldintza irregular baten aurrean ere badira aldaezinak edo bermeak. Hedapen moduan, beste denbora zehatz batzuk neurtu daitezkeen aztertzeak ikasle azkarrak soluzioa kopiatzetik egitura aztertzera eramaten ditu.",
+      "eramateko_ideia": "Informazio ezezagunaren barruan ere bada ziurtasunez kontrola daitekeen zerbait.\n",
+      "ikasleen_ibilbide_tipikoa": [
+        "Luzera eta denbora proportzionalak direla suposatzen duten proposamenak agertzen dira.",
+        "«Ez da abiadura konstantean erretzen» baldintzak proposamen horiek baliogabetzen ditu.",
+        "Taldeak ziurtasunez dakiten informazioa isolatzen hasten dira.",
+        "Bi muturretatik pizteak 30 minutuko seinale fidagarria sortzen du.",
+        "Bigarren sokarekin seinale hori konbinatuta 45 minutu lortzen dira."
+      ],
+      "bateratze_eztabaida": [
+        "Nola dakizu soka-zati horrek denbora hori behar duela?",
+        "Zer dakigu ziur, erretze-abiadura ezagutu gabe?",
+        "Soka bat bi muturretatik pizten badugu, zer gertatzen da?",
+        "30 minutu neurtzeko gai bagara, nola erabil dezakegu beste soka?",
+        "30. minutuan bigarren sokatik geratzen den luzera ezagutzen al dugu? Zer ezagutzen dugu?"
+      ]
     },
     "irakaslearen_fitxa": {
       "jardueraren_deskribapena": "Bi soketako bakoitzak 60 minutu behar ditu erabat erretzeko, baina ez dute abiadura konstantean erretzen. 45 minutu neurtu behar dira.\n",
@@ -361,13 +454,22 @@ window.LAB_JARDUERAK = [
           "izena": "45 minutuko denbora-diagrama",
           "irudiak": [
             "../assets/bi_sokak.svg"
-          ]
+          ],
+          "azalpena": "t=0: lehen soka bi muturretatik eta bigarrena mutur batetik piztu. t=30: lehen soka amaitzen da; une horretan bigarren sokaren beste muturra piztu. Bigarren sokari mutur bakarretik beste 30 minutuko erretze-denbora geratuko litzaioke; bi muturretatik, 15 minutu. t=45: amaitu. Ez dakigu 30. minutuan zenbat luzera geratzen den, eta ez dugu jakin behar."
         }
       ],
       "hedapenak": [
         "Zein beste denbora zehatz neur daitezke bi sokekin?",
         "40 minutu? 50 minutu? Zergatik?"
-      ]
+      ],
+      "galdera_erabilgarriak": [
+        "Nola dakizu soka-zati horrek denbora hori behar duela?",
+        "Zer dakigu ziur, erretze-abiadura ezagutu gabe?",
+        "Soka bat bi muturretatik pizten badugu, zer gertatzen da?",
+        "30 minutu neurtzeko gai bagara, nola erabil dezakegu beste soka?",
+        "30. minutuan bigarren sokatik geratzen den luzera ezagutzen al dugu? Zer ezagutzen dugu?"
+      ],
+      "amaierako_bateratzea": "Bereizi esplizituki «geratzen den luzera» eta «geratzen den erretze-denbora». Lehenengoa ezezaguna da; bigarrena ziurtasunez ezagutzen dugu. Hortik atera «Zer dakigu ziur?» pentsatzeko tresna."
     },
     "ikaslearen_fitxa": {
       "beharrezkoa": false,
@@ -381,7 +483,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "eskuak-ematea",
-    "bertsioa": "0.6.3",
+    "bertsioa": "0.1.2",
     "izena": "Zenbat aldiz emango diogu eskua elkarri?",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Pertsona talde batean denek elkarri behin eskua ematen diotenean zenbat esku-emate gertatzen diren ikertzea; kasu txikietatik arau orokor baterantz.\n",
@@ -433,8 +535,22 @@ window.LAB_JARDUERAK = [
     },
     "jardueraren_aurkezpena": {
       "helburua": "Ikerketa matematikoaren zikloa modu irisgarrian bizitzea: kasu txikiak, datuak antolatu, patroia aurkitu, orokortu eta zergatik funtzionatzen duen azaldu.\n",
-      "azalpen_nagusia": "Bi pertsonarekin esku-emate bakarra dago; hirurekin hiru; laurekin sei.\nHasieran ikasleek antzeztu, puntuak marraztu edo zerrendak egin ditzakete.\n\nPertsona kopurua handitzean, zenbaketa zuzena neketsua bihurtzen da eta\nsistematizatzeko beharra sortzen da. Pertsona berri bakoitzak aurreko pertsona\nguztiekin ematen du eskua, eta horrek 1, 3, 6, 10, 15... segida iradokitzen du.\n\nBeste ikuspegi batek n(n−1) zenbaketa ematen du, baina esku-emate bakoitza bi aldiz\nzenbatzen du. Horregatik agertzen da n(n−1)/2.\n\nFormula aurkitzea ez da amaiera. Galdera nagusia da zergatik izan behar duen\nzuzena edozein n-rako.\n",
-      "eramateko_ideia": "Kasu partikularrak sistematikoki aztertzeak patroi bat iradoki dezake; hurrengo urratsa patroia orokortzea eta azaltzea da.\n"
+      "azalpen_nagusia": "Esku-emateen ikerketa kasu txikietatik egitura orokor batera igarotzeko jarduera irisgarria da. Egoera ulertzeko erraza da eta hasieran gorputzez antzeztu daiteke; hala ere, pertsona kopurua handitzean zenbaketa zuzena deseroso bihurtzen da. Hor sortzen da matematikaren beharra: informazioa antolatzea eta egitura bilatzea.\n\nBi pertsonarekin esku-emate bakarra dago; hirurekin 3; laurekin 6; bostekin 10. Ikasleek zerrendak, puntuak eta loturak, marrazkiak edo taulak erabil ditzakete. Irakasleak ez luke taula edo formula hasieratik eman behar: irudikapen sistematiko baten beharra ikasleen lanetik sortzea interesatzen zaigu. Galdera emankorra da «Nola ziurtatzen duzue ez duzuela esku-ematerik errepikatu edo ahaztu?».\n\nDatuak 1, 3, 6, 10, 15... bihurtzen direnean patroia ikus daiteke: pertsona berri bat gehitzean aurreko guztiekin ematen du eskua. Horregatik gehikuntzak 1, 2, 3, 4... dira. Ikuspegi honek 1+2+...+(n−1) adierazpenera eramaten du eta formula ez da magia: pertsonak banan-banan sartzean gertatzen denaren laburpena da.\n\nBigarren justifikazio batek beste egitura bat erakusten du. n pertsonetako bakoitzak beste n−1 pertsona ditu; horrek n(n−1) kontaktu zenbatzen ditu. Baina A-k B-rekin emandako eskua eta B-k A-rekin emandakoa esku-emate bera dira, eta, beraz, dena bi aldiz zenbatu dugu. Hortik n(n−1)/2. Bi azalpenak alderatzea formula bera bi modutan ulertzeko aukera da.\n\nJardueraren une garrantzitsua formula agertzen denean dator. «1, 3, 6, 10 ikusi eta formula asmatu dut» ez da oraindik justifikazioa. Kasu partikularrek aierua sortzen laguntzen dute; azalpenak erakusten du zergatik funtzionatu behar duen edozein n-rako. Horixe da ikerketatik eramateko ideia nagusia.",
+      "eramateko_ideia": "Kasu partikularrak sistematikoki aztertzeak patroi bat iradoki dezake; hurrengo urratsa patroia orokortzea eta azaltzea da.\n",
+      "ikasleen_ibilbide_tipikoa": [
+        "Kasu txikiak antzeztu edo marrazten dituzte.",
+        "Zenbaketa handitzean errepikapenak eta hutsuneak saihesteko antolaketa behar dute.",
+        "1, 3, 6, 10, 15... patroia agertzen da.",
+        "Talde batzuek araua hitzez ematen dute eta beste batzuek formula bilatzen dute.",
+        "Amaieran formula aurkitzea eta formula justifikatzea bereizten dira."
+      ],
+      "bateratze_eztabaida": [
+        "Nola dakizue esku-emate guztiak behin bakarrik zenbatu dituzuela?",
+        "Pertsona berri bat sartzen denean, zenbat esku-emate berri sortzen dira?",
+        "Zuen patroia 100 pertsonarekin ere egia izango dela nola dakizue?",
+        "n(n−1) zer ari da zenbatzen? Zergatik zatitu behar dugu bitan?",
+        "Bi azalpenetatik zein da zuentzat argiagoa, eta zergatik?"
+      ]
     },
     "irakaslearen_fitxa": {
       "jardueraren_deskribapena": "Ikasleek pertsona kopuru txikiekin hasten dute ikerketa eta edozein n-rako esku-emate kopurua azaltzeko arau bat proposatzen saiatzen dira.\n",
@@ -462,22 +578,28 @@ window.LAB_JARDUERAK = [
         }
       ],
       "galdera_erabilgarriak": [
-        "Zer gertatzen da 2, 3 edo 4 pertsonarekin?",
-        "Nola antola ditzakezue emaitzak?",
-        "Zer gehitzen da pertsona berri bat sartzean?",
-        "Nola justifikatuko zenukete zuen araua?"
+        "Nola dakizue esku-emate guztiak behin bakarrik zenbatu dituzuela?",
+        "Pertsona berri bat sartzen denean, zenbat esku-emate berri sortzen dira?",
+        "Zuen patroia 100 pertsonarekin ere egia izango dela nola dakizue?",
+        "n(n−1) zer ari da zenbatzen? Zergatik zatitu behar dugu bitan?",
+        "Bi azalpenetatik zein da zuentzat argiagoa, eta zergatik?"
       ],
       "soluzioak": [
         {
-          "izena": "Arau orokorra",
-          "azalpena": "n(n−1)/2"
+          "izena": "1. Pertsona berria gehitzea",
+          "azalpena": "2, 3, 4, 5... pertsonentzat 1, 3, 6, 10... esku-emate daude. Pertsona berri bakoitzak aurreko guztiekin ematen du eskua; gehikuntzak 1, 2, 3, ..., n−1 dira. Beraz, guztira 1+2+...+(n−1)."
+        },
+        {
+          "izena": "2. Bi aldiz zenbatzea",
+          "azalpena": "Pertsona bakoitzak beste n−1 pertsonekin du kontaktua: n(n−1). Baina A–B eta B–A esku-emate bera dira; esku-emate bakoitza bi aldiz zenbatu dugu. Beraz, n(n−1)/2."
         }
       ],
       "ebaluazioan_zer_behatu": [
         "Kasuak modu sistematikoan antolatzen dituzten.",
         "Patroia identifikatzen duten.",
         "Arau orokorra justifikatzen duten."
-      ]
+      ],
+      "amaierako_bateratzea": "Ez amaitu formula arbelean idaztearekin. Alderatu bi justifikazioak eta galdetu zer azaltzen duen bakoitzak. Formula aurkitzea eta formula edozein n-rako zergatik den zuzena azaltzea bereizi."
     },
     "ikaslearen_fitxa": {
       "beharrezkoa": true,
@@ -504,7 +626,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "zenbat-piano",
-    "bertsioa": "0.6.3",
+    "bertsioa": "0.1.2",
     "izena": "Zenbat piano daude Bilbon?",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Daturik eman gabe, Bilbon zenbat piano dauden estimatu behar dute. Helburua ez da zenbaki «zuzena» asmatzea, baizik eta arrazoizko eredua eraiki eta defendatzea.\n",
@@ -550,8 +672,23 @@ window.LAB_JARDUERAK = [
     },
     "jardueraren_aurkezpena": {
       "helburua": "Informazio partzialarekin arrazoizko estimazio bat eraiki, defendatu eta berrikustea.\n",
-      "azalpen_nagusia": "Galdera nahita dago daturik gabe: «Zenbat piano daude Bilbon?». Hasieran Internet\nere ez da erabiltzen. «Ezin dugu jakin» erreakzioa jardueraren abiapuntua da.\n\nIkasleek galdetzen hasten dira: zenbat biztanle ditu Bilbok? zenbat etxe? eskolak\nkontatzen dira? musika-eskolak? hotelak? Galdera horiek ez dira zarata; problema\ndefinitzen eta eredu bat eraikitzen ari dira.\n\nFermi motako estimazio batean galdera handi bat galdera txikiagotan deskonposatzen da.\nAdibidez, 350 000 biztanle eta etxeko 2,5 pertsona estimatuz:\n350 000 / 2,5 ≈ 140 000 etxe.\n\nTalde batek 20 etxetik batean piano bat dagoela estimatzen badu:\n140 000 / 20 = 7 000 piano etxeetan.\n\nBeste talde batek 100 etxetik batean dagoela pentsa dezake eta emaitza oso bestelakoa\nlortu. Orduan sortzen da galdera nagusia: benetako erantzuna ez badakigu,\nnola erabakitzen dugu zeinek egin duen matematika hobea?\n\nEredu on batek hipotesiak esplizitu egiten ditu, defendatu daitezkeen hipotesiak erabiltzen\nditu, kalkulu koherenteak egiten ditu eta informazio berria agertzen denean berrikusi daiteke.\n\nHipotesi guztiek ez dute pisu bera. Biztanleria 350 000 edo 360 000 izateak emaitza\ngutxi aldatzen du; 20 etxetik batean edo 50etik batean pianoa egoteak, berriz, asko.\n",
-      "eramateko_ideia": "Matematikak ez dira soilik datu zehatzekin erantzun zehatzak lortzeko; informazio partzialarekin eredu arrazoizkoak eraikitzeko ere balio dute.\n"
+      "azalpen_nagusia": "«Zenbat piano daude Bilbon?» galderak nahita ez du behar adina datu erantzun zehatza kalkulatzeko. Lehen erreakzioa «ezin da jakin» izan daiteke, eta hori ez da oztopo bat saihestu beharrekoa: jardueraren abiapuntua da. Helburua da ikasleek ikustea matematikak ez duela beti datu guztiak jasotzen dituen enuntziatu itxi batekin lan egiten.\n\nInternet erabili gabe, taldeek berehala hasten dira behar lituzketen datuez galdetzen: zenbat biztanle ditu Bilbok, zenbat etxe daude, zenbat eskola, musika-eskola edo hotel, piano elektrikoak kontatzen diren... Galdera horiek ez dira jardueratik kanpoko zalantzak. Problema definitzen, kategoriak erabakitzen eta eredu bat eraikitzen ari dira.\n\nFermi motako estimazioaren mugimendu nagusia deskonposizioa da. Adibidez, etxeetako pianoak estimatzeko, 350.000 biztanle eta etxeko 2,5 pertsona har daitezke: 350.000 / 2,5 ≈ 140.000 etxe. Ondoren, 20 etxetik batean piano bat dagoela suposatuz, 7.000 piano etxeetan lortuko genituzke. Zenbaki horiek ez dira «datu zuzenak»; hipotesiak dira, eta horregatik idatzi eta defendatu behar dira.\n\nBeste talde batek 100 etxetik batean pianoa dagoela pentsatzen badu, emaitza oso bestelakoa izango da. Une horretan agertzen da jardueraren galdera matematiko interesgarriena: «Benetako erantzuna ez badakigu, nola erabakitzen dugu zeinek egin duen matematika hobea?». Kalitatea ez da azken zenbakia errealitatearekin kasualitatez bat etortzea. Eredu hobe batek hipotesiak esplizitatzen ditu, arrazoizkoak direla defendatzen du, kategoria nagusiak kontuan hartzen ditu eta kalkulu koherenteak egiten ditu.\n\nHipotesi guztiek ez dute eragin bera. Bilbok 350.000 edo 360.000 biztanle izateak emaitza gutxi aldatuko du; 20 etxetik batean edo 50etik batean pianoa dagoela pentsatzeak, ordea, asko. «Zein hipotesik du eragin handiena?» galdetzeak sentikortasunaren ideia modu intuitiboan lantzen du, terminologia teknikoa erabili beharrik gabe.\n\nTaldeek lehen eredua eraiki ondoren, aukera interesgarria da Internet erabiltzea erantzuna bilatzeko ez, baizik eta ereduko sarrera batzuk hobetzeko: benetako biztanleria, etxeko batez besteko pertsona kopurua edo eskola kopurua. Ondoren eredua berriz kalkulatzen da. Horrela, datuak ez dira pentsamenduaren ordezko; pentsatutako eredua fintzeko tresna dira.\n\nJardueraren amaieran taldeek ez dute soilik zenbaki bat aurkeztu behar. Beren eredua, hipotesi erabakigarrienak eta emaitza nola aldatuko litzatekeen azaldu behar dute. Hori da Fermi-estimazioaren balio nagusia: informazio partzialarekin arrazoizko, gardena eta berrikusgarria den eredu bat eraikitzea.",
+      "eramateko_ideia": "Matematikak ez dira soilik datu zehatzekin erantzun zehatzak lortzeko; informazio partzialarekin eredu arrazoizkoak eraikitzeko ere balio dute.\n",
+      "ikasleen_ibilbide_tipikoa": [
+        "«Ezin da jakin, datuak falta dira» erreakzioa agertzen da.",
+        "Zein datu beharko lituzketen galdetzean, problema deskonposatzen hasten dira.",
+        "Taldeek hipotesiei balio arrazoizkoak ematen dizkiete eta lehen eredua kalkulatzen dute.",
+        "Emaitza oso desberdinak alderatzean, azken zenbakia baino ereduaren kalitatea eztabaidatzen da.",
+        "Hipotesi erabakigarriena identifikatu eta, nahi bada, datu erreal batekin eredua berrikusten da."
+      ],
+      "bateratze_eztabaida": [
+        "Zer esan nahi dugu «piano» esaten dugunean? Zer sartuko dugu eta zer ez?",
+        "Galdera handi hau zein galdera txikiagotan bana daiteke?",
+        "Datu hori ez badakizue, zer balio izan daiteke arrazoizkoa? Zergatik?",
+        "Bi taldeek emaitza desberdinak badituzte, nola erabakitzen dugu zeinek egin duen matematika hobea?",
+        "Zein hipotesik du eragin handiena azken emaitzan?",
+        "Datu bakar bat egiaztatu ahal bazenute, zein aukeratuko zenukete eredua gehien hobetzeko?"
+      ]
     },
     "irakaslearen_fitxa": {
       "jardueraren_deskribapena": "Ikasleek Bilbon zenbat piano dauden estimatu behar dute datu zuzenik eta Internetik gabe. Talde bakoitzak bere eredu sinplifikatua eraiki, hipotesiak egin eta emaitza defendatzen du.\n",
@@ -584,17 +721,30 @@ window.LAB_JARDUERAK = [
         }
       ],
       "galdera_erabilgarriak": [
-        "Zein leku motatan egon daitezke pianoak?",
-        "Galdera hau txikiagoetan bana daiteke?",
-        "Zein datu beharko zenukete?",
-        "Datu hori ez badakizue, zer balio izan daiteke arrazoizkoa?",
-        "Zein hipotesik du eragin handiena?"
+        "Zer esan nahi dugu «piano» esaten dugunean? Zer sartuko dugu eta zer ez?",
+        "Galdera handi hau zein galdera txikiagotan bana daiteke?",
+        "Datu hori ez badakizue, zer balio izan daiteke arrazoizkoa? Zergatik?",
+        "Bi taldeek emaitza desberdinak badituzte, nola erabakitzen dugu zeinek egin duen matematika hobea?",
+        "Zein hipotesik du eragin handiena azken emaitzan?",
+        "Datu bakar bat egiaztatu ahal bazenute, zein aukeratuko zenukete eredua gehien hobetzeko?"
       ],
       "ebaluazioan_zer_behatu": [
         "Hipotesiak esplizitatzeko gaitasuna.",
         "Problema deskonposatzeko gaitasuna.",
         "Kalkulu koherenteak egitea.",
         "Ereduaren ahulguneak identifikatzea."
+      ],
+      "soluzioak": [
+        {
+          "izena": "Adibideko eredua — ez da erantzun eredugarria bakarra",
+          "azalpena": "Adibidez: 350.000 biztanle / 2,5 pertsona etxeko ≈ 140.000 etxe. 20 etxetik batean pianoa dagoela suposatuz ≈ 7.000 etxeko piano. Ondoren beste kategoriak gehitu beharko lirateke, taldeak bere definizioan sartzen baditu. Zenbaki hauen funtzioa eredu bat nola eraikitzen den erakustea da, ez ikasleei hipotesiak ematea."
+        }
+      ],
+      "amaierako_bateratzea": "Ereduak alderatu, ez soilik emaitzak. Irizpideak: hipotesiak esplizituak eta defendagarriak izatea; kategoria nagusiak kontuan hartzea; kalkuluak koherenteak izatea; eta eredua informazio berriarekin berrikusi ahal izatea. Amaitu «Zein hipotesik du eragin handiena?» galderarekin.",
+      "hedapenak": [
+        "Eman tarte arrazoizko bat puntu-estimazio bakarraren ordez.",
+        "Aukeratu egiaztatuko zenuketen datu bakarra eta azaldu zergatik hobetuko lukeen eredua gehien.",
+        "Lehen eredua egin ondoren, bilatu Interneten sarrera egiaztagarri batzuk —ez piano kopurua— eta berrikalkulatu."
       ]
     },
     "ikaslearen_fitxa": {

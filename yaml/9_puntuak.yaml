@@ -1,110 +1,115 @@
-# Matematikako Laborategia — jarduera
-# YAML hau da jardueraren iturri nagusia.
-
-id: "9-puntuak"
-bertsioa: "0.6.3"
-izena: "9 puntuak, 4 zuzen"
-
+id: 9-puntuak
+bertsioa: 0.1.2
+izena: 9 puntuak, 4 zuzen
 fitxa_teknikoa:
-  deskribapen_laburra: >
-    3×3 sareko bederatzi puntuak lau segmentu zuzen eta jarraituz lotzea,
-    arkatza altxatu gabe. Ohiko oztopoa ikasleek beren kabuz ezartzen duten
-    karratu ikusezina da.
-  jarduera_mota: "Erronka"
+  deskribapen_laburra: '3×3 sareko bederatzi puntuak lau segmentu zuzen eta jarraituz lotzea, arkatza altxatu gabe. Ohiko oztopoa ikasleek beren kabuz ezartzen duten karratu ikusezina da.
+
+    '
+  jarduera_mota: Erronka
   fasea:
-    - "Kultura sortzea"
-  denboralizazioa: "25–35 min"
-  irekiera_maila: "Itxia"
-  zailtasuna: "Ertaina"
-  taldekatzea: "Ausazko 3ko taldeak"
+  - Kultura sortzea
+  denboralizazioa: 25–35 min
+  irekiera_maila: Itxia
+  zailtasuna: Ertaina
+  taldekatzea: Ausazko 3ko taldeak
   gaiak:
-    - "Logika"
-    - "Geometria"
+  - Logika
+  - Geometria
   pentsatzeko_tresnak:
-    - "Suposizio ezkutuak identifikatzea"
-    - "Ikuspegia aldatzea"
+  - Suposizio ezkutuak identifikatzea
+  - Ikuspegia aldatzea
   konpetentziak:
-    - kodea: "1.1"
-      sakontasuna: 3
-      nola_lantzen_da: "Enuntziatuak benetan dioena eta geuk gehitutakoa bereiztea."
-    - kodea: "1.2"
-      sakontasuna: 2
-      nola_lantzen_da: "Saiakerak egin, estrategia aldatu eta soluzioa justifikatzea."
-    - kodea: "5.1"
-      sakontasuna: 2
-      nola_lantzen_da: "Blokeoari aurre egin eta porrota informazio gisa erabiltzea."
-    - kodea: "5.2"
-      sakontasuna: 1
-      nola_lantzen_da: "Taldeko ideiak kontrastatzea."
-
+  - kodea: '1.1'
+    sakontasuna: 3
+    nola_lantzen_da: Enuntziatuak benetan dioena eta geuk gehitutakoa bereiztea.
+  - kodea: '1.2'
+    sakontasuna: 2
+    nola_lantzen_da: Saiakerak egin, estrategia aldatu eta soluzioa justifikatzea.
+  - kodea: '5.1'
+    sakontasuna: 2
+    nola_lantzen_da: Blokeoari aurre egin eta porrota informazio gisa erabiltzea.
+  - kodea: '5.2'
+    sakontasuna: 1
+    nola_lantzen_da: Taldeko ideiak kontrastatzea.
 jardueraren_aurkezpena:
-  helburua: >
-    Jarduerak ikasleek enuntziatuan ez dagoen muga bat nola sortzen duten
-    ikusarazten du: segmentuak puntuek iradokitzen duten karratuaren barruan
-    mantendu behar direla.
-  azalpen_nagusia: |
-    Lehen saiakeretan segmentuak 3×3 puntuen «kutxaren» barruan geratzen dira.
-    Ikasleek konbinazio ugari probatzen dituzte eta sarritan zortzi puntu lotzea
-    edo bosgarren segmentua behar izatea lortzen dute.
+  helburua: 'Jarduerak ikasleek enuntziatuan ez dagoen muga bat nola sortzen duten ikusarazten du: segmentuak puntuek iradokitzen duten karratuaren barruan mantendu behar direla.
 
-    Errepikapen hori interesgarria da: ez da estrategia berririk probatzen ari,
-    muga beraren barruan aukera desberdinak baizik.
+    '
+  azalpen_nagusia: 'Bederatzi puntuen erronkak oso material gutxirekin pentsatzeko ohitura garrantzitsu bat lantzen du: marrazki batek iradokitzen duen muga ez da zertan problemaren baldintza izan. 3×3 sareak karratu baten itxura du, baina enuntziatuak ez du karraturik aipatzen.
 
-    «Kutxatik kanpo pentsatu» esatea ez da komeni hasieran, aurkikuntza nagusia
-    oparitzen duelako. Laguntza hobea da enuntziatura itzultzea:
-    «Non dio segmentuek puntuen artean geratu behar dutela?»
 
-    Soluzioa aurkitu ondoren, interesgarriena da ikasleek identifikatzea zer aldatu
-    duten aurreko saiakerekiko eta zein arau inplizitu kendu duten.
-  eramateko_ideia: >
-    Saiakera asko egitea ez da estrategia aldatzea. Batzuetan aurrera egiteko
-    problemari geuk jarritako muga ikusezina identifikatu behar dugu.
+    Ikasleen lehen saiakerak ia beti puntuen kanpo-perimetroaren barruan geratzen dira. Lerro horizontalak, bertikalak eta diagonalak konbinatzen dituzte, eta sarritan zortzi puntu estaltzea edo bosgarren segmentua behar izatea lortzen dute. Horrek frustrazioa sor dezake, baina didaktikoki oso une baliotsua da: konfigurazio desberdinak probatzen ari dira, baina estrategia bera mantentzen dute, segmentuak «karratu ikusezinaren» barruan uztea.
 
+
+    Horregatik, hasieran ez da komeni «kutxatik kanpo pentsatu» esatea. Esaldi ezaguna izan arren, jardueraren aurkikuntza nagusia oparitzen du. Interbentzio hobeak enuntziatura itzultzen dira: «Zer baldintza dio?», «Segmentuen muturrak puntu batean amaitu behar direla dio?», «Marrazkian ikusten duzuen karratua problemaren parte da?». Galdera horiek ez dute norabide geometrikoa ematen; ikasleei beren interpretazioa aztertzeko eskatzen diete.
+
+
+    Lau segmentuko ibilbide zuzen batek sarearen mugetatik kanpora luzatu behar du. Soluzioa aurkitutakoan, interes pedagogikoa ez dago irudia kopiatzean, aurreko saiakerekin alderatzean baizik. Zer aldatu da? Segmentu batzuk kanpoko puntuetatik harago luzatu dira eta lerro baten amaiera ez da zertan puntu batean egon. Ikasle batek «kanpora atera gara» esaten badu, irakasleak zehaztu dezake: «Zein arau hautsi dugu? Enuntziatuko arau bat ala geuk asmatutakoa?».
+
+
+    Jarduera honek 6 pospoloen erronkarekin lotura naturala du. Bietan blokeoa ez da kalkulu falta, baizik eta irudikapenak iradokitako baldintza bat. Eraman beharreko ideia ez da slogan bat, tresna operatiboa baizik: saiakera asko egiteak ez du esan nahi estrategia aldatzen ari garenik. Batzuetan estrategia aldatzea erabiltzen ari garen muga bera zalantzan jartzea da.'
+  eramateko_ideia: 'Saiakera asko egitea ez da estrategia aldatzea. Batzuetan aurrera egiteko problemari geuk jarritako muga ikusezina identifikatu behar dugu.
+
+    '
+  ikasleen_ibilbide_tipikoa:
+  - Lehen marrazkiek 3×3 sarearen barruan geratzeko joera dute.
+  - Taldeek gero eta konbinazio gehiago egiten dituzte, baina muga bera mantentzen dute.
+  - «Lau zuzenekin ezin da» ondorioa ager daiteke.
+  - Enuntziatua berrirakurtzeak muga ikusezina identifikatzeko aukera ematen du.
+  - Soluzioaren ondoren, saiakera berria eta estrategia-aldaketa bereizten dira.
+  ohiko_blokeoak:
+  - suposizioa: Segmentuek puntuek osatzen duten karratuaren barruan geratu behar dute.
+    zergatik_interesgarria: Karratua ikusmenak sortzen du; ez dago enuntziatuan.
+  - suposizioa: Segmentu bakoitza puntu batean hasi eta amaitu behar da.
+    zergatik_interesgarria: Puntuak lotzeko objektuak direla interpretatzen dugu, baina zuzenki-segmentua puntuetatik harago luza daiteke.
+  bateratze_eztabaida: &id001
+  - Zer baldintza dio benetan enuntziatuak?
+  - Non ikusten duzue karratua? Enuntziatuan ala zuen buruan?
+  - Zuen azken saiakerek zer zuten komunean?
+  - Saiakera berria egin duzue, ala estrategia aldatu?
+  - Zer arau kendu behar izan duzue soluzioa ikusteko?
 irakaslearen_fitxa:
-  jardueraren_deskribapena: >
-    Talde bakoitzak bederatzi puntuak lau segmentu zuzen eta jarraituz lotu
-    behar ditu, arkatza paperetik altxatu gabe.
-  aurkezpena: >
-    Lotu bederatzi puntuak 4 segmentu zuzen eta jarraituz, arkatza paperetik
-    altxatu gabe.
-  denboralizazioa:
-    - tartea: "0–3 min"
-      fasea: "Aurkezpena"
-      azalpena: "Erronka aurkeztu."
-    - tartea: "3–15 min"
-      fasea: "Esplorazioa"
-      azalpena: "Ez eman pistarik."
-    - tartea: "15–23 min"
-      fasea: "Desblokeoa"
-      azalpena: "Beharrezkoa bada, enuntziatuaren baldintzak berrirakurri."
-    - tartea: "23–30 min"
-      fasea: "Bateratzea"
-      azalpena: "Suposizio ikusezina eta estrategiak partekatu."
-  galdera_erabilgarriak:
-    - "Zer baldintza dio enuntziatuak?"
-    - "Zer baldintza gehitu dugu guk?"
-    - "Saiakera huts batek zer informazio eman dizue?"
-  soluzioak:
-    - izena: "Lau segmentuko soluzioa"
-      irudiak:
-        - "../assets/9_puntuak_soluzioa.svg"
-  ebaluazioan_zer_behatu:
-    - "Suposizio ezkutua identifikatzen duten."
-    - "Estrategia aldatzen duten."
-    - "Soluzioa azaltzeko gai diren."
+  jardueraren_deskribapena: 'Talde bakoitzak bederatzi puntuak lau segmentu zuzen eta jarraituz lotu behar ditu, arkatza paperetik altxatu gabe.
 
+    '
+  aurkezpena: 'Lotu bederatzi puntuak 4 segmentu zuzen eta jarraituz, arkatza paperetik altxatu gabe.
+
+    '
+  denboralizazioa:
+  - tartea: 0–3 min
+    fasea: Aurkezpena
+    azalpena: Erronka aurkeztu.
+  - tartea: 3–15 min
+    fasea: Esplorazioa
+    azalpena: Ez eman pistarik.
+  - tartea: 15–23 min
+    fasea: Desblokeoa
+    azalpena: Beharrezkoa bada, enuntziatuaren baldintzak berrirakurri.
+  - tartea: 23–30 min
+    fasea: Bateratzea
+    azalpena: Suposizio ikusezina eta estrategiak partekatu.
+  galdera_erabilgarriak: *id001
+  soluzioak:
+  - izena: Lau segmentuko soluzioa
+    irudiak:
+    - ../assets/9_puntuak_soluzioa.svg
+    azalpena: 'Ibilbide posible bat, 3×3 sareko puntuak (0,0)–(2,2) koordenatuetan hartuta: (−1,−1) → (2,2) → (−1,2) → (2,−1) → (2,1). Lau segmentuek bederatzi puntuak estaltzen dituzte eta zenbait segmentu sareak iradokitzen duen karratutik kanpora luzatzen dira.'
+  ebaluazioan_zer_behatu:
+  - Suposizio ezkutua identifikatzen duten.
+  - Estrategia aldatzen duten.
+  - Soluzioa azaltzeko gai diren.
+  amaierako_bateratzea: 'Ez erabili «kutxatik kanpo pentsatu» ondorio bakar gisa. Zehaztu zer muga zen ikusezina eta alderatu saiakera berria egitea estrategia aldatzearekin. Eraman beharreko galdera: «Baldintza hori problemak dio, ala guk jarri dugu?».'
 ikaslearen_fitxa:
   beharrezkoa: true
-  titulua: "9 puntuak, 4 zuzen"
+  titulua: 9 puntuak, 4 zuzen
   blokeak:
-    - mota: "enuntziatua"
-      testua: >
-        Lotu bederatzi puntuak 4 segmentu zuzen eta jarraituz, arkatza
-        paperetik altxatu gabe.
-    - mota: "irudia"
-      fitxategia: "../assets/9_puntuak.svg"
+  - mota: enuntziatua
+    testua: 'Lotu bederatzi puntuak 4 segmentu zuzen eta jarraituz, arkatza paperetik altxatu gabe.
 
+      '
+  - mota: irudia
+    fitxategia: ../assets/9_puntuak.svg
 loturak:
   aurretik_egitekoak:
-    - "6-pospoloak"
+  - 6-pospoloak
   ondoren_egitekoak: []

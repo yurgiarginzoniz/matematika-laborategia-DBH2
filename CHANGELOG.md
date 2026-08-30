@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## 0.1.3 — Cache-busting eta bertsio ikusgarria
+- CSS, jarduera-datu eta JavaScript fitxategiek bertsio-parametroa daramate nabigatzaileak bertsio zaharra ez erabiltzeko.
+- Webaren bertsioa footerrean erakusten da, kargatutako bertsioa egiaztatzeko.
+- 0.1.2ko `Laburpen-fitxa` taula eta eduki editorial guztiak mantentzen dira.
+
+
+## 0.1.2 — Lehen bost jardueren maila editoriala
+- Fitxa teknikoan `Laburpen-fitxa` izenburua eta taula trinkoa gehitu dira.
+- 9 puntuak, Eskuak ematea, Bi sokak eta Zenbat piano jardueren aurkezpen pedagogikoak sakon berridatzi dira.
+- Ikasleen ibilbide tipikoak, bateratze-galderak, blokeoak eta irakaslearen azalpen operatiboak zabaldu dira.
+- Esku-emateen bi justifikazioak, bi soken luzera/denbora bereizketa, 9 puntuen muga ikusezina eta pianoen Fermi-modelizazioaren kalitate-irizpideak esplizitatu dira.
+- YAML fitxategiak dira edukiaren iturri nagusia; `data/actividades.js` berreraiki da.
+
+
+## 0.1.1 — 6 pospoloak erreferentziazko fitxa
+- Aurkezpen pedagogiko osoa berreskuratu da.
+- Hiru soluzioen diagramak eta blokeoen azalpen operatiboak gehitu dira.
+- YAML eta rendererrak eduki aberastua onartzen dute.
+
+
 ## 0.1.0 — Primera versión pública para GitHub
 
 - Primera versión preparada para publicación en GitHub Pages.

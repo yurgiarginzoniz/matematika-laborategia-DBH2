@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 0.1.3 — Cache-busting eta bertsio ikusgarria
+- CSS, jarduera-datu eta JavaScript fitxategiek bertsio-parametroa daramate nabigatzaileak bertsio zaharra ez erabiltzeko.
+- Webaren bertsioa footerrean erakusten da, kargatutako bertsioa egiaztatzeko.
+- 0.1.2ko `Laburpen-fitxa` taula eta eduki editorial guztiak mantentzen dira.
+
+
 ## 0.1.2 — Lehen bost jardueren maila editoriala
 - Fitxa teknikoan `Laburpen-fitxa` izenburua eta taula trinkoa gehitu dira.
 - 9 puntuak, Eskuak ematea, Bi sokak eta Zenbat piano jardueren aurkezpen pedagogikoak sakon berridatzi dira.

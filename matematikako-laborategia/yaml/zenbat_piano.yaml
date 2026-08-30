@@ -1,0 +1,114 @@
+# Matematikako Laborategia — jarduera
+# YAML hau da jardueraren iturri nagusia.
+
+id: "zenbat-piano"
+bertsioa: "0.6.3"
+izena: "Zenbat piano daude Bilbon?"
+
+fitxa_teknikoa:
+  deskribapen_laburra: >
+    Daturik eman gabe, Bilbon zenbat piano dauden estimatu behar dute.
+    Helburua ez da zenbaki «zuzena» asmatzea, baizik eta arrazoizko eredua
+    eraiki eta defendatzea.
+  jarduera_mota: "Erronka"
+  fasea:
+    - "Pentsatzeko tresnak garatzea"
+  denboralizazioa: "35–45 min"
+  irekiera_maila: "Erdi-irekia"
+  zailtasuna: "Ertaina"
+  taldekatzea: "Ausazko 3ko taldeak"
+  gaiak:
+    - "Estimazioa"
+    - "Modelizazioa"
+  pentsatzeko_tresnak:
+    - "Deskonposizioa"
+    - "Estimazioa"
+    - "Hipotesiak esplizitatzea"
+  konpetentziak:
+    - kodea: "1.1"
+      sakontasuna: 3
+      nola_lantzen_da: "Informazio falta interpretatu eta zer datu behar diren identifikatzea."
+    - kodea: "1.2"
+      sakontasuna: 3
+      nola_lantzen_da: "Problema deskonposatu, hipotesiak egin eta estrategia defendatzea."
+    - kodea: "3.1"
+      sakontasuna: 1
+      nola_lantzen_da: "Erlazio numerikoak erabiltzea biztanle, etxe eta proportzioen artean."
+    - kodea: "5.2"
+      sakontasuna: 2
+      nola_lantzen_da: "Taldean hipotesiak adostu eta justifikatzea."
+
+jardueraren_aurkezpena:
+  helburua: >
+    Informazio partzialarekin arrazoizko estimazio bat eraiki, defendatu eta berrikustea.
+  azalpen_nagusia: |
+    Galdera nahita dago daturik gabe: «Zenbat piano daude Bilbon?». Hasieran Internet
+    ere ez da erabiltzen. «Ezin dugu jakin» erreakzioa jardueraren abiapuntua da.
+
+    Ikasleek galdetzen hasten dira: zenbat biztanle ditu Bilbok? zenbat etxe? eskolak
+    kontatzen dira? musika-eskolak? hotelak? Galdera horiek ez dira zarata; problema
+    definitzen eta eredu bat eraikitzen ari dira.
+
+    Fermi motako estimazio batean galdera handi bat galdera txikiagotan deskonposatzen da.
+    Adibidez, 350 000 biztanle eta etxeko 2,5 pertsona estimatuz:
+    350 000 / 2,5 ≈ 140 000 etxe.
+
+    Talde batek 20 etxetik batean piano bat dagoela estimatzen badu:
+    140 000 / 20 = 7 000 piano etxeetan.
+
+    Beste talde batek 100 etxetik batean dagoela pentsa dezake eta emaitza oso bestelakoa
+    lortu. Orduan sortzen da galdera nagusia: benetako erantzuna ez badakigu,
+    nola erabakitzen dugu zeinek egin duen matematika hobea?
+
+    Eredu on batek hipotesiak esplizitu egiten ditu, defendatu daitezkeen hipotesiak erabiltzen
+    ditu, kalkulu koherenteak egiten ditu eta informazio berria agertzen denean berrikusi daiteke.
+
+    Hipotesi guztiek ez dute pisu bera. Biztanleria 350 000 edo 360 000 izateak emaitza
+    gutxi aldatzen du; 20 etxetik batean edo 50etik batean pianoa egoteak, berriz, asko.
+  eramateko_ideia: >
+    Matematikak ez dira soilik datu zehatzekin erantzun zehatzak lortzeko;
+    informazio partzialarekin eredu arrazoizkoak eraikitzeko ere balio dute.
+
+irakaslearen_fitxa:
+  jardueraren_deskribapena: >
+    Ikasleek Bilbon zenbat piano dauden estimatu behar dute datu zuzenik eta Internetik gabe.
+    Talde bakoitzak bere eredu sinplifikatua eraiki, hipotesiak egin eta emaitza defendatzen du.
+  aurkezpena: >
+    Zenbat piano daude Bilbon? Internet ezin da erabili.
+  denboralizazioa:
+    - tartea: "0–5 min"
+      fasea: "«Ezinezkoa da»"
+      azalpena: "Erreakzioak eta behar diren datuei buruzko galderak."
+    - tartea: "5–15 min"
+      fasea: "Eredua"
+      azalpena: "Galdera handiaren deskonposizioa."
+    - tartea: "15–25 min"
+      fasea: "Zenbakiak"
+      azalpena: "Hipotesiei balio arrazoizkoak eman."
+    - tartea: "25–35 min"
+      fasea: "Bateratzea"
+      azalpena: "Ereduak alderatu, ez soilik emaitzak."
+    - tartea: "35–45 min"
+      fasea: "Sakontzea"
+      azalpena: "Zein hipotesik eragiten duen gehien aztertu."
+  galdera_erabilgarriak:
+    - "Zein leku motatan egon daitezke pianoak?"
+    - "Galdera hau txikiagoetan bana daiteke?"
+    - "Zein datu beharko zenukete?"
+    - "Datu hori ez badakizue, zer balio izan daiteke arrazoizkoa?"
+    - "Zein hipotesik du eragin handiena?"
+  ebaluazioan_zer_behatu:
+    - "Hipotesiak esplizitatzeko gaitasuna."
+    - "Problema deskonposatzeko gaitasuna."
+    - "Kalkulu koherenteak egitea."
+    - "Ereduaren ahulguneak identifikatzea."
+
+ikaslearen_fitxa:
+  beharrezkoa: false
+  aukera: >
+    A3 orri ia hutsa erabil daiteke: titulua, azken estimazioa,
+    arrazoibidearentzako espazio handia eta hipotesi garrantzitsuenari buruzko galdera.
+
+loturak:
+  aurretik_egitekoak: []
+  ondoren_egitekoak: []

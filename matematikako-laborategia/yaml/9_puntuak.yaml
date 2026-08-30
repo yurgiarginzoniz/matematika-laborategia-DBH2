@@ -1,0 +1,110 @@
+# Matematikako Laborategia — jarduera
+# YAML hau da jardueraren iturri nagusia.
+
+id: "9-puntuak"
+bertsioa: "0.6.3"
+izena: "9 puntuak, 4 zuzen"
+
+fitxa_teknikoa:
+  deskribapen_laburra: >
+    3×3 sareko bederatzi puntuak lau segmentu zuzen eta jarraituz lotzea,
+    arkatza altxatu gabe. Ohiko oztopoa ikasleek beren kabuz ezartzen duten
+    karratu ikusezina da.
+  jarduera_mota: "Erronka"
+  fasea:
+    - "Kultura sortzea"
+  denboralizazioa: "25–35 min"
+  irekiera_maila: "Itxia"
+  zailtasuna: "Ertaina"
+  taldekatzea: "Ausazko 3ko taldeak"
+  gaiak:
+    - "Logika"
+    - "Geometria"
+  pentsatzeko_tresnak:
+    - "Suposizio ezkutuak identifikatzea"
+    - "Ikuspegia aldatzea"
+  konpetentziak:
+    - kodea: "1.1"
+      sakontasuna: 3
+      nola_lantzen_da: "Enuntziatuak benetan dioena eta geuk gehitutakoa bereiztea."
+    - kodea: "1.2"
+      sakontasuna: 2
+      nola_lantzen_da: "Saiakerak egin, estrategia aldatu eta soluzioa justifikatzea."
+    - kodea: "5.1"
+      sakontasuna: 2
+      nola_lantzen_da: "Blokeoari aurre egin eta porrota informazio gisa erabiltzea."
+    - kodea: "5.2"
+      sakontasuna: 1
+      nola_lantzen_da: "Taldeko ideiak kontrastatzea."
+
+jardueraren_aurkezpena:
+  helburua: >
+    Jarduerak ikasleek enuntziatuan ez dagoen muga bat nola sortzen duten
+    ikusarazten du: segmentuak puntuek iradokitzen duten karratuaren barruan
+    mantendu behar direla.
+  azalpen_nagusia: |
+    Lehen saiakeretan segmentuak 3×3 puntuen «kutxaren» barruan geratzen dira.
+    Ikasleek konbinazio ugari probatzen dituzte eta sarritan zortzi puntu lotzea
+    edo bosgarren segmentua behar izatea lortzen dute.
+
+    Errepikapen hori interesgarria da: ez da estrategia berririk probatzen ari,
+    muga beraren barruan aukera desberdinak baizik.
+
+    «Kutxatik kanpo pentsatu» esatea ez da komeni hasieran, aurkikuntza nagusia
+    oparitzen duelako. Laguntza hobea da enuntziatura itzultzea:
+    «Non dio segmentuek puntuen artean geratu behar dutela?»
+
+    Soluzioa aurkitu ondoren, interesgarriena da ikasleek identifikatzea zer aldatu
+    duten aurreko saiakerekiko eta zein arau inplizitu kendu duten.
+  eramateko_ideia: >
+    Saiakera asko egitea ez da estrategia aldatzea. Batzuetan aurrera egiteko
+    problemari geuk jarritako muga ikusezina identifikatu behar dugu.
+
+irakaslearen_fitxa:
+  jardueraren_deskribapena: >
+    Talde bakoitzak bederatzi puntuak lau segmentu zuzen eta jarraituz lotu
+    behar ditu, arkatza paperetik altxatu gabe.
+  aurkezpena: >
+    Lotu bederatzi puntuak 4 segmentu zuzen eta jarraituz, arkatza paperetik
+    altxatu gabe.
+  denboralizazioa:
+    - tartea: "0–3 min"
+      fasea: "Aurkezpena"
+      azalpena: "Erronka aurkeztu."
+    - tartea: "3–15 min"
+      fasea: "Esplorazioa"
+      azalpena: "Ez eman pistarik."
+    - tartea: "15–23 min"
+      fasea: "Desblokeoa"
+      azalpena: "Beharrezkoa bada, enuntziatuaren baldintzak berrirakurri."
+    - tartea: "23–30 min"
+      fasea: "Bateratzea"
+      azalpena: "Suposizio ikusezina eta estrategiak partekatu."
+  galdera_erabilgarriak:
+    - "Zer baldintza dio enuntziatuak?"
+    - "Zer baldintza gehitu dugu guk?"
+    - "Saiakera huts batek zer informazio eman dizue?"
+  soluzioak:
+    - izena: "Lau segmentuko soluzioa"
+      irudiak:
+        - "../assets/9_puntuak_soluzioa.svg"
+  ebaluazioan_zer_behatu:
+    - "Suposizio ezkutua identifikatzen duten."
+    - "Estrategia aldatzen duten."
+    - "Soluzioa azaltzeko gai diren."
+
+ikaslearen_fitxa:
+  beharrezkoa: true
+  titulua: "9 puntuak, 4 zuzen"
+  blokeak:
+    - mota: "enuntziatua"
+      testua: >
+        Lotu bederatzi puntuak 4 segmentu zuzen eta jarraituz, arkatza
+        paperetik altxatu gabe.
+    - mota: "irudia"
+      fitxategia: "../assets/9_puntuak.svg"
+
+loturak:
+  aurretik_egitekoak:
+    - "6-pospoloak"
+  ondoren_egitekoak: []

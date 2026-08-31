@@ -1,5 +1,5 @@
 id: txokolate-tableta
-bertsioa: 0.1.5
+bertsioa: '1.0'
 izena: Txokolate-tableta
 fitxa_teknikoa:
   deskribapen_laburra: Txokolate-tableta baten laukitxo guztiak banantzeko zenbat haustura behar diren aztertzea, eta estrategia desberdinek kopurua aldatzen duten erabakitzea.

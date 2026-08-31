@@ -1,5 +1,5 @@
 id: nim
-bertsioa: 0.1.5
+bertsioa: '1.0'
 izena: 'Nim: irabazteko estrategia'
 fitxa_teknikoa:
   deskribapen_laburra: Objektuak txandaka kenduz jokatzen den joko batean posizio irabazleak eta galtzaileak aurkitu eta estrategia orokor bat eraikitzea.

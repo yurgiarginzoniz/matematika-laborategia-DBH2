@@ -1,7 +1,7 @@
 window.LAB_JARDUERAK = [
   {
     "id": "100-ateak",
-    "bertsioa": "0.1.5",
+    "bertsioa": "1.0",
     "izena": "100 ateak",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "100 ate ireki eta ixteko prozesu errepikatu batean amaieran zein geratzen diren irekita aurkitu eta karratu perfektuekin duten lotura azaltzea.",
@@ -389,7 +389,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "6-pospoloak",
-    "bertsioa": "0.1.5",
+    "bertsioa": "1.0",
     "izena": "6 pospoloen erronka",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Sei pospolo erabiliz lau triangelu aldeberdin berdin eraikitzeko erronka. Soluzio desberdinek ikasleek enuntziatuari gehitzen dizkioten baldintza ez-esplizituak agerian uzten dituzte.\n",
@@ -601,7 +601,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "9-puntuak",
-    "bertsioa": "0.1.5",
+    "bertsioa": "1.0",
     "izena": "9 puntuak, 4 zuzen",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "3×3 sareko bederatzi puntuak lau segmentu zuzen eta jarraituz lotzea, arkatza altxatu gabe. Ohiko oztopoa ikasleek beren kabuz ezartzen duten karratu ikusezina da.\n",
@@ -745,7 +745,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "bi-sokak",
-    "bertsioa": "0.1.5",
+    "bertsioa": "1.0",
     "izena": "Bi sokak",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Bi sokak 60 minututan erretzen dira, baina ez abiadura konstantean. Bi sokak eta sua bakarrik erabiliz, 45 minutu zehazki neurtu behar dira.\n",
@@ -871,7 +871,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "domino-taula-mutilatua",
-    "bertsioa": "0.1.5",
+    "bertsioa": "1.1",
     "izena": "Domino-taula mutilatua",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Kontrako bi izkinak kendutako xake-taula dominoekin estali daitekeen erabaki eta ezintasuna koloreztatze bidez frogatzea.",
@@ -975,7 +975,10 @@ window.LAB_JARDUERAK = [
       "soluzioak": [
         {
           "izena": "Koloreztatze bidezko ezintasuna",
-          "azalpena": "Kontrako izkinak kolore berekoak dira. Horiek kenduta kolore bateko 30 eta besteko 32 laukitxo geratzen dira. Domino 2×1 bakoitzak beti kolore bakoitzeko bana estaltzen du; 31 dominok 31+31 beharko lituzkete. Beraz estaldura ezinezkoa da."
+          "azalpena": "Kontrako izkinak kolore berekoak dira. Horiek kenduta kolore bateko 30 eta besteko 32 laukitxo geratzen dira. Domino 2×1 bakoitzak beti kolore bakoitzeko bana estaltzen du; 31 dominok 31+31 beharko lituzkete. Beraz estaldura ezinezkoa da.",
+          "irudiak": [
+            "assets/domino_taula_mutilatua/taula_irakaslea.svg"
+          ]
         }
       ],
       "ebaluazioan_zer_behatu": [
@@ -985,7 +988,11 @@ window.LAB_JARDUERAK = [
       ],
       "hedapenak": [
         "Zer gertatzen da kendutako bi laukitxoak kolore desberdinekoak badira?",
-        "Beste taula-neurri batzuekin zer gertatzen da?"
+        "Beste taula-neurri batzuekin zer gertatzen da?",
+        "Kendu kolore desberdineko bi lauki: dameroaren argumentuak ez du ezintasuna frogatzen. Baldintza beharrezkoa eta nahikoa bereizi.",
+        "Erabili 1×3 triomino zuzenak: zer taula edo eskualde estali daitezke? Dameroaren bi koloreak ez dira nahikoa; probatu 3 koloreko koloreztatze periodikoa.",
+        "Beste poliomino batzuekin, diseinatu koloreztatze edo aldaezin bat piezen portaera ikusgarri egiteko.",
+        "Galdera sakona: kolore-kopuruak orekatuta egoteak estaldura badagoela bermatzen al du? Bilatu adibideak eta kontraadibideak."
       ]
     },
     "ikaslearen_fitxa": {
@@ -995,6 +1002,10 @@ window.LAB_JARDUERAK = [
         {
           "mota": "enuntziatua",
           "testua": "8×8 xake-taula bati kontrako bi izkinak kendu dizkiogu. 31 domino 2×1ekin guztiz estali al daiteke? Frogatu zuen erantzuna."
+        },
+        {
+          "mota": "irudia",
+          "fitxategia": "assets/domino_taula_mutilatua/taula_ikaslea.svg"
         }
       ]
     },
@@ -1006,7 +1017,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "eskuak-ematea",
-    "bertsioa": "0.1.5",
+    "bertsioa": "1.0",
     "izena": "Zenbat aldiz emango diogu eskua elkarri?",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Pertsona talde batean denek elkarri behin eskua ematen diotenean zenbat esku-emate gertatzen diren ikertzea; kasu txikietatik arau orokor baterantz.\n",
@@ -1149,7 +1160,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "mobiusen-zinta",
-    "bertsioa": "0.1.5",
+    "bertsioa": "1.0",
     "izena": "Möbiusen zinta",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Paperezko zinta bati bira erdi eman, itsatsi eta moztu aurretik emaitza iragartzea; ondoren esperimentua eta azalpena alderatzea.",
@@ -1299,7 +1310,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "nim",
-    "bertsioa": "0.1.5",
+    "bertsioa": "1.0",
     "izena": "Nim: irabazteko estrategia",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Objektuak txandaka kenduz jokatzen den joko batean posizio irabazleak eta galtzaileak aurkitu eta estrategia orokor bat eraikitzea.",
@@ -1430,7 +1441,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "txokolate-tableta",
-    "bertsioa": "0.1.5",
+    "bertsioa": "1.0",
     "izena": "Txokolate-tableta",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Txokolate-tableta baten laukitxo guztiak banantzeko zenbat haustura behar diren aztertzea, eta estrategia desberdinek kopurua aldatzen duten erabakitzea.",
@@ -1551,7 +1562,7 @@ window.LAB_JARDUERAK = [
   },
   {
     "id": "zenbat-piano",
-    "bertsioa": "0.1.5",
+    "bertsioa": "1.0",
     "izena": "Zenbat piano daude Bilbon?",
     "fitxa_teknikoa": {
       "deskribapen_laburra": "Daturik eman gabe, Bilbon zenbat piano dauden estimatu behar dute. Helburua ez da zenbaki «zuzena» asmatzea, baizik eta arrazoizko eredua eraiki eta defendatzea.\n",

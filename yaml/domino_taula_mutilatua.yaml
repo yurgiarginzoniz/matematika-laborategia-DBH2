@@ -1,5 +1,5 @@
 id: domino-taula-mutilatua
-bertsioa: 0.1.5
+bertsioa: '1.1'
 izena: Domino-taula mutilatua
 fitxa_teknikoa:
   deskribapen_laburra: Kontrako bi izkinak kendutako xake-taula dominoekin estali daitekeen erabaki eta ezintasuna koloreztatze bidez frogatzea.
@@ -82,6 +82,8 @@ irakaslearen_fitxa:
   soluzioak:
   - izena: Koloreztatze bidezko ezintasuna
     azalpena: Kontrako izkinak kolore berekoak dira. Horiek kenduta kolore bateko 30 eta besteko 32 laukitxo geratzen dira. Domino 2×1 bakoitzak beti kolore bakoitzeko bana estaltzen du; 31 dominok 31+31 beharko lituzkete. Beraz estaldura ezinezkoa da.
+    irudiak:
+    - assets/domino_taula_mutilatua/taula_irakaslea.svg
   ebaluazioan_zer_behatu:
   - Saiakera konstruktiboa eta froga bereizten dituzten.
   - Koloreztatzea informazio matematiko gisa erabiltzen duten.
@@ -89,12 +91,18 @@ irakaslearen_fitxa:
   hedapenak:
   - Zer gertatzen da kendutako bi laukitxoak kolore desberdinekoak badira?
   - Beste taula-neurri batzuekin zer gertatzen da?
+  - 'Kendu kolore desberdineko bi lauki: dameroaren argumentuak ez du ezintasuna frogatzen. Baldintza beharrezkoa eta nahikoa bereizi.'
+  - 'Erabili 1×3 triomino zuzenak: zer taula edo eskualde estali daitezke? Dameroaren bi koloreak ez dira nahikoa; probatu 3 koloreko koloreztatze periodikoa.'
+  - Beste poliomino batzuekin, diseinatu koloreztatze edo aldaezin bat piezen portaera ikusgarri egiteko.
+  - 'Galdera sakona: kolore-kopuruak orekatuta egoteak estaldura badagoela bermatzen al du? Bilatu adibideak eta kontraadibideak.'
 ikaslearen_fitxa:
   beharrezkoa: true
   titulua: Domino-taula mutilatua
   blokeak:
   - mota: enuntziatua
     testua: 8×8 xake-taula bati kontrako bi izkinak kendu dizkiogu. 31 domino 2×1ekin guztiz estali al daiteke? Frogatu zuen erantzuna.
+  - mota: irudia
+    fitxategia: assets/domino_taula_mutilatua/taula_ikaslea.svg
 loturak:
   aurretik_egitekoak: []
   ondoren_egitekoak: []

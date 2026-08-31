@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## 0.1.8 — Egilea eta bertsioa bermatuta
+- Egilea `Yurgi Arginzoniz` gisa finkatu da.
+- Footerrean egilea eta aplikazioaren bertsioa beti agertzen dira, baita `site-config.js` falta bada ere.
+- `site.json` eta `data/site-config.js` bertsio honetan sartzen dira, instalazio berri edo eguneratu batek zuzenean funtziona dezan.
+- Ez da jardueren, gidaren edo jarraipenaren edukirik aldatu.
+
+
+
+## 0.1.7 — Footer eta konfigurazioaren iturri bakarra
+- Footerreko egilea `site.json` fitxategitik dator, `tools/build.py` bidez sortutako `data/site-config.js` erabiliz.
+- Aplikazioaren bertsioa `VERSION` fitxategitik dator; ez dago bertsio gogorkodetu anizkoitzik.
+- Footerrean bertsioa behin bakarrik erakusten da.
+- Update ZIPek ez dute `site.json` ezta `data/site-config.js` gainidazten.
+- GitHub Actions-ek eta tokiko `build.py` exekuzioak konfigurazio bera sortzen dute.
+
+
+
+## 0.1.6 — Jardueren bertsio independenteak
+- Aplikazioaren eta jardueren bertsioak bereizi dira.
+- `Laburpen-fitxa` atalean `Jardueraren bertsioa` erakusten da.
+- Uneko jarduerek `1.0` bertsioa dute; berrikusitako `Domino-taula mutilatua` jarduerak `1.1`.
+- Domino jardueran onartutako ikasle/irakasle diagramak eta poliominoekin sakontzeko proposamenak sartu dira.
+- READMEan jarduera bakarka eguneratzeko prozedura dokumentatu da.
+
+
+
 ## 0.1.5 — Gida, nabigazioa eta 100 ateak
 - `Irakaslearen gida` osorik berreraiki da, laborategiaren filosofia, ikasturtearen arkitektura, esku-hartze eskailera, pentsatzeko tresnak, bateratzea, ebaluazioa eta ordezko irakaslearentzako gida barne.
 - Jarduera-orri guztietan `← Jarduera-bankura itzuli` nabigazioa gehitu da.

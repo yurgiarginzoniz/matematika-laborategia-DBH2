@@ -79,3 +79,35 @@ eta ondoren `http://localhost:8000` ireki.
 Materiala **Creative Commons BY-NC-SA 4.0** lizentziapean argitaratzen da: aitortza egin behar da, erabilera komertzialik ez da onartzen eta egokitzapenak lizentzia berarekin partekatu behar dira.
 
 Proiektua OpenAI ChatGPT-ren laguntzarekin garatu da.
+
+## Bertsioak: aplikazioa eta jarduerak
+
+Bi bertsio-maila daude:
+- **Aplikazioaren bertsioa** (`VERSION`): webgunearen kode edo egitura komuna aldatzen denean.
+- **Jardueraren bertsioa** (`bertsioa` YAML fitxategian): jarduera horren edukia, fitxak edo baliabideak aldatzen direnean.
+
+Jarduera bat eguneratzeko, haren YAML fitxategia eta dagozkion `assets/` baliabideak kopiatu eta exekutatu:
+
+```bash
+python3 tools/build.py
+```
+
+Horrek ez du aplikazioaren bertsioa aldatzea eskatzen.
+
+## Instalazioaren konfigurazioa
+
+`site.json` fitxategiak instalazioaren datu propioak gordetzen ditu, bereziki egilearen izena. Update ZIPek **ez dute `site.json` gainidazten**.
+
+`python3 tools/build.py` exekutatzean bi fitxategi sortzen dira:
+
+- `data/actividades.js`, jardueren YAML fitxategietatik.
+- `data/site-config.js`, `site.json` eta `VERSION` fitxategietatik.
+
+Horregatik, update bat aplikatu ondoren hau exekutatzea gomendatzen da:
+
+```bash
+python3 tools/build.py
+```
+
+Horrela footerrean egile zuzena eta aplikazioaren benetako bertsioa agertuko dira.
+

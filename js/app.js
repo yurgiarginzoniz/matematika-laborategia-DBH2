@@ -1,13 +1,12 @@
 
-const SITE = {
+const SITE = Object.assign({
   name: "Matematikako Laborategia",
-  author: "[EGILEAREN IZENA / NOMBRE DEL AUTOR]",
+  author: "Yurgi Arginzoniz",
   ai: "OpenAI ChatGPT",
   license: "CC BY-NC-SA 4.0",
   licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-  version: "0.1.5",
-  version: "0.1.3"
-};
+  version: "0.1.8"
+}, window.LAB_SITE_CONFIG || {});
 
 function esc(v){ return (v ?? "").toString().replace(/[&<>"']/g, m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m])); }
 function paras(text){
@@ -22,10 +21,12 @@ function activityById(id){ return (window.LAB_JARDUERAK||[]).find(a=>a.id===id);
 function query(name){ return new URLSearchParams(location.search).get(name); }
 
 function footerHTML(){
+  const authorPart = SITE.author ? `© ${esc(SITE.author)} · ` : "";
+  const versionPart = SITE.version ? ` · v${esc(SITE.version)}` : "";
   return `<footer class="site-footer">
-  <div><strong>${SITE.name}</strong></div>
-  <div>Egilea / Autor: ${esc(SITE.author)} · Adimen artifizialaren laguntzarekin / Con asistencia de IA: ${esc(SITE.ai)}</div>
-  <div><a href="lizentzia.html">${SITE.license}</a> · <span class="site-version">v${SITE.version}</span></div>
+  <div><strong>${esc(SITE.name)}</strong></div>
+  <div>${authorPart}<a href="lizentzia.html">${esc(SITE.license)}</a>${versionPart}</div>
+  <div>Adimen artifizialaren laguntzarekin / Con asistencia de IA: ${esc(SITE.ai)}</div>
   </footer>`;
 }
 
@@ -172,6 +173,7 @@ function renderActivityPage(){
         <tr><th>Denboralizazioa:</th><td>${esc(ft.denboralizazioa)}</td><th>Irekiera-maila:</th><td>${esc(ft.irekiera_maila)}</td></tr>
         <tr><th>Zailtasuna:</th><td>${esc(ft.zailtasuna)}</td><th>Taldekatzea:</th><td>${esc(ft.taldekatzea)}</td></tr>
         <tr><th>Gaiak:</th><td>${esc((ft.gaiak||[]).join(" · "))}</td><th>Pentsatzeko tresnak:</th><td>${esc((ft.pentsatzeko_tresnak||[]).join(" · "))}</td></tr>
+        <tr><th>Jardueraren bertsioa:</th><td colspan="3">${esc(a.bertsioa||"—")}</td></tr>
       </tbody></table></div>
     </div>
     <div class="section"><h2>Konpetentziak</h2>${renderCompetencies(ft.konpetentziak)}</div>

@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 0.1.10 — Jardueren irakurgarritasun bisuala
+- Jarduera luzeen aurkezpena eta irakaslearen fitxa irakurgarriago egin dira, edukia edo HTML egitura aldatu gabe.
+- Atal-izenburuek marka grafiko sinplea dute CSS bidez; ez da emoji edo ikono-fontik erabiltzen.
+- Denboralizazioa urrats zenbakiduneko ibilbide bertikal gisa bistaratzen da.
+- Callout, adibide, taula eta zerrenden hierarkia bisuala arindu eta hobetu da.
+- Inprimatzeko arauek atzeko plano apaingarriak kentzen dituzte, PDF/inprimaketa sendoagoa izan dadin.
+- Ez da YAMLrik, JavaScriptik, jarduerarik, jarraipenik edo nabigaziorik aldatu.
+
+
 ## 0.1.9 — Irakaslearen gida berridatzita
 - Irakaslearen gida gida comprehensibo bihurtu da: Laborategiaren izaera, helburuak, matematika-kultura, jarduera-formatuen zentzua, pentsatzeko tresnak, irakaslearen rola, lankidetza, low floor/high ceiling, ikasturtearen arkitektura, ebaluazioa, konpetentziak, bankuaren erabilera eta jarraipena.
 - Gidak ez du jarduera zehatz baten saioa azaltzen; hori jarduera-fitxen funtzioa da.

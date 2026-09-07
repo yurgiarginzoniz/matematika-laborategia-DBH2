@@ -1,0 +1,281 @@
+id: azoka-matematikoa
+bertsioa: '1.1'
+izena: Azoka matematikoa
+fitxa_teknikoa:
+  deskribapen_laburra: Bost ausazko joko esperimentatu, haien probabilitateak ulertu eta antolatzaileari epe luzerako abantaila emango dion joko-postua diseinatzea; amaieran, azokako benetako emaitzak aurreikuspenekin alderatu eta diruzko ausazko jokoen etxearen abantaila aztertzea.
+  jarduera_mota: Proiektua
+  fasea:
+  - 3. ebaluazioa · Amaierako proiektua
+  denboralizazioa: 6–7 saio
+  irekiera_maila: Erdi-irekia
+  zailtasuna: Ertaina–handia
+  taldekatzea: 3ko 5 talde; jokoak taldearen beharretara egokituta banatzea
+  gaiak:
+  - Probabilitatea
+  - Maiztasun erlatiboa
+  - Zenbaki handien legea
+  - Modelizazioa
+  - Pentsamendu kritikoa
+  pentsatzeko_tresnak:
+  - Datuak antolatzea
+  - Kasu posibleak sistematikoki aztertzea
+  - Aierua egin eta egiaztatzea
+  - Eredua eta benetako emaitza alderatzea
+  - Zer dakigu ziur?
+  - Arrazoibidea urratsez urrats aztertzea
+  konpetentziak:
+  - kodea: '1.1'
+    sakontasuna: 2
+    nola_lantzen_da: Joko bakoitzeko datuak, baldintzak eta erabaki ekonomikoak bereizi eta taulen bidez antolatzen dira.
+  - kodea: '1.2'
+    sakontasuna: 3
+    nola_lantzen_da: Taldeek probabilitateak kalkulatzeko estrategiak hautatu, 100 partidako aurreikuspena egin eta jokoaren diseinua matematikoki justifikatzen dute.
+  - kodea: '3.1'
+    sakontasuna: 2
+    nola_lantzen_da: Esperimentuetako datuen eta probabilitate teorikoen arteko erlazioak aztertu eta errepikapen askotako portaera identifikatzen da.
+  - kodea: '3.2'
+    sakontasuna: 2
+    nola_lantzen_da: Hasierako esperimentuetatik aieruak egiten dira eta kasu posibleen analisiaren edo simulazioaren bidez egiaztatzen dira.
+  - kodea: '4.1'
+    sakontasuna: 3
+    nola_lantzen_da: Ausazko jokoen egitura matematikoa, ordainsariak eta antolatzailearen abantaila identifikatu eta azaltzen dira.
+  - kodea: '4.2'
+    sakontasuna: 2
+    nola_lantzen_da: Taldeek beren jokoaren eredua, aurreikuspena eta azokako emaitzak taulen eta azalpen matematikoen bidez komunikatzen dituzte.
+  - kodea: '5.2'
+    sakontasuna: 3
+    nola_lantzen_da: Talde bakoitzak joko-postu bat diseinatu eta kudeatzen du, erabakiak datuetan oinarrituz eta gelako beste taldeekin emaitzak partekatuz.
+  - kodea: '5.3'
+    sakontasuna: 2
+    nola_lantzen_da: Amaierako eztabaidan kasinoen eta diruzko ausazko jokoen etxearen abantaila aztertzen da, probabilitatea eguneroko erabaki kritikoekin lotuz.
+jardueraren_aurkezpena:
+  helburua: 'Ausazko joko bat barrutik ulertzea: esperimentaziotik probabilitate teorikora igaro, errepikapen askotan zer espero daitekeen modelizatu eta matematika hori jokoaren diseinuan eta diruzko ausazko jokoen irakurketa kritikoan erabiltzea.'
+  azalpen_nagusia: 'Proiektu honetan ikasleek ez dute probabilitateari buruzko aurretiazko ezagutza formalik behar. Proiektua bera izango da oinarrizko ideiak eraikitzeko bidea. Lehenik jolastu eta emaitzak jasoko dituzte; ondoren, gertatutakoa aztertuko dute eta jokoaren probabilitateak zein diren ulertzen saiatuko dira; azkenik, ezagutza hori erabiliko dute joko-postu bat diseinatzeko.
+
+
+    Erronka nagusia hau da: «Nola diseinatu dezakegu ausazko joko bat, jokalariek irabazteko aukera izan arren, antolatzaileak epe luzera irabaztea espero dezan?» Helburua ez da probabilitate-unitate formal oso bat egitea. Proiektuak behar duen matematika eraikiko da: probabilitate sinple bat interpretatzea, kasu ekiprobableetan kalkulatzea, probabilitate teorikoa eta behatutako maiztasuna bereiztea eta errepikapen kopuru handiak zergatik diren garrantzitsuak ulertzea.
+
+
+    15 ikasleak hiruko bost taldetan antolatzen dira. Talde bakoitzak joko desberdin bat jasotzen du: erruleta, poltsa opakua, hiru txanpon, bi dadoen batura edo bi dadoetako batura-helburua. Jokoek ez dute zailtasun matematiko bera nahita. Irakasleak banaketa talde bakoitzaren autonomia eta arrazoiketa-mailaren arabera egin dezake. Diferentziazioa jokoaren barruko oztopo matematikoan dago; guztiek prozesu bera egiten dute: jolastu, datuak bildu, probabilitateak ulertu, aurreikuspenak egin, jokoa diseinatu, probatu eta emaitzak aztertu.
+
+
+    Hasierako esperimentazioak ez du «benetako probabilitatea» automatikoki ematen. Hamar partidatik lau irabazteak ez du esan nahi irabazteko probabilitatea 4/10 denik. Horregatik proiektuaren erdian checkpoint matematiko esplizitu bat dago. Talde bakoitzak bere jokoaren probabilitate nagusiak zehaztu eta haien esanahia ulertu behar du hurrengo fasera igaro aurretik. Horretarako arrazoitu, emaitza posibleak antolatu, besteekin kontrastatu, informazioa bilatu edo irakasleari galdetu ahal izango dio. Beharrezkoa bada, irakasleak probabilitate zuzena emango du eta haren esanahia landuko du. Helburua ez da dena autonomoki deduzitzea; probabilitate oker baten gainean negozio-eredurik ez eraikitzea baizik.
+
+
+    Checkpoint horretan zenbaki handien legearen ideia intuitiboa lantzen da. Errepikapen gutxirekin behatutako maiztasuna probabilitate teorikotik urrun egon daiteke; esperimentua behin eta berriz errepikatzean, maiztasun erlatiboa probabilitate teorikoaren inguruan egonkortzeko joera du. Simulazio digital sinple batek 20, 100, 1.000 edo 10.000 partida alderatzeko aukera eman dezake. Teknologia hemen ez da apaingarria: eskuz egitea zentzugabea litzatekeen esperimentua egiteko erabiltzen da.
+
+
+    Probabilitateak ulertu ondoren, proiektuak norabidea aldatzen du: «Hemendik aurrera, ez dugu soilik jolastuko. Jokoa diseinatuko dugu». LAB txanpon sinbolikoekin, talde bakoitzak ordainsariak eta, jokoak uzten duen neurrian, arauak egokituko ditu jokalariak irabazteko benetako aukera izan dezan baina antolatzaileak epe luzera irabaztea espero dezan. Ez da beharrezkoa sari fisikorik, marketinik edo dekorazio berezirik. 100 jokalarirekin zer gertatzea espero duten kalkulatzea nahikoa da probabilitatea erabakiak hartzeko tresna bihurtzeko.
+
+
+    Azokan bost postuak benetan probatzen dira. Emaitza errealak ez dira zertan aurreikuspenarekin bat etorri. Matematikoki ondo diseinatutako postu batek egun horretan gal dezake, edo beste batek espero baino askoz gehiago irabazi. Desadostasun hori ez da proiektuaren akatsa: amaierako eztabaidarako datu nagusia da. «Gure aurreikuspena eta gertatutakoa desberdinak badira, gure matematika gaizki dago?» galderak probabilitatearen esanahira eta zenbaki handien legearen ideiara itzultzen ditu ikasleak.
+
+
+    Azken pausoa esplizituki egin behar da. Taldeek postuak epe luzera irabaziak emateko diseinatu dituzte; orduan galdetzen da: «Postuak irabazten duen hori, nondik ateratzen da?» Jokalari bat irabazle izan daiteke eta, hala ere, antolatzaileak batez besteko abantaila izan dezake. Hortik kasinoen eta diruzko ausazko joko komertzialen funtzionamenduaren ideia nagusira iristen gara: antolatzaileak abantaila matematikoa badu, jokalari batzuek irabazi arren, jokalariek multzoan eta epe luzera galtzea espero da.
+
+
+    Amaierako hausnarketak jokalariaren falazia ere bereizten du zenbaki handien legetik. Bost aldiz jarraian galtzeak ez du esan nahi hurrengo partida «tokatzen delako» irabazteko probabilitatea handitu denik, jaurtiketak independenteak badira. Proiektuaren azken helburua, beraz, ez da probabilitate batzuk kalkulatzea soilik: matematika erabiltzea da ausazko joko baten egitura ikusteko eta mundu errealeko joko-eskaintzak ikuspegi kritikoago batekin interpretatzeko.
+
+
+    Proiektua amaierako proiektu gisa kokatzea gomendatzen da. Kudeaketa konplexua da —bost talde, bost joko eta oztopo desberdinak—, baina ikasturte amaieran ikasleek dagoeneko Laborategiko lan-zikloa ezagutuko dute: probatu, datuak antolatu, aierua egin, egiaztatu, azaldu eta berrerabili. Oinarrizko ibilbideak lehentasuna du; hedapenetara ez iristeak ez du esan nahi proiektua osatu gabe dagoenik.'
+  ikasleen_ibilbide_tipikoa:
+  - Gela osoarekin probabilitatearen lehen intuizioak eraikitzen dituzte esperimentu sinple baten bidez.
+  - Talde bakoitzak bere jokoa behin eta berriz probatu eta emaitzak erregistratzen ditu.
+  - Behatutako maiztasuna eta jokoaren egituratik ondorioztatutako probabilitatea bereizten hasten dira.
+  - Checkpoint matematikoan talde bakoitzak probabilitate zuzenak ulertu eta justifikatzen ditu.
+  - Errepikapen askoko simulazioarekin zenbaki handien legearen ideia intuitiboa lantzen dute.
+  - LAB txanponen ordainsariak diseinatu eta 100 partidako emaitza ekonomikoa aurreikusten dute.
+  - Azokan beren postua kudeatu eta beste jokoetan parte hartzen dute; benetako datuak jasotzen dituzte.
+  - Aurreikuspena eta benetako emaitza alderatu, eta etxearen abantaila eta jokalariaren falazia eztabaidatzen dituzte.
+  ohiko_blokeoak:
+  - suposizioa: «20 partidatik 7 irabazi ditugu; beraz, irabazteko probabilitatea 7/20 da.»
+    zergatik_interesgarria: Esperimentuko maiztasuna eta probabilitate teorikoa bereizteko une nagusia da. Jokoaren egiturak probabilitatea ezagutzeko aukera ematen badu, lagin txikiak ez du probabilitatea ordezkatzen.
+  - suposizioa: «Probabilitatea 1/6 bada, sei partidatik behin irabazi behar dugu.»
+    zergatik_interesgarria: Probabilitateak epe luzerako portaera deskribatzen du, ez sei partidako bloke bakoitza.
+  - suposizioa: «0, 1, 2 edo 3 aurpegi dira lau aukerak; bakoitzak 1/4 du.»
+    zergatik_interesgarria: Emaitza-motak eta oinarrizko emaitza ekiprobableak ez direla gauza bera ikusarazten du.
+  - suposizioa: «2tik 12ra hamaika batura daude; batura guztiek probabilitate bera dute.»
+    zergatik_interesgarria: Bi dadoen 36 emaitza ekiprobableak sistematikoki antolatzeko beharra sortzen du.
+  - suposizioa: «Bost aldiz galdu dugu; orain irabaztea tokatzen da.»
+    zergatik_interesgarria: Jokalariaren falazia eta zenbaki handien legea nahasteko arriskua agerian uzten du.
+  bateratze_eztabaida:
+  - Zer gertatu da gure partidetan? Zer espero dugu epe luzera gertatzea? Gauza bera al dira?
+  - Nola dakigu gure jokoaren probabilitatea? Datuengatik ala jokoaren egituragatik?
+  - Zergatik ez dira 20 partidako emaitzak eta 10.000 partidako simulazioa berdin egonkorrak?
+  - Postu batek azokan dirua galdu badu, horrek esan nahi al du gaizki diseinatuta dagoela?
+  - Postuak irabazten duen hori, nondik ateratzen da?
+  - Kasino batek ez badaki zein jokalarik irabaziko duen, nola izan dezake epe luzerako abantaila?
+  eramateko_ideia: Ausazko partida baten emaitza ezin dugu aurreikusi, baina probabilitateak partida askoren portaera modelizatzeko eta jokoaren arauek noren alde egiten duten ulertzeko aukera ematen digu.
+irakaslearen_fitxa:
+  jardueraren_deskribapena: 'Amaierako proiektu honetan bost taldek zailtasun desberdineko ausazko jokoak esperimentatzen dituzte. Probabilitatea hutsetik eraikitzen da eta proiektuaren erdian checkpoint matematiko bat egiten da: talde batek ere ez du diseinu-fasera pasatzen bere jokoaren probabilitateak gaizki ulertuta. Ondoren, LAB txanponekin ordainsariak diseinatzen dituzte antolatzaileak epe luzera abantaila izan dezan, 100 partidako aurreikuspena egiten dute eta gelako azokan benetako emaitzak jasotzen dituzte. Amaieran aurreikuspena eta errealitatea alderatu, zenbaki handien legearen ideia berrerabili eta kasinoen etxearen abantaila esplizituki aztertzen da.
+
+
+    Kudeaketa intentsiboa da. Horregatik, jokoak ez dira ausaz banatu behar eta ikasleen fitxek taldeei autonomia eman behar diete irakaslea beste taldeekin dagoen bitartean. 6–7 saio aurreikustea errealistagoa da bost saioan amaitzen saiatzea baino.'
+  prestaketa:
+  - 15 ikasleentzat 3ko bost talde aurreikusi eta jokoak taldearen beharretara egokituta banatu.
+  - Erruleta: 12 sektore berdineko erruleta (6 zuri, 4 urdin, 2 gorri) eta biratzeko gezi edo spinner bat.
+  - Poltsa: poltsa opakua eta 10 pieza bereizgarri (6 zuri, 3 urdin, 1 gorri). Partida bakoitzaren ondoren pieza poltsara itzuli behar da.
+  - Hiru txanpon: hiru txanpon edo bi alde argi bereizten dituzten hiru pieza.
+  - Bi dadoen batura: bi dado arrunt.
+  - 'Batura-helburua: bi dado arrunt. Jokalariak hasieran 2tik 12ra arteko batura bat aukeratzen du; lehen dadoa ikusi ondoren, hasierako helburua oraindik posible den ala ez aztertzen da. Joko hau talde autonomoenarentzat gordetzea gomendatzen da eta ordainsari-sistema 5. saioko checkpointaren aurretik irakaslearekin egiaztatu behar da.'
+  - 2. saiorako, joko bakoitzari egokitutako 20–30 saioko erregistro-orri bereizia prestatu. Fitxa nagusia ez da datu gordin guztiak jasotzeko erabiliko.
+  - '6. saiorako, postu bakoitzarentzako erregistro operatibo laburra prestatu: partida kopurua, sarrerak, ordainketak eta azken saldoa.'
+  - 4. saiotik aurrera LAB txanpon sinbolikoak edo kontabilitate-fitxa bat; ez dira sari fisikoak behar.
+  - Zenbaki handien legearen checkpointarako errepikapen askoko simulazio digital sinple bat prestatzea gomendatzen da. Ez da beharrezkoa tresna konplexua izatea.
+  aurkezpena: Nola diseinatu dezakegu ausazko joko bat, jokalariek irabazteko aukera izan arren, antolatzaileak epe luzera irabaztea espero dezan?
+  ez_esatekoak:
+  - Ez eman hasieran joko bakoitzaren probabilitate guztiak; lehen esperimentazioak galderak eta hipotesiak sortu behar ditu.
+  - Ez esan 20–30 partidako maiztasuna «benetako probabilitatea» dela.
+  - Ez aurkeztu zenbaki handien legea emaitzak epe laburrean konpentsatzen direla esango balu bezala.
+  - Ez sartu balio esperotua termino formal gisa beharrezkoa ez bada; 100 partidako aurreikuspenak ideia bera modu eskuragarrian eraikitzen du.
+  - Ez bihurtu sari fisikoak, marketina edo dekorazioa proiektuaren baldintza. Denbora badago soilik dira hedapenak.
+  denboralizazioa:
+  - tartea: 1. saioa
+    fasea: Probabilitatea hutsetik
+    azalpena: Gela osoarekin 5 gorri/5 zuri eta 8 gorri/2 zuri bezalako poltsa sinpleak erabili. «Zer da probableagoa?», «Zer da posiblea, ezinezkoa edo ziurra?» eta «8/10 gorri badaude, hamar ateralditan beti 8 gorri aterako al dira?» galderak landu. Helburua probabilitatea eta partida zehatz baten emaitza bereizten hastea da.
+  - tartea: 2. saioa
+    fasea: Ezagutu zuen jokoa
+    azalpena: Bost jokoak banatu. Talde bakoitzak 20–30 partida inguru egin, emaitzak erregistratu eta zein emaitza diren probableagoak proposatzen du. Oraindik ez dituzte arauak edo ordainsariak aldatzen.
+  - tartea: 3. saioa
+    fasea: Checkpoint matematikoa
+    azalpena: Talde bakoitzak bere jokoaren probabilitate nagusiak zehaztu eta «Nola dakigu?» galderari erantzuten dio. Irakasleak eredua egiaztatzen du eta beharrezkoa bada informazioa ematen du. Ondoren, behatutako maiztasunak probabilitate teorikoekin alderatu eta errepikapen askoko simulazioarekin zenbaki handien legearen ideia intuitiboa landu.
+  - tartea: 4. saioa
+    fasea: Jolastetik diseinatzera
+    azalpena: «Hemendik aurrera, ez dugu soilik jolastuko. Jokoa diseinatuko dugu.» Partida baten prezioa eta ordainsariak LAB txanponekin zehaztu. Taldeek 100 jokalarirekin zer gertatzea espero duten kalkulatu eta antolatzailearen saldoa positiboa izatea bilatzen dute, jokalariak irabazteko benetako aukera mantenduz.
+  - tartea: 5. saioa
+    fasea: Eredua egiaztatu eta azoka prestatu
+    azalpena: Taldeek beren kalkuluak irakaslearekin egiaztatu, arauak argi idatzi eta erregistro-sistema prestatzen dute. Talde batek denbora gehiago behar badu, saio hau ulermena sendotzeko erabili; ez gehitu marketina edo dekorazioa derrigorrez.
+  - tartea: 6. saioa
+    fasea: Azoka
+    azalpena: Bost mahaietan jokoak probatu. Taldekideek txandaka postua kudeatu eta beste postuetan jolasten dute. Postu bakoitzak partida kopurua, jasotako txanponak, ordaindutako txanponak eta azken saldoa erregistratzen ditu.
+  - tartea: 7. saioa
+    fasea: Autopsia matematikoa eta amaierako hausnarketa
+    azalpena: Postu bakoitzaren espero zen emaitza eta benetako emaitza alderatu. Desadostasunak aztertu, zenbaki handien legearen ideiara itzuli eta «Postuak irabazten duen hori, nondik ateratzen da?» galderatik etxearen abantaila, kasinoak eta jokalariaren falazia landu.
+  galdera_erabilgarriak:
+  - Zer gertatu da zuen partidetan? Zer espero zenuten gertatzea?
+  - Zuen datuek erakusten dutena eta jokoaren egiturak esaten duena gauza bera al dira?
+  - Nola dakizue emaitza horren probabilitatea hori dela?
+  - Emaitza posible guztiak ekiprobableak al dira? Zeintzuk dira benetan oinarrizko kasuak?
+  - 100 pertsonak jolastuko balute, gutxi gorabehera zenbat aldiz gertatuko litzateke emaitza bakoitza?
+  - 2 LAB txanpon ordaindu eta 2 jasotzen baditut, irabazi al dut?
+  - Zuen postuak epe luzera irabaztea espero du? Erakutsi zenbakiekin.
+  - Benetako saldoa aurreikusitakoa ez bada, zer azalpen izan ditzake?
+  - Bost aldiz jarraian galdu badut, hurrengo partidaren probabilitatea aldatu al da?
+  - Kasinoak ez badaki nor izango den hurrengo irabazlea, nola irabaz dezake epe luzera?
+  pista_mailak:
+  - '1. pista: Ez hasi formularekin. Zerrendatu edo marraztu zer emaitza gerta daitezkeen.'
+  - '2. pista: Galdetu ea zerrendatutako emaitza guztiak modu berean gerta daitezkeen.'
+  - '3. pista: Txanponetan, idatzi hiru jaurtiketen 8 sekuentziak; dadoetan, egin 6×6 taula.'
+  - '4. pista: 100 partidako ekonomian, kalkulatu lehenik zenbat LAB txanpon sartuko liratekeen eta gero emaitza bakoitzeko zenbat ordaintzea espero den.'
+  soluzioak:
+  - izena: 1. jokoa — Erruleta
+    azalpena: '12 sektore berdin: 6 zuri, 4 urdin eta 2 gorri. Probabilitateak P(zuria)=6/12=1/2, P(urdina)=4/12=1/3 eta P(gorria)=2/12=1/6 dira. Joko egokia da laguntza handiagoa behar duen taldearentzat, probabilitatea zuzenean ikus baitaiteke. Oztopo nagusia behatutako maiztasuna probabilitatearekin nahastea da.'
+  - izena: 2. jokoa — Poltsa opakua
+    azalpena: '10 pieza: 6 zuri, 3 urdin eta 1 gorri. Ateratako pieza partida bakoitzaren ondoren poltsara itzultzen da. Probabilitateak 6/10, 3/10 eta 1/10 dira. Ikasleek poltsaren konposizioa ezagutzen badute, probabilitatea konposiziotik dator; 20 partidako emaitzek ez dute hori ordezkatzen. Hedapen interesgarria: konposizioa ezezaguna balitz, esperimentuak estimatzeko balio lezake.'
+  - izena: 3. jokoa — Hiru txanpon
+    azalpena: 'Hiru txanponen 8 oinarrizko emaitza ekiprobableak daude. Aurpegi kopuruaren arabera: 0 aurpegi = 1/8, 1 aurpegi = 3/8, 2 aurpegi = 3/8 eta 3 aurpegi = 1/8. Errore emankorra da lau aurpegi-kopuru daudenez bakoitzak 1/4 duela pentsatzea. «Bi aurpegi» zenbat sekuentziatan lor daitekeen galdetzeak desblokeatzen du.'
+  - izena: 4. jokoa — Bi dadoen batura
+    azalpena: 'Bi dadoek 36 emaitza ekiprobable dituzte. Baturen kasu kopuruak 2tik 12ra honela dira: 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1. Beraz, 7ren probabilitatea 6/36=1/6 da; 2rena 1/36. 6×6 taula da irudikapen nagusia. Oztopo nagusia 11 batura posibleak ekiprobableak direla pentsatzea da.'
+  - izena: 5. jokoa — Batura-helburua (joko aurreratua, behin-behineko diseinua)
+    azalpena: 'Jokalariak bi dadoen azken batura aukeratzen du (2tik 12ra) lehen dadoa jaurti aurretik. Lehen dadoa ikusi ondoren, hasierako batura oraindik lor daitekeen aztertzen du. Hasierako helburua posible bada, apustua bikoizteko aukera izan dezake helburu bera mantenduz; helburua jada ezinezkoa bada, batura alda dezake hasierako apustua eta ordainsaria mantenduta. 7ak kasu berezia sortzen du, lehen dadoaren edozein emaitzarekin lor baitaiteke; horregatik, hasierako ordainsari-sisteman 7a bereiz tratatu edo bikoizteko aukeratik kanpo uztea komeni da.
+
+
+      Jokoaren interesa ez dago soilik azken baturaren probabilitatean. Ikasleek aztertu behar dute hasierako batura bakoitzak zenbat lehen dado-emaitzarekin uzten duen helburua bizirik: 2 eta 12 → 1/6; 3 eta 11 → 2/6; 4 eta 10 → 3/6; 5 eta 9 → 4/6; 6 eta 8 → 5/6; 7 → 6/6. Horrela, bi dadoen banaketa triangularra beste ikuspegi batetik agertzen da eta jokoaren diseinuak ordainsarien arazoa sortzen du.
+
+
+      Joko hau beste lauak baino konplexuagoa da eta behin-behineko diseinutzat hartu behar da. Autonomia eta arrazoiketa matematiko handiagoa duen talde bati ematea gomendatzen da. Taldearentzat gehiegizkoa bada, irakasleak bikoizteko araua kendu edo bi dadoen batura-joko sinpleago baten aldaera erabil dezake. Azokara iritsi aurretik irakasleak ordainsari-sistema eta etxearen abantaila egiaztatu behar ditu.'
+  - izena: 100 partidako kalkulu-eredua
+    azalpena: Ez da beharrezkoa balio esperotuaren formula erabiltzea. Adibidez, erruletan partida bakoitzak 2 LAB txanpon balio badu eta ordainsariak zuria=0, urdina=2, gorria=5 badira, 100 partidatan 200 txanpon sartzea espero da. Gutxi gorabehera 33,3 urdin eta 16,7 gorri espero dira; ordainketa esperoak 33,3×2 + 16,7×5 ≈ 150 dira. Antolatzailearen saldo esperoak, beraz, +50 ingurukoak dira. Kopuruak ez dira 100 partida zehatzetan gertatuko denaren promesa, epe luzerako eredua baizik.
+  - izena: «Irabazi» hitzaren esanahia
+    azalpena: Jokalariak 2 LAB txanpon ordaindu eta 2 jasotzen baditu, gastatutakoa berreskuratu du; ez du 2 txanponeko irabazi garbia izan. 5 jasotzen baditu, irabazi garbia 5−2=3 da. Hau esplizituki argitu behar da 4. saioan.
+  amaierako_bateratzea: 'Arbelean postu bakoitzaren «espero zen saldoa» eta «benetako saldoa» jarri. Ez erabili desadostasuna kalkuluak zuzenean zuzentzeko: galdetu lehenik ea partida kopuru txiki batek horrelako aldeak sor ditzakeen. Ondoren egin azken bira: «Postuak epe luzera irabazteko diseinatu ditugu. Nondik ateratzen da irabazi hori?»
+
+
+    Ondorio zehatza da jokalari batek irabaz dezakeela, baina antolatzaileak jokoaren arauak bere aldeko batez besteko emaitza izan dezan diseina ditzakeela. Partida asko jokatzean abantaila hori gero eta ikusgarriagoa bihurtzen da. Ez esan kasinoan ezin dela inoiz irabazi; esan antolatzaileak epe luzerako abantaila matematikoa izan dezakeela.
+
+
+    Amaitu jokalariaren falaziarekin: partida independenteetan aurreko bost galerak ez du hurrengo partidaren probabilitatea aldatzen. Zenbaki handien legeak ez du esaten emaitzek epe laburrean «konpentsatu» behar dutenik.'
+  hedapenak:
+  - Denbora badago, taldeek azokaren ondoren jokoa birdiseinatu dezakete benetako datuak eta beste taldeen ideiak erabiliz.
+  - Joko-postuaren kartela edo publizitatea diseinatu eta zer informazio nabarmentzen edo ezkutatzen den aztertu.
+  - Benetako apustu-iragarki edo joko-eskaintza baten probabilitate eta ordainsarien aurkezpena kritikoki aztertu.
+  - Simulazio digitalarekin ordainsari-sistema desberdinak milaka partidatan alderatu.
+  - Eskolako jaietan publiko errealarekin egiteko aukera azter daiteke; hori ez da oinarrizko proiektuaren baldintza.
+  ebaluazioan_zer_behatu:
+  - Probabilitate teorikoa eta behatutako maiztasuna bereizten dituzten.
+  - Bere jokoaren probabilitate nagusiak azaldu eta justifikatzeko gai diren.
+  - Emaitza-motak eta oinarrizko kasu ekiprobableak behar denean bereizten dituzten.
+  - 100 partidako aurreikuspena zentzuz erabiltzen duten, emaitza zehatz gisa interpretatu gabe.
+  - Ordainsari eta prezioei buruzko erabakiak datu matematikoekin justifikatzen dituzten.
+  - Benetako azokako emaitza aurreikuspenetik urruntzen denean azalpen probabilistikoa ematen saiatzen diren.
+  - Etxearen abantaila azaltzeko gai diren, jokalari indibidual batek irabaz dezakeela ukatu gabe.
+  - Taldean datuak erregistratu, erabakiak hartu eta postua arduraz kudeatzen duten.
+  - 'Denboralizazioa egokitzeko irizpidea: ikasleek denbora gehiago behar badute, ez moztu probabilitatea/maiztasuna bereiztea, checkpoint matematikoa, 100 partidako aurreikuspena, benetako proba edo amaierako hausnarketa. Moztu daitezke partida esperimentalen kopurua, marketina, dekorazioa, sari fisikoak, birdiseinu gehigarriak eta hedapenak.'
+ikaslearen_fitxa:
+  beharrezkoa: true
+  titulua: Azoka matematikoa — Proiektu-fitxa
+  blokeak:
+  - mota: enuntziatua
+    testua: 'Erronka: nola diseinatu dezakegu ausazko joko bat, jokalariek irabazteko aukera izan arren, antolatzaileak epe luzera irabaztea espero dezan?'
+  - mota: enuntziatua
+    testua: 1. Gure jokoa ikertzen · 2.–3. saioak. Datu gordinak zuen jokoaren erregistro-orri bereizian jasoko dituzue; hemen emaitzak laburbildu eta interpretatuko dituzue.
+  - mota: galdera
+    testua: 'Gure jokoa / taldea:'
+  - mota: taula
+    zutabeak:
+    - Emaitza
+    - Zenbat aldiz gertatu da?
+    - Maiztasuna
+  - mota: taula
+    zutabeak:
+    - Emaitza
+    - Benetako probabilitatea
+    - Nola dakigu?
+  - mota: galdera
+    testua: Gure partidetan gertatutakoa eta espero genuena bat etorri al dira? Zergatik izan daiteke?
+  - mota: enuntziatua
+    testua: 'Checkpointa: probabilitateak irakaslearekin egiaztatu ditugu. ☐'
+  - mota: enuntziatua
+    testua: 2. Orain, diseinatu zuen jokoa · 4.–5. saioak. Jokalariak irabazteko aukera izan behar du, baina postuak epe luzera irabaztea espero behar du.
+  - mota: galdera
+    testua: 'Partida baten prezioa: ______ LAB txanpon'
+  - mota: taula
+    zutabeak:
+    - Emaitza
+    - Probabilitatea
+    - Jokalariak jasoko du
+  - mota: galdera
+    testua: 100 partida jokatuko balira, zenbat LAB txanpon jasoko lituzke postuak?
+  - mota: galdera
+    testua: 100 partida jokatuko balira, zenbat LAB txanpon ordaintzea espero dugu sarietan?
+  - mota: galdera
+    testua: Beraz, zenbat irabaztea edo galtzea espero dugu? Zergatik uste dugu joko honek epe luzera funtzionatuko duela?
+  - mota: enuntziatua
+    testua: 3. Azokaren ondoren · 7. saioa. Azoka-egunean postuaren erregistro operatiboa erabiliko duzue; hemen aurreikuspena eta benetako emaitza alderatuko dituzue.
+  - mota: galdera
+    testua: 'Zenbat partida jokatu dira? ______    Postuaren benetako emaitza: ______ LAB txanpon    Guk aurreikusitako emaitza: ______ LAB txanpon'
+  - mota: galdera
+    testua: Espero genuena eta gertatutakoa alderatu. Zer azalpen emango zenioke aldeari?
+  - mota: galdera
+    testua: Postuak epe luzera irabazten badu, nondik ateratzen da irabazten duen hori?
+  erregistro_orriak:
+  - jokoa: Erruleta
+    erregistroa: '30 tirada: Z/U/G kodea; amaieran zuria, urdina, gorria eta guztira zenbatu.'
+  - jokoa: Poltsa opakua
+    erregistroa: '30 ateraldi: Z/U/G kodea; pieza ateraldi bakoitzaren ondoren poltsara itzuli; amaieran kolore bakoitza eta guztira zenbatu.'
+  - jokoa: Hiru txanpon
+    erregistroa: '30 saiakera: 0/1/2/3 aurpegi; behar denean hiru txanponen sekuentzia ere jaso; amaieran kategoria bakoitza zenbatu.'
+  - jokoa: Bi dadoen batura
+    erregistroa: '30 saiakera: 1. dadoa, 2. dadoa eta batura. Datu horiek 6×6 espazio lagina ulertzeko erabiliko dira.'
+  - jokoa: Batura-helburua
+    erregistroa: 'Saiakera bakoitzean: hasierako batura, 1. dadoa, helburua oraindik posible den, mantendu/aldatu/bikoiztu erabakia, 2. dadoa eta azken emaitza.'
+  azokako_erregistroa:
+    zutabeak:
+    - Partida kopurua
+    - Jasotako LAB txanponak
+    - Ordaindutako LAB txanponak
+    - Azken saldoa
+    oharra: Azoka-egunean erregistro operatibo laburra soilik; ez da hausnarketa-fitxa bete behar jolasten ari diren bitartean.
+loturak:
+  aurretik_egitekoak: []
+  ondoren_egitekoak: []

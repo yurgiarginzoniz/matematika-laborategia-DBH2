@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 0.1.9 — Irakaslearen gida berridatzita
+- Irakaslearen gida gida comprehensibo bihurtu da: Laborategiaren izaera, helburuak, matematika-kultura, jarduera-formatuen zentzua, pentsatzeko tresnak, irakaslearen rola, lankidetza, low floor/high ceiling, ikasturtearen arkitektura, ebaluazioa, konpetentziak, bankuaren erabilera eta jarraipena.
+- Gidak ez du jarduera zehatz baten saioa azaltzen; hori jarduera-fitxen funtzioa da.
+- Formatu bisuala editorialagoa da: atal jarraituak, tarte zuriak, taulak eta nabarmendutako ideia gutxi batzuk; aurreko “burbuila” estiloko sekzio-kutxak baztertu dira.
+- Ez da jarduerarik, YAMLrik, JavaScriptik, jarraipenik edo bankurik aldatu.
+
+
+
 ## 0.1.8 — Egilea eta bertsioa bermatuta
 - Egilea `Yurgi Arginzoniz` gisa finkatu da.
 - Footerrean egilea eta aplikazioaren bertsioa beti agertzen dira, baita `site-config.js` falta bada ere.

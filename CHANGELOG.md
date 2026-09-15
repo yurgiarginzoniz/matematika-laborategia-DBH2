@@ -1,5 +1,29 @@
 # CHANGELOG
 
+## 0.1.13 — Jarraipenaren xehetasunak lokalean ere
+- `Xehetasunak ikusi` botoiak erregistroaren oharrak `jarraipena.html` orrian bertan erakusten ditu.
+- Horrek `file://` bidezko erabileran `localStorage` fitxategien artean isolatzeak sortzen zuen arazoa saihesten du.
+- Xehetasunak itxi eta jarraipen-taulara berehala itzul daiteke.
+
+
+
+## 0.1.12 — Jarduera-bankuko iragazkiak eta formatuen koloreak
+- `Proiektu handiak` iragazkia zuzendu da: `Proiektuak` erakusten da eta YAMLeko `Proiektua` balioarekin bat dator.
+- Jarduera-formatu bakoitzak kolore-identitate diskretua du bankuan eta jardueraren goiburuko etiketan.
+- Konpetentzien araberako iragazkia gehitu da; formatuaren iragazkiarekin batera erabil daiteke.
+- Konpetentzia-iragazkiak konpetentziaren presentzia erabiltzen du, sakontasun-maila edozein dela ere.
+
+
+
+## 0.1.11 — Hasiera, lizentzia eta jarraipena
+- Lizentzia-orrian egilearen izena zuzendu da: Yurgi Arginzoniz.
+- Hasierako orriak DBH 2ko Matematikako Laborategia zer den eta 11 azpikonpetentzien laburpena azaltzen du.
+- Kurtsoaren jarraipeneko formularioa ezkutuan hasten da eta `Jarduera berria erregistratu` botoiarekin irekitzen da.
+- Jarraipen-taulatik erregistro bakoitzaren ohar eta ondorio guztiak ikusteko xehetasun-orria gehitu da.
+- Ez da jardueren YAML edukirik, jarduera-bankurik edo irakaslearen gidarik aldatu.
+
+
+
 ## 0.1.10 — Jardueren irakurgarritasun bisuala
 - Jarduera luzeen aurkezpena eta irakaslearen fitxa irakurgarriago egin dira, edukia edo HTML egitura aldatu gabe.
 - Atal-izenburuek marka grafiko sinplea dute CSS bidez; ez da emoji edo ikono-fontik erabiltzen.

@@ -157,7 +157,7 @@ function renderActivityPage(){
   root.innerHTML=`
   <div class="activity-back no-print"><a href="bankua.html">← Jarduera-bankura itzuli</a></div>
   <div class="page-head"><div><div class="eyebrow">${esc(ft.jarduera_mota||"")} · ${esc((ft.fasea||[]).join(", "))}</div><h1>${esc(a.izena)}</h1></div>
-  <div class="pills"><span class="pill type">${esc(ft.jarduera_mota)}</span><span class="pill">${esc(ft.denboralizazioa)}</span><span class="pill">${esc(ft.irekiera_maila)}</span></div></div>
+  <div class="pills"><span class="pill type ${activityTypeClass(ft.jarduera_mota)}">${esc(ft.jarduera_mota)}</span><span class="pill">${esc(ft.denboralizazioa)}</span><span class="pill">${esc(ft.irekiera_maila)}</span></div></div>
   <div class="tabs" id="activityTabs">
     <button class="active" data-tab="tech">Fitxa teknikoa</button>
     <button data-tab="presentation">Jardueraren aurkezpena</button>
@@ -194,21 +194,54 @@ function bindTabs(){
   });
 }
 
+function activityTypeClass(type){
+  const classes={
+    "Erronka":"type-erronka",
+    "Ikerketa":"type-ikerketa",
+    "Matematika-jolasa":"type-jolasa",
+    "Proiektua":"type-proiektua"
+  };
+  return classes[type]||"";
+}
+
 function renderBank(){
   const root=document.getElementById("bankRoot");
   const acts=window.LAB_JARDUERAK||[];
   root.innerHTML=acts.map(a=>{
     const ft=a.fitxa_teknikoa||{};
-    return `<article class="card activity-card" data-type="${esc(ft.jarduera_mota)}">
-      <div class="pills"><span class="pill type">${esc(ft.jarduera_mota)}</span><span class="pill">${esc(ft.denboralizazioa)}</span><span class="pill">${esc(ft.irekiera_maila)}</span></div>
+    const competencies=(ft.konpetentziak||[]).map(k=>String(k.kodea||"")).filter(Boolean);
+    const typeClass=activityTypeClass(ft.jarduera_mota);
+    return `<article class="card activity-card ${typeClass}" data-type="${esc(ft.jarduera_mota)}" data-competencies="${esc(competencies.join(","))}">
+      <div class="pills"><span class="pill type ${typeClass}">${esc(ft.jarduera_mota)}</span><span class="pill">${esc(ft.denboralizazioa)}</span><span class="pill">${esc(ft.irekiera_maila)}</span></div>
       <h3>${esc(a.izena)}</h3><p>${esc(ft.deskribapen_laburra)}</p>
       <a class="button" href="jarduera.html?id=${encodeURIComponent(a.id)}">Fitxa ireki</a></article>`;
   }).join("");
-  document.querySelectorAll("[data-filter]").forEach(btn=>btn.addEventListener("click",()=>{
-    document.querySelectorAll("[data-filter]").forEach(b=>b.classList.remove("active")); btn.classList.add("active");
-    const f=btn.dataset.filter;
-    document.querySelectorAll(".activity-card").forEach(c=>c.style.display=(f==="all"||c.dataset.type===f)?"block":"none");
+
+  let activeType="all";
+  let activeCompetence="all";
+  const applyFilters=()=>{
+    document.querySelectorAll(".activity-card").forEach(card=>{
+      const typeOk=activeType==="all"||card.dataset.type===activeType;
+      const competencies=(card.dataset.competencies||"").split(",").filter(Boolean);
+      const competenceOk=activeCompetence==="all"||competencies.includes(activeCompetence);
+      card.hidden=!(typeOk&&competenceOk);
+    });
+  };
+
+  document.querySelectorAll("[data-type-filter]").forEach(btn=>btn.addEventListener("click",()=>{
+    document.querySelectorAll("[data-type-filter]").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    activeType=btn.dataset.typeFilter;
+    applyFilters();
   }));
+
+  const competenceFilter=document.getElementById("competenceFilter");
+  if(competenceFilter){
+    competenceFilter.addEventListener("change",()=>{
+      activeCompetence=competenceFilter.value;
+      applyFilters();
+    });
+  }
 }
 
 const TRACK_KEY="mlab_course_tracking_v2";
@@ -216,7 +249,7 @@ function loadTracking(){ try{return JSON.parse(localStorage.getItem(TRACK_KEY)||
 function saveTracking(d){ localStorage.setItem(TRACK_KEY,JSON.stringify(d)); }
 
 function trackingFormHTML(){
-  return `<div class="card followup"><h2>Jarduera baten jarraipena gehitu</h2>
+  return `<div class="card followup tracking-form-card" id="trackingFormCard" hidden><div class="tracking-form-head"><h2>Jarduera berria erregistratu</h2><button class="mini" type="button" id="closeTrackingForm">Itxi</button></div>
   <form id="trackingForm">
   <label>Jarduera</label><select name="activityId" required><option value="">— Hautatu —</option>${(window.LAB_JARDUERAK||[]).map(a=>`<option value="${esc(a.id)}">${esc(a.izena)}</option>`).join("")}</select>
   <div class="meta">
@@ -236,13 +269,16 @@ function trackingFormHTML(){
 
 function renderTrackingPage(){
   const root=document.getElementById("trackingRoot");
-  root.innerHTML=trackingFormHTML()+`
+  root.innerHTML=`<div class="tracking-actions no-print"><button class="button" id="newTrackingBtn">Jarduera berria erregistratu</button></div>`+trackingFormHTML()+`
   <section class="card section"><div class="page-head"><div><h2>Egindako jarduerak</h2></div><div class="backup-row no-print">
   <button class="button secondary" id="backupBtn">Babeskopia egin</button>
   <label class="button secondary" style="cursor:pointer">Babeskopia berreskuratu<input id="restoreInput" type="file" accept=".json,application/json" style="display:none"></label>
   </div></div><div id="history"></div></section>
   <section class="card section"><h2>Konpetentzia × jarduera matrizea</h2><div id="matrix"></div></section>
   <section class="card section"><h2>Konpetentzien estaldura metatua</h2><p class="note">Programazioaren oreka aztertzeko adierazlea da; ez ikasleen lorpen-maila.</p><div id="coverage"></div></section>`;
+  const card=document.getElementById("trackingFormCard");
+  document.getElementById("newTrackingBtn").onclick=()=>{card.hidden=false; document.getElementById("newTrackingBtn").hidden=true; card.scrollIntoView({behavior:"smooth",block:"start"});};
+  document.getElementById("closeTrackingForm").onclick=()=>{card.hidden=true;document.getElementById("newTrackingBtn").hidden=false;};
   document.getElementById("trackingForm").addEventListener("submit",e=>{
     e.preventDefault();
     const f=e.currentTarget, data=loadTracking();
@@ -252,7 +288,8 @@ function renderTrackingPage(){
       repeat:f.repeat.value,studentResponse:f.studentResponse.value,worked:f.worked.value,
       difficulties:f.difficulties.value,changes:f.changes.value,nextYear:f.nextYear.value,savedAt:new Date().toISOString()
     });
-    saveTracking(data); f.reset(); document.getElementById("saveMsg").textContent="Gordeta ✓"; renderTrackingViews();
+    saveTracking(data); f.reset(); document.getElementById("saveMsg").textContent="Gordeta"; renderTrackingViews();
+    card.hidden=true; document.getElementById("newTrackingBtn").hidden=false;
   });
   document.getElementById("backupBtn").onclick=()=>{
     const blob=new Blob([JSON.stringify(loadTracking(),null,2)],{type:"application/json"});
@@ -269,8 +306,8 @@ function renderTrackingPage(){
 function renderTrackingViews(){
   const d=loadTracking(), recs=d.records||[];
   const h=document.getElementById("history");
-  h.innerHTML=recs.length?`<div class="matrix-wrap"><table><thead><tr><th>Data</th><th>Jarduera</th><th>Saioak</th><th>Balorazioa</th><th>Datorren urterako</th><th></th></tr></thead><tbody>`+
-    recs.map(r=>{const a=activityById(r.activityId);return `<tr><td>${esc(r.date)}</td><td><strong>${esc(a?.izena||r.activityId)}</strong></td><td>${esc(r.sessions||"—")}</td><td>${esc(r.rating||"—")}</td><td>${esc(r.nextYear||"—")}</td><td><button class="mini" onclick="deleteTracking('${esc(r.id)}')">Ezabatu</button></td></tr>`}).join("")+`</tbody></table></div>`:
+  h.innerHTML=recs.length?`<div class="matrix-wrap"><table><thead><tr><th>Data</th><th>Jarduera</th><th>Saioak</th><th>Balorazioa</th><th>Errepikatu?</th><th>Ondorioak</th><th></th></tr></thead><tbody>`+
+    recs.map(r=>{const a=activityById(r.activityId);const rep=r.repeat==="true"?"Bai":r.repeat==="false"?"Ez":"—";return `<tr><td>${esc(r.date)}</td><td><strong>${esc(a?.izena||r.activityId)}</strong></td><td>${esc(r.sessions||"—")}</td><td>${esc(r.rating||"—")}</td><td>${rep}</td><td><button class="mini detail-link" type="button" onclick="showTrackingDetail('${esc(r.id)}')">Xehetasunak ikusi</button></td><td><button class="mini" onclick="deleteTracking('${esc(r.id)}')">Ezabatu</button></td></tr>`}).join("")+`</tbody></table></div>`:
     `<p>Oraindik ez dago jarduerarik erregistratuta.</p>`;
 
   const comps=["1.1","1.2","2.1","2.2","3.1","3.2","4.1","4.2","5.1","5.2","5.3"];
@@ -288,6 +325,44 @@ function renderTrackingViews(){
     return `<tr><td><strong>${c}</strong></td><td>${count}</td><td>${sum}</td><td><span class="status ${cls}">${label}</span></td></tr>`;
   }).join("");
   document.getElementById("coverage").innerHTML=`<table><thead><tr><th>Konpetentzia</th><th>Jarduera kop.</th><th>Sakontasun metatua</th><th>Egoera</th></tr></thead><tbody>${cov}</tbody></table>`;
+}
+
+function showTrackingDetail(id){
+  const record=(loadTracking().records||[]).find(r=>r.id===id);
+  if(!record)return;
+  const a=activityById(record.activityId);
+  const rep=record.repeat==="true"?"Bai":record.repeat==="false"?"Ez":"—";
+  const field=(title,value)=>`<section class="tracking-detail-section"><h3>${title}</h3><div class="tracking-detail-text">${esc(value||"—").replace(/\n/g,"<br>")}</div></section>`;
+  let panel=document.getElementById("trackingInlineDetail");
+  if(!panel){
+    panel=document.createElement("section");
+    panel.id="trackingInlineDetail";
+    panel.className="card section tracking-inline-detail";
+    document.getElementById("history").closest("section").insertAdjacentElement("afterend",panel);
+  }
+  panel.innerHTML=`<div class="page-head"><div><div class="eyebrow">${esc(record.date||"")}</div><h2>${esc(a?.izena||record.activityId)}</h2></div><div><button class="button secondary" type="button" onclick="closeTrackingDetail()">Itxi xehetasunak</button></div></div>
+  <div class="meta"><div class="box"><small>Benetako saioak</small><strong>${esc(record.sessions||"—")}</strong></div><div class="box"><small>Balorazioa</small><strong>${esc(record.rating||"—")}</strong></div><div class="box"><small>Errepikatu?</small><strong>${rep}</strong></div></div>
+  ${field("Ikasleen erantzuna",record.studentResponse)}${field("Zer funtzionatu du?",record.worked)}${field("Zailtasunak",record.difficulties)}${field("Egindako aldaketak",record.changes)}${field("Datorren urterako",record.nextYear)}`;
+  panel.hidden=false;
+  panel.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function closeTrackingDetail(){
+  const panel=document.getElementById("trackingInlineDetail");
+  if(panel)panel.hidden=true;
+}
+
+function renderTrackingDetailPage(){
+  const root=document.getElementById("trackingDetailRoot"); if(!root)return;
+  const id=new URLSearchParams(location.search).get("id");
+  const record=(loadTracking().records||[]).find(r=>r.id===id);
+  if(!record){root.innerHTML=`<div class="card"><h2>Erregistroa ez da aurkitu</h2><p>Baliteke erregistroa ezabatu izana edo esteka zaharra izatea.</p><a class="button secondary" href="jarraipena.html">Jarraipenera itzuli</a></div>`;return;}
+  const a=activityById(record.activityId);
+  const rep=record.repeat==="true"?"Bai":record.repeat==="false"?"Ez":"—";
+  const field=(title,value)=>`<section class="tracking-detail-section"><h3>${title}</h3><div class="tracking-detail-text">${esc(value||"—").replace(/\n/g,"<br>")}</div></section>`;
+  root.innerHTML=`<article class="card tracking-detail"><div class="tracking-detail-title"><div><div class="eyebrow">${esc(record.date||"")}</div><h2>${esc(a?.izena||record.activityId)}</h2></div></div>
+  <div class="meta"><div class="box"><small>Benetako saioak</small><strong>${esc(record.sessions||"—")}</strong></div><div class="box"><small>Balorazioa</small><strong>${esc(record.rating||"—")}</strong></div><div class="box"><small>Errepikatu?</small><strong>${rep}</strong></div></div>
+  ${field("Ikasleen erantzuna",record.studentResponse)}${field("Zer funtzionatu du?",record.worked)}${field("Zailtasunak",record.difficulties)}${field("Egindako aldaketak",record.changes)}${field("Datorren urterako",record.nextYear)}</article>`;
 }
 
 function deleteTracking(id){

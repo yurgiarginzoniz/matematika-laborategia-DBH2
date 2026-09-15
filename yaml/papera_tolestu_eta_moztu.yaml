@@ -1,0 +1,172 @@
+id: papera-tolestu-eta-moztu
+bertsioa: '1.0'
+izena: Papera tolestu eta moztu
+fitxa_teknikoa:
+  deskribapen_laburra: Papera tolestu, ebaki aurretik emaitza aurreikusi eta irekitzean agertzen den irudia simetriaren bidez azaltzeko ikerketa manipulatiboa.
+  jarduera_mota: Ikerketa
+  fasea:
+  - Pentsatzeko tresnak garatzea
+  - Geometria eta bistaratzea
+  denboralizazioa: 1 saio
+  irekiera_maila: Erdi-irekia
+  zailtasuna: Ertaina
+  taldekatzea: 3ko taldeak
+  gaiak:
+  - Geometria eta bistaratzea
+  - Matematika esperimentala
+  pentsatzeko_tresnak:
+  - Irudikatu
+  - Simetria
+  - Aierua egin
+  - Irudikapena aldatu
+  - Zer dakigu ziur?
+  konpetentziak:
+  - kodea: '1.2'
+    sakontasuna: 2
+    nola_lantzen_da: Tolesturen eta ebakien emaitza aurreikusteko estrategia desberdinak probatu, alderatu eta azaldu egiten dira.
+  - kodea: '2.2'
+    sakontasuna: 3
+    nola_lantzen_da: Tolestutako eta zabaldutako paperaren irudiak marrazkien bidez adierazten dira, eta simetria-erlazioak erabiltzen dira emaitza arrazoitzeko.
+  - kodea: '3.2'
+    sakontasuna: 2
+    nola_lantzen_da: Ebaki aurretik aieruak egiten dira, esperimentuz egiaztatzen dira eta emaitzaren zergatia eztabaidatzen da.
+  - kodea: '4.1'
+    sakontasuna: 2
+    nola_lantzen_da: Toleste eta ebakitze sinple baten atzean dauden transformazio eta simetria matematikoak identifikatzen dira.
+  - kodea: '5.1'
+    sakontasuna: 2
+    nola_lantzen_da: Aurreikuspen okerrak ez dira porrot gisa tratatzen; irekitako paperak emandako informazioa erabiltzen da hurrengo eredua fintzeko.
+  - kodea: '5.2'
+    sakontasuna: 2
+    nola_lantzen_da: Taldekideek banakako aurreikuspenak alderatu, adostutako iragarpena erregistratu eta azalpen bateratua eraikitzen dute.
+
+jardueraren_aurkezpena:
+  helburua: Tolestutako paper baten ebakia mentalki desegin eta emaitza aurreikustea, esperimentuak aierua egiaztatzeko erabiliz eta simetria azalpen-tresna bihurtuz.
+  azalpen_nagusia: |
+    Jarduera honetan papera ez da eskulan baten euskarri hutsa: esperimentu matematiko baten objektua da. Erronka bakoitzean ikasleek papera tolestu eta ebaki aurretik zer agertuko den aurreikusi behar dute. Aurreikuspena marraztu edo idatzi ondoren bakarrik egiten da ebakia eta irekitzen da papera.
+
+    Sekuentzia horri eustea da jardueraren gakoa: aurreikusi → egin → alderatu → azaldu. Ebakia lehenengo egiten bada, jarduera sorpresa bisualen bilduma bihurtzen da; aurreikuspena lehenengo eskatuta, bistaratze geometrikoko problema bihurtzen da.
+
+    Lehen kasuak oso eskuragarriak dira: paper karratua erditik tolestu eta tolestutako ertz edo izkina batean ebaki txiki bat egin. Ondoren bi tolestura erabiltzen dira. Ikasleek pixkanaka ikusten dute ebaki baten kopiak ez direla ausaz agertzen: tolesturak desegitean irudia islatzen da. Helburua ez da simetriaren hiztegi formal osoa ematea, baizik eta «papera irekitzean zer gertatzen zaio ebakiari?» galdera arrazoitzea.
+
+    Saioaren bigarren erdian norabidea alderantzikatzen da: irakasleak zabaldutako paper batean lortu nahi den emaitza deskribatzen du eta taldeek non tolestu eta non moztu beharko litzatekeen proposatzen dute. Horrek atzeraka pentsatzea eta simetriak erabiltzea eskatzen du.
+
+    Amaieran talde bakoitzak bere erronka txiki bat diseina dezake beste talde baterako. Erronka baliagarria izateko, diseinatzaileek aldez aurretik jakin behar dute zein emaitza sortuko duen eta zergatik. Horrela, jarduera ez da «asmatu eta ikusi zer ateratzen den» fasean geratzen.
+  ikasleen_ibilbide_tipikoa:
+  - Tolestura bakarreko kasu batean emaitza intuitiboki aurreikusten dute.
+  - Ebakia egin eta papera irekitzean aurreikuspena egiaztatu edo zuzendu egiten dute.
+  - Bi tolesturarekin kopia gehiago agertzen direla ikusten dute eta haien kokapena arrazoitzen saiatzen dira.
+  - Tolestura-lerroak ispilu gisa pentsatzen hasten dira.
+  - Emandako azken emaitza batetik atzeraka lan egiten dute ebakia non egin erabakitzeko.
+  - Denbora badago, beste talde baterako erronka diseinatzen dute.
+  ohiko_blokeoak:
+  - suposizioa: Ebakiaren kopia kopurua asmatzea nahikoa da.
+    zergatik_interesgarria: Kopia kopuruaz gain haien kokapena eta orientazioa aurreikusi behar dira; hor agertzen da bistaratze geometrikoa.
+  - suposizioa: Papera irekitzean ebakia leku berean geratzen da.
+    zergatik_interesgarria: Tolestura desegitea islapen gisa pentsatzea da jardueraren jauzi kontzeptuala.
+  - suposizioa: Aurreikuspena okerra bada esperimentua gaizki atera da.
+    zergatik_interesgarria: Desadostasuna informazioa da; ikasleek beren eredu mentala zuzentzeko aukera ematen du.
+  bateratze_eztabaida:
+  - Zer jakin dezakegu papera ireki aurretik?
+  - Tolestura bat desegiten dugunean, zer gertatzen zaio ebakiari?
+  - Bi tolestura badaude, nola erabaki dezakegu kopiak non agertuko diren?
+  - Zein aurreikuspen aldatu duzue esperimentu baten ondoren? Zergatik?
+  - Emaitza ezagututa, atzeraka pentsa al dezakegu ebakia non egin behar den?
+  eramateko_ideia: Esperimentua ez da emaitza ikusteko bakarrik; aurretik egindako eredu edo aieru bat probatzeko erabiltzen dugu.
+
+irakaslearen_fitxa:
+  jardueraren_deskribapena: |
+    Saio bakarreko geometria-ikerketa manipulatiboa. Paper karratuak tolestu eta ebakitzen dira, baina ebaki bakoitzaren aurretik ikasleek emaitza marraztu behar dute. Jardueraren balioa aurreikuspenaren eta emaitzaren arteko elkarrizketan dago.
+  prestaketa:
+  - Talde bakoitzerako gutxienez 6–8 paper karratu prestatu; paper arrunta nahikoa da.
+  - Talde bakoitzerako guraizeak prestatu.
+  - Ikaslearen fitxa inprimatu edo erronkak arbelean erakusteko prestatu.
+  - Irakasleak aldez aurretik erronka guztiak paperarekin probatzea gomendatzen da, tolesturaren eta ebakiaren deskribapena anbiguoa ez dela ziurtatzeko.
+  aurkezpena: 'Gaur ez dugu papera moztu eta gero zer atera den ikusiko. Alderantziz egingo dugu: lehenengo zer aterako den aurreikusi, eta gero bakarrik moztu ahal izango dugu.'
+  ez_esatekoak:
+  - Ez esan hasieran «simetria» dela erantzuna; utzi ikasleei islapenaren ideia behar izaten.
+  - Ez utzi taldeei aurreikuspena erregistratu gabe ebakitzen.
+  - Ez zuzendu aurreikuspen oker bat ebakia egin aurretik, segurtasun edo enuntziatu-arazo bat ez bada.
+  - Ez bihurtu amaiera irudi politak sortzeko eskulan libre batean; diseinatutako erronkak aurreikus daitekeen emaitza izan behar du.
+  denboralizazioa:
+  - tartea: 0–7 min
+    fasea: Arau nagusia eta lehen proba
+    azalpena: Paper karratua erditik tolestu. Tolestutako paperaren kanpoko izkina batean ebaki txiki bat proposatu. Talde bakoitzak irekitako paperaren emaitza marraztu behar du ebaki aurretik.
+  - tartea: 7–18 min
+    fasea: Tolestura bakarra ulertzea
+    azalpena: Bi edo hiru kokapen desberdinetako ebakiak probatu. Ebaki bakoitzean aurreikuspena, esperimentua eta azalpena eskatu. Tolestura-lerroarekiko kokapena azpimarratu.
+  - tartea: 18–33 min
+    fasea: Bi tolestura
+    azalpena: Karratua erditik tolestu eta berriro erditik tolestu. Ebaki txiki baten emaitza aurreikusi. Taldeek kopia kopurua ez ezik kokapena ere marraztu behar dute.
+  - tartea: 33–45 min
+    fasea: Atzeraka pentsatu
+    azalpena: Zabaldutako paper batean lau zulo simetriko lortu nahi direla planteatu. Taldeek zer tolestura eta ebaki erabiliko lituzketen proposatu, probatu eta azaldu.
+  - tartea: 45–52 min
+    fasea: Sortu erronka bat
+    azalpena: Denbora badago, talde bakoitzak tolestura eta ebaki sinple bateko erronka sortzen du beste talde baterako. Sortzaileek erantzuna eta azalpena prest izan behar dituzte.
+  - tartea: 52–55 min
+    fasea: Itxiera
+    azalpena: «Zerk lagundu digu papera ireki aurretik ikusten?» galderarekin simetria eta irudikapen mentala esplizitatu.
+  galdera_erabilgarriak:
+  - Papera lehen aldiz irekitzean, non agertuko da ebakiaren kopia?
+  - Tolestura-lerroa ispilu bat balitz bezala pentsa dezakezue?
+  - Zenbat kopia espero dituzue? Eta non?
+  - Marraztu papera pausoz pauso irekitzen. Zer gertatzen da lehenengo irekieran?
+  - Zuen aurreikuspena eta emaitza ez datoz bat. Zein zatitan aldatu behar duzue zuen ideia?
+  - Emaitza hau nahi badugu, atzeraka nondik hasi gaitezke?
+  pista_mailak:
+  - '1. maila: Ez saiatu bi tolesturak batera desegiten. Ireki mentalki tolestura bat eta gero bestea.'
+  - '2. maila: Marraztu tolestura-lerroa eta pentsatu ispilu bat dela.'
+  - '3. maila: Ebakiaren puntu bakoitzak tolestura-lerroaren beste aldean distantzia bereko kopia izango du.'
+  soluzioak:
+  - izena: Tolestura bakarra
+    azalpena: 'Tolestutako paperaren bi geruzak batera mozten direnez, papera irekitzean ebakiak tolestura-lerroarekiko simetrikoa den kopia sortzen du. Ebakia tolestura-lerroan bertan badago, irekitzean ebaki bakar handiago edo simetriko bat osatzen da, ez bi ebaki bereizi.'
+  - izena: Bi tolestura
+    azalpena: 'Bi tolesturak bi islapen bezala desegin daitezke. Lehen irekieran ebakiaren kopia bat agertzen da; bigarren irekieran aurreko bi irudiak berriro islatzen dira. Kokapen arrunt batean egindako ebaki txiki batek lau kopia sortzen ditu. Tolestura-lerro edo izkina berezietan egindako ebakiek kopiak elkartu ditzakete; horregatik kokapena ere arrazoitu behar da.'
+  - izena: Atzerako erronka
+    azalpena: 'Lau zulo lau koadrantetan simetrikoki nahi badira, bi simetria-ardatzekiko tolestu daiteke papera: erditik norabide batean eta erditik perpendikularki. Tolestutako laurdenean zulo bakarra eginda, bi tolesturak irekitzean lau kokapen simetriko sortzen dira.'
+  atzeko_matematika: |
+    Tolestura bat irekitzea islapen geometriko gisa interpreta daiteke. Ebakiak tolestutako geruza guztiak zeharkatzen dituenez, papera irekitzean ebakiaren irudi simetrikoak agertzen dira. Bi tolestura perpendikularren kasuan, bi islapenen konposizioak lau kokapen erlazionatu sor ditzake. Ez da beharrezkoa transformazioen formalismoa erabiltzea; ikasleentzat «tolestura-lerroa ispilu gisa» ideia nahikoa izan daiteke.
+  hedapenak:
+  - Emandako eredu simetriko bat ebaki bakarrarekin lor daitekeen ala ez erabakitzea.
+  - Tolestura diagonalak erabiltzea eta emaitzak aurreikustea.
+  - Ebakia tolestura-lerroan, izkinan edo kanpoko ertzean egitearen arteko aldeak sistematikoki ikertzea.
+  - Ondorengo saio batean Teselak jarduerarekin lotzea: paperaren transformazioak erabiliz forma berri baten propietateak aurreikustea.
+  ebaluazioan_zer_behatu:
+  - Ebaki aurretik aurreikuspena egiten eta erregistratzen duten.
+  - Tolestura bat pausoz pauso mentalki desegiteko gai diren.
+  - Kopia kopuruaz gain kokapena arrazoitzen duten.
+  - Emaitza ustekabekoa denean beren eredua berrikusten duten.
+  - Simetria azalpen gisa erabiltzen hasten diren, hitz formalik erabili ez arren.
+
+ikaslearen_fitxa:
+  beharrezkoa: true
+  titulua: Papera tolestu eta moztu
+  blokeak:
+  - mota: enuntziatua
+    testua: 'Arau bakarra: ez moztu aurreikuspena egin aurretik. Erronka bakoitzean, lehenengo marraztu zer uste duzuen agertuko dela; gero moztu, ireki eta alderatu.'
+  - mota: azpiizenburua
+    testua: '1. Tolestura bat'
+  - mota: galdera
+    testua: 'Tolestu paper karratua erditik. Aukeratu ebaki txiki baten kokapena. Zer ikusiko duzue papera irekitzean? Marraztu aurreikuspena eta gero egiaztatu.'
+  - mota: galdera
+    testua: 'Zer gertatu da? Zuen aurreikuspena aldatu behar izan duzue? Azaldu.'
+  - mota: azpiizenburua
+    testua: '2. Bi tolestura'
+  - mota: galdera
+    testua: 'Tolestu karratua erditik eta berriro erditik. Ebaki aurretik, marraztu zenbat kopia eta non agertuko diren. Ondoren egiaztatu.'
+  - mota: galdera
+    testua: 'Saiatu emaitza azaltzen papera pausoz pauso irekitzen ariko bazinete bezala.'
+  - mota: azpiizenburua
+    testua: '3. Atzeraka'
+  - mota: galdera
+    testua: 'Zabaldutako paperean lau zulo simetriko lortu nahi dituzue ebaki bakarrarekin. Nola tolestuko zenukete? Non egingo zenukete ebakia? Lehenengo proposatu, gero probatu.'
+  - mota: azpiizenburua
+    testua: '4. Zuen erronka'
+  - mota: galdera
+    testua: 'Denbora baduzue, sortu beste talde baterako tolestu-eta-moztu erronka bat. Erantzuna eta zergatia jakin behar dituzue erronka eman aurretik.'
+
+loturak:
+  aurretik_egitekoak: []
+  ondoren_egitekoak:
+  - teselak

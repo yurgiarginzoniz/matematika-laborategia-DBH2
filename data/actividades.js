@@ -2087,6 +2087,485 @@ window.LAB_JARDUERAK = [
     "_file": "nim.yaml"
   },
   {
+    "id": "papera-tolestu-eta-moztu",
+    "bertsioa": "1.0",
+    "izena": "Papera tolestu eta moztu",
+    "fitxa_teknikoa": {
+      "deskribapen_laburra": "Papera tolestu, ebaki aurretik emaitza aurreikusi eta irekitzean agertzen den irudia simetriaren bidez azaltzeko ikerketa manipulatiboa.",
+      "jarduera_mota": "Ikerketa",
+      "fasea": [
+        "Pentsatzeko tresnak garatzea",
+        "Geometria eta bistaratzea"
+      ],
+      "denboralizazioa": "1 saio",
+      "irekiera_maila": "Erdi-irekia",
+      "zailtasuna": "Ertaina",
+      "taldekatzea": "3ko taldeak",
+      "gaiak": [
+        "Geometria eta bistaratzea",
+        "Matematika esperimentala"
+      ],
+      "pentsatzeko_tresnak": [
+        "Irudikatu",
+        "Simetria",
+        "Aierua egin",
+        "Irudikapena aldatu",
+        "Zer dakigu ziur?"
+      ],
+      "konpetentziak": [
+        {
+          "kodea": "1.2",
+          "sakontasuna": 2,
+          "nola_lantzen_da": "Tolesturen eta ebakien emaitza aurreikusteko estrategia desberdinak probatu, alderatu eta azaldu egiten dira."
+        },
+        {
+          "kodea": "2.2",
+          "sakontasuna": 3,
+          "nola_lantzen_da": "Tolestutako eta zabaldutako paperaren irudiak marrazkien bidez adierazten dira, eta simetria-erlazioak erabiltzen dira emaitza arrazoitzeko."
+        },
+        {
+          "kodea": "3.2",
+          "sakontasuna": 2,
+          "nola_lantzen_da": "Ebaki aurretik aieruak egiten dira, esperimentuz egiaztatzen dira eta emaitzaren zergatia eztabaidatzen da."
+        },
+        {
+          "kodea": "4.1",
+          "sakontasuna": 2,
+          "nola_lantzen_da": "Toleste eta ebakitze sinple baten atzean dauden transformazio eta simetria matematikoak identifikatzen dira."
+        },
+        {
+          "kodea": "5.1",
+          "sakontasuna": 2,
+          "nola_lantzen_da": "Aurreikuspen okerrak ez dira porrot gisa tratatzen; irekitako paperak emandako informazioa erabiltzen da hurrengo eredua fintzeko."
+        },
+        {
+          "kodea": "5.2",
+          "sakontasuna": 2,
+          "nola_lantzen_da": "Taldekideek banakako aurreikuspenak alderatu, adostutako iragarpena erregistratu eta azalpen bateratua eraikitzen dute."
+        }
+      ]
+    },
+    "jardueraren_aurkezpena": {
+      "helburua": "Tolestutako paper baten ebakia mentalki desegin eta emaitza aurreikustea, esperimentuak aierua egiaztatzeko erabiliz eta simetria azalpen-tresna bihurtuz.",
+      "azalpen_nagusia": "Jarduera honetan papera ez da eskulan baten euskarri hutsa: esperimentu matematiko baten objektua da. Erronka bakoitzean ikasleek papera tolestu eta ebaki aurretik zer agertuko den aurreikusi behar dute. Aurreikuspena marraztu edo idatzi ondoren bakarrik egiten da ebakia eta irekitzen da papera.\n\nSekuentzia horri eustea da jardueraren gakoa: aurreikusi → egin → alderatu → azaldu. Ebakia lehenengo egiten bada, jarduera sorpresa bisualen bilduma bihurtzen da; aurreikuspena lehenengo eskatuta, bistaratze geometrikoko problema bihurtzen da.\n\nLehen kasuak oso eskuragarriak dira: paper karratua erditik tolestu eta tolestutako ertz edo izkina batean ebaki txiki bat egin. Ondoren bi tolestura erabiltzen dira. Ikasleek pixkanaka ikusten dute ebaki baten kopiak ez direla ausaz agertzen: tolesturak desegitean irudia islatzen da. Helburua ez da simetriaren hiztegi formal osoa ematea, baizik eta «papera irekitzean zer gertatzen zaio ebakiari?» galdera arrazoitzea.\n\nSaioaren bigarren erdian norabidea alderantzikatzen da: irakasleak zabaldutako paper batean lortu nahi den emaitza deskribatzen du eta taldeek non tolestu eta non moztu beharko litzatekeen proposatzen dute. Horrek atzeraka pentsatzea eta simetriak erabiltzea eskatzen du.\n\nAmaieran talde bakoitzak bere erronka txiki bat diseina dezake beste talde baterako. Erronka baliagarria izateko, diseinatzaileek aldez aurretik jakin behar dute zein emaitza sortuko duen eta zergatik. Horrela, jarduera ez da «asmatu eta ikusi zer ateratzen den» fasean geratzen.\n",
+      "ikasleen_ibilbide_tipikoa": [
+        "Tolestura bakarreko kasu batean emaitza intuitiboki aurreikusten dute.",
+        "Ebakia egin eta papera irekitzean aurreikuspena egiaztatu edo zuzendu egiten dute.",
+        "Bi tolesturarekin kopia gehiago agertzen direla ikusten dute eta haien kokapena arrazoitzen saiatzen dira.",
+        "Tolestura-lerroak ispilu gisa pentsatzen hasten dira.",
+        "Emandako azken emaitza batetik atzeraka lan egiten dute ebakia non egin erabakitzeko.",
+        "Denbora badago, beste talde baterako erronka diseinatzen dute."
+      ],
+      "ohiko_blokeoak": [
+        {
+          "suposizioa": "Ebakiaren kopia kopurua asmatzea nahikoa da.",
+          "zergatik_interesgarria": "Kopia kopuruaz gain haien kokapena eta orientazioa aurreikusi behar dira; hor agertzen da bistaratze geometrikoa."
+        },
+        {
+          "suposizioa": "Papera irekitzean ebakia leku berean geratzen da.",
+          "zergatik_interesgarria": "Tolestura desegitea islapen gisa pentsatzea da jardueraren jauzi kontzeptuala."
+        },
+        {
+          "suposizioa": "Aurreikuspena okerra bada esperimentua gaizki atera da.",
+          "zergatik_interesgarria": "Desadostasuna informazioa da; ikasleek beren eredu mentala zuzentzeko aukera ematen du."
+        }
+      ],
+      "bateratze_eztabaida": [
+        "Zer jakin dezakegu papera ireki aurretik?",
+        "Tolestura bat desegiten dugunean, zer gertatzen zaio ebakiari?",
+        "Bi tolestura badaude, nola erabaki dezakegu kopiak non agertuko diren?",
+        "Zein aurreikuspen aldatu duzue esperimentu baten ondoren? Zergatik?",
+        "Emaitza ezagututa, atzeraka pentsa al dezakegu ebakia non egin behar den?"
+      ],
+      "eramateko_ideia": "Esperimentua ez da emaitza ikusteko bakarrik; aurretik egindako eredu edo aieru bat probatzeko erabiltzen dugu."
+    },
+    "irakaslearen_fitxa": {
+      "jardueraren_deskribapena": "Saio bakarreko geometria-ikerketa manipulatiboa. Paper karratuak tolestu eta ebakitzen dira, baina ebaki bakoitzaren aurretik ikasleek emaitza marraztu behar dute. Jardueraren balioa aurreikuspenaren eta emaitzaren arteko elkarrizketan dago.\n",
+      "prestaketa": [
+        "Talde bakoitzerako gutxienez 6–8 paper karratu prestatu; paper arrunta nahikoa da.",
+        "Talde bakoitzerako guraizeak prestatu.",
+        "Ikaslearen fitxa inprimatu edo erronkak arbelean erakusteko prestatu.",
+        "Irakasleak aldez aurretik erronka guztiak paperarekin probatzea gomendatzen da, tolesturaren eta ebakiaren deskribapena anbiguoa ez dela ziurtatzeko."
+      ],
+      "aurkezpena": "Gaur ez dugu papera moztu eta gero zer atera den ikusiko. Alderantziz egingo dugu: lehenengo zer aterako den aurreikusi, eta gero bakarrik moztu ahal izango dugu.",
+      "ez_esatekoak": [
+        "Ez esan hasieran «simetria» dela erantzuna; utzi ikasleei islapenaren ideia behar izaten.",
+        "Ez utzi taldeei aurreikuspena erregistratu gabe ebakitzen.",
+        "Ez zuzendu aurreikuspen oker bat ebakia egin aurretik, segurtasun edo enuntziatu-arazo bat ez bada.",
+        "Ez bihurtu amaiera irudi politak sortzeko eskulan libre batean; diseinatutako erronkak aurreikus daitekeen emaitza izan behar du."
+      ],
+      "denboralizazioa": [
+        {
+          "tartea": "0–7 min",
+          "fasea": "Arau nagusia eta lehen proba",
+          "azalpena": "Paper karratua erditik tolestu. Tolestutako paperaren kanpoko izkina batean ebaki txiki bat proposatu. Talde bakoitzak irekitako paperaren emaitza marraztu behar du ebaki aurretik."
+        },
+        {
+          "tartea": "7–18 min",
+          "fasea": "Tolestura bakarra ulertzea",
+          "azalpena": "Bi edo hiru kokapen desberdinetako ebakiak probatu. Ebaki bakoitzean aurreikuspena, esperimentua eta azalpena eskatu. Tolestura-lerroarekiko kokapena azpimarratu."
+        },
+        {
+          "tartea": "18–33 min",
+          "fasea": "Bi tolestura",
+          "azalpena": "Karratua erditik tolestu eta berriro erditik tolestu. Ebaki txiki baten emaitza aurreikusi. Taldeek kopia kopurua ez ezik kokapena ere marraztu behar dute."
+        },
+        {
+          "tartea": "33–45 min",
+          "fasea": "Atzeraka pentsatu",
+          "azalpena": "Zabaldutako paper batean lau zulo simetriko lortu nahi direla planteatu. Taldeek zer tolestura eta ebaki erabiliko lituzketen proposatu, probatu eta azaldu."
+        },
+        {
+          "tartea": "45–52 min",
+          "fasea": "Sortu erronka bat",
+          "azalpena": "Denbora badago, talde bakoitzak tolestura eta ebaki sinple bateko erronka sortzen du beste talde baterako. Sortzaileek erantzuna eta azalpena prest izan behar dituzte."
+        },
+        {
+          "tartea": "52–55 min",
+          "fasea": "Itxiera",
+          "azalpena": "«Zerk lagundu digu papera ireki aurretik ikusten?» galderarekin simetria eta irudikapen mentala esplizitatu."
+        }
+      ],
+      "galdera_erabilgarriak": [
+        "Papera lehen aldiz irekitzean, non agertuko da ebakiaren kopia?",
+        "Tolestura-lerroa ispilu bat balitz bezala pentsa dezakezue?",
+        "Zenbat kopia espero dituzue? Eta non?",
+        "Marraztu papera pausoz pauso irekitzen. Zer gertatzen da lehenengo irekieran?",
+        "Zuen aurreikuspena eta emaitza ez datoz bat. Zein zatitan aldatu behar duzue zuen ideia?",
+        "Emaitza hau nahi badugu, atzeraka nondik hasi gaitezke?"
+      ],
+      "pista_mailak": [
+        "1. maila: Ez saiatu bi tolesturak batera desegiten. Ireki mentalki tolestura bat eta gero bestea.",
+        "2. maila: Marraztu tolestura-lerroa eta pentsatu ispilu bat dela.",
+        "3. maila: Ebakiaren puntu bakoitzak tolestura-lerroaren beste aldean distantzia bereko kopia izango du."
+      ],
+      "soluzioak": [
+        {
+          "izena": "Tolestura bakarra",
+          "azalpena": "Tolestutako paperaren bi geruzak batera mozten direnez, papera irekitzean ebakiak tolestura-lerroarekiko simetrikoa den kopia sortzen du. Ebakia tolestura-lerroan bertan badago, irekitzean ebaki bakar handiago edo simetriko bat osatzen da, ez bi ebaki bereizi."
+        },
+        {
+          "izena": "Bi tolestura",
+          "azalpena": "Bi tolesturak bi islapen bezala desegin daitezke. Lehen irekieran ebakiaren kopia bat agertzen da; bigarren irekieran aurreko bi irudiak berriro islatzen dira. Kokapen arrunt batean egindako ebaki txiki batek lau kopia sortzen ditu. Tolestura-lerro edo izkina berezietan egindako ebakiek kopiak elkartu ditzakete; horregatik kokapena ere arrazoitu behar da."
+        },
+        {
+          "izena": "Atzerako erronka",
+          "azalpena": "Lau zulo lau koadrantetan simetrikoki nahi badira, bi simetria-ardatzekiko tolestu daiteke papera: erditik norabide batean eta erditik perpendikularki. Tolestutako laurdenean zulo bakarra eginda, bi tolesturak irekitzean lau kokapen simetriko sortzen dira."
+        }
+      ],
+      "atzeko_matematika": "Tolestura bat irekitzea islapen geometriko gisa interpreta daiteke. Ebakiak tolestutako geruza guztiak zeharkatzen dituenez, papera irekitzean ebakiaren irudi simetrikoak agertzen dira. Bi tolestura perpendikularren kasuan, bi islapenen konposizioak lau kokapen erlazionatu sor ditzake. Ez da beharrezkoa transformazioen formalismoa erabiltzea; ikasleentzat «tolestura-lerroa ispilu gisa» ideia nahikoa izan daiteke.\n",
+      "hedapenak": [
+        "Emandako eredu simetriko bat ebaki bakarrarekin lor daitekeen ala ez erabakitzea.",
+        "Tolestura diagonalak erabiltzea eta emaitzak aurreikustea.",
+        "Ebakia tolestura-lerroan, izkinan edo kanpoko ertzean egitearen arteko aldeak sistematikoki ikertzea.",
+        {
+          "Ondorengo saio batean Teselak jarduerarekin lotzea": "paperaren transformazioak erabiliz forma berri baten propietateak aurreikustea."
+        }
+      ],
+      "ebaluazioan_zer_behatu": [
+        "Ebaki aurretik aurreikuspena egiten eta erregistratzen duten.",
+        "Tolestura bat pausoz pauso mentalki desegiteko gai diren.",
+        "Kopia kopuruaz gain kokapena arrazoitzen duten.",
+        "Emaitza ustekabekoa denean beren eredua berrikusten duten.",
+        "Simetria azalpen gisa erabiltzen hasten diren, hitz formalik erabili ez arren."
+      ]
+    },
+    "ikaslearen_fitxa": {
+      "beharrezkoa": true,
+      "titulua": "Papera tolestu eta moztu",
+      "blokeak": [
+        {
+          "mota": "enuntziatua",
+          "testua": "Arau bakarra: ez moztu aurreikuspena egin aurretik. Erronka bakoitzean, lehenengo marraztu zer uste duzuen agertuko dela; gero moztu, ireki eta alderatu."
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "1. Tolestura bat"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Tolestu paper karratua erditik. Aukeratu ebaki txiki baten kokapena. Zer ikusiko duzue papera irekitzean? Marraztu aurreikuspena eta gero egiaztatu."
+        },
+        {
+          "mota": "galdera",
+          "testua": "Zer gertatu da? Zuen aurreikuspena aldatu behar izan duzue? Azaldu."
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "2. Bi tolestura"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Tolestu karratua erditik eta berriro erditik. Ebaki aurretik, marraztu zenbat kopia eta non agertuko diren. Ondoren egiaztatu."
+        },
+        {
+          "mota": "galdera",
+          "testua": "Saiatu emaitza azaltzen papera pausoz pauso irekitzen ariko bazinete bezala."
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "3. Atzeraka"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Zabaldutako paperean lau zulo simetriko lortu nahi dituzue ebaki bakarrarekin. Nola tolestuko zenukete? Non egingo zenukete ebakia? Lehenengo proposatu, gero probatu."
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "4. Zuen erronka"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Denbora baduzue, sortu beste talde baterako tolestu-eta-moztu erronka bat. Erantzuna eta zergatia jakin behar dituzue erronka eman aurretik."
+        }
+      ]
+    },
+    "loturak": {
+      "aurretik_egitekoak": [],
+      "ondoren_egitekoak": [
+        "teselak"
+      ]
+    },
+    "_file": "papera_tolestu_eta_moztu.yaml"
+  },
+  {
+    "id": "teselak",
+    "bertsioa": "1.0",
+    "izena": "Teselak: moztu, mugitu eta estali",
+    "fitxa_teknikoa": {
+      "deskribapen_laburra": "Karratu baten alde batetik moztutako zatia kontrako aldera trasladatuz tesela bat eraiki, planoa zergatik estaltzen duen justifikatu eta diseinu propioa sortzeko ikerketa.",
+      "jarduera_mota": "Ikerketa",
+      "fasea": [
+        "Geometria eta bistaratzea",
+        "Patroiak eta justifikazioa"
+      ],
+      "denboralizazioa": "1 saio",
+      "irekiera_maila": "Erdi-irekia",
+      "zailtasuna": "Ertaina",
+      "taldekatzea": "3ko taldeak",
+      "gaiak": [
+        "Geometria eta bistaratzea",
+        "Matematika esperimentala",
+        "Patroiak eta orokortzea"
+      ],
+      "pentsatzeko_tresnak": [
+        "Irudikatu",
+        "Simetria",
+        "Aierua egin",
+        "Zer dakigu ziur?",
+        "Irudikapena aldatu"
+      ],
+      "konpetentziak": [
+        {
+          "kodea": "1.2",
+          "sakontasuna": 2,
+          "nola_lantzen_da": "Tesela eraikitzeko araua aplikatu, diseinu desberdinak probatu eta zergatik funtzionatzen duten argudiatzen da."
+        },
+        {
+          "kodea": "2.2",
+          "sakontasuna": 3,
+          "nola_lantzen_da": "Karratuaren ertzak eraldatu, teselaren kopiak kokatu eta traslazioen bidez sortutako estaldura geometrikoki adierazten da."
+        },
+        {
+          "kodea": "3.2",
+          "sakontasuna": 2,
+          "nola_lantzen_da": "«Alde batetik kendutakoa kontrako aldera eramanez gero beti teselatuko du» aierua eraiki, adibideekin probatu eta justifikatzen da."
+        },
+        {
+          "kodea": "4.1",
+          "sakontasuna": 3,
+          "nola_lantzen_da": "Teselazio baten funtzionamenduan ertzen arteko erlazioa eta traslazioa identifikatzen dira."
+        },
+        {
+          "kodea": "5.1",
+          "sakontasuna": 2,
+          "nola_lantzen_da": "Lehen diseinuak desegokiak edo zailak direnean forma sinplifikatu eta berriro probatzen da, errorea diseinu-prozesuaren parte gisa erabiliz."
+        },
+        {
+          "kodea": "5.2",
+          "sakontasuna": 2,
+          "nola_lantzen_da": "Taldeak tesela bakarra eraiki, kopiekin estaldura egiaztatu eta funtzionamenduaren azalpen bateratua prestatzen du."
+        }
+      ]
+    },
+    "jardueraren_aurkezpena": {
+      "helburua": "Tesela irregular baten eraikuntza ez tratatzea trikimailu edo eskulan gisa, baizik eta eraikuntza-arauak planoa hutsunerik eta gainjartzerik gabe estaltzea zergatik bermatzen duen ulertzea.",
+      "azalpen_nagusia": "Jarduera karratu batekin hasten da, planoa teselatzen duela begi-bistakoa delako. Galdera ez da soilik «forma polit bat sor dezakegu?», baizik eta «zenbat alda dezakegu karratua eta hala ere ziur egon kopiek planoa estaliko dutela?».\n\nOinarrizko eraikuntza honetan karratuaren alde batetik pieza bat mozten da eta, biratu edo irauli gabe, kontrako aldeko posizio baliokidera eramaten da. Ondoren gauza bera egin daiteke beste alde-parearekin. Sortzen den forma irregularrak teselatzen jarraitzen du, ertzak bikoteka eraiki direlako: alde batean dagoen irtengunea ondoko kopiaren kontrako aldeko hutsune bera da.\n\nJardueraren puntu matematiko nagusia bermea da. Ikasleek tesela batzuk elkarren ondoan jartzean «ikusten» dute egokitzen direla, baina irakasleak harago eraman behar du: zergatik genekien probatu aurretik egokituko zirela? Erantzuna eraikuntza-prozesuan dago. Moztutako ertza ez da desagertu; traslazio baten bidez kontrako ertzera eraman da. Teselaren kopia bera traslazio horrekin mugitzean, bi ertzak derrigor bat datoz.\n\nLehenengo diseinu gidatu baten ondoren, taldeek beren tesela sortzen dute eta hainbat kopia marraztu edo kalkatu behar dituzte estaldura erakusteko. Amaieran, azalpen labur bat prestatzen dute: «gure teselak ez du kasualitatez funtzionatzen; funtzionatzen du...». Horrek eskulanetik argumentaziora eramaten du.\n\nPapera tolestu eta moztu jardueraren ondoren egitea bereziki egokia da: bi saioetan papera eraldatzen da, baina lehenengoan islapenak eta aurreikuspena dira nagusi; hemen traslazioa eta eraikuntza baten bermea. Hala ere, jarduera independentea da eta ez du aurreko saioa behar.\n",
+      "ikasleen_ibilbide_tipikoa": [
+        "Karratuak planoa zergatik estaltzen duen identifikatzen dute.",
+        "Alde batetik pieza bat moztu eta kontrako aldera posizio bera mantenduz eramaten dute.",
+        "Teselaren kopiak elkarren ondoan jarri eta ertzak bat datozela egiaztatzen dute.",
+        "Bigarren alde-parea eraldatuz forma konplexuagoa sortzen dute.",
+        "«funtzionatzen du» behaketatik «zergatik funtzionatu behar du» justifikaziora igarotzen dira.",
+        "Diseinu propioa sortu eta mosaiko txiki bat osatzen dute."
+      ],
+      "ohiko_blokeoak": [
+        {
+          "suposizioa": "Moztutako pieza kontrako aldeko edozein lekutan jar daiteke.",
+          "zergatik_interesgarria": "Eraikuntzaren bermea posizio baliokidea mantentzen duen traslazioan oinarritzen da; desplazamendu arbitrario batek ertzen parekatzea hautsi dezake."
+        },
+        {
+          "suposizioa": "Pieza biratzea edo iraultzea berdin da.",
+          "zergatik_interesgarria": "Oinarrizko eraikuntzan orientazioa mantentzea funtsezkoa da; beste transformazio batzuek ere teselak sor ditzakete, baina beste baldintza batzuk behar dituzte."
+        },
+        {
+          "suposizioa": "Kopia batzuk egokitzen direla ikusteak nahikoa frogatzen du beti teselatuko duela.",
+          "zergatik_interesgarria": "Adibideak egiaztapenak dira; eraikuntza-arauak ematen du orokortzeko arrazoia."
+        }
+      ],
+      "bateratze_eztabaida": [
+        "Zergatik teselatzen du karratu batek?",
+        "Moztutako zatia kontrako aldera eramatean, zer mantendu dugu?",
+        "Zergatik dator bat tesela baten irtengunea hurrengoaren hutsunearekin?",
+        "Probatu aurretik jakin al genezakeen funtzionatuko zuela?",
+        "Zer aldaketa egin genezake araua hautsi gabe? Zeinek hautsiko luke bermea?"
+      ],
+      "eramateko_ideia": "Forma irregularrak ez du kasualitatez teselatzen; kontrako ertzak traslazio beraren bidez eraiki ditugulako dago bermatuta."
+    },
+    "irakaslearen_fitxa": {
+      "jardueraren_deskribapena": "Saio bakarreko geometria-ikerketa. Ikasleek karratu batetik abiatuta tesela irregular bat eraikitzen dute, alde batetik moztutakoa kontrako aldera traslazioz eramanez. Helburua ez da mosaiko apaingarri bat egitea, eraikuntza horrek teselazioa zergatik bermatzen duen azaltzea baizik.\n",
+      "prestaketa": [
+        "Talde bakoitzerako paper edo kartoi meheko hainbat karratu prestatu; 8–12 cm inguruko aldeak erosoak dira.",
+        "Guraizeak, arkatza, zinta itsasgarria edo kola eta kalkatzeko paper gehigarria prestatu.",
+        "Karratuak ahalik eta zehatzenak izatea komeni da, ertzak alderatzean akats fisikoek ideia matematikoa ez ezkutatzeko.",
+        "Ez da diagramarik behar jarduera egiteko; irakasleak lehen eraikuntza fisikoki erakuts dezake, baina ez du azken forma bat aurrez erakutsi behar."
+      ],
+      "aurkezpena": "Karratu batekin planoa estal dezakegu hutsunerik eta gainjartzerik gabe. Zenbat deforma dezakegu karratua eta hala ere ziur egon forma berriak ere planoa estaliko duela?",
+      "ez_esatekoak": [
+        "Ez hasi tesela apaingarri bukatuen bilduma erakutsiz; horrek jarduera kopiatzeko eskulan bihur dezake.",
+        "Ez esan soilik «moztu eta beste aldera itsatsi»; azpimarratu pieza biratu edo irauli gabe posizio baliokidera trasladatu behar dela.",
+        "Ez onartu «ikusten da sartzen dela» azken azalpen gisa; galdetu zergatik zegoen hori bermatuta.",
+        "Ez sartu hasieran biraketa bidezko teselen eraikuntzan; oinarrizko traslazio-kasua ulertu ondoren bakarrik erabili hedapen gisa."
+      ],
+      "denboralizazioa": [
+        {
+          "tartea": "0–8 min",
+          "fasea": "Karratua eta galdera",
+          "azalpena": "Karratuak teselatzen duela gogorarazi eta karratua deformatzeko moduak proposatzeko eskatu. Ez eman berehala eraikuntza-araua."
+        },
+        {
+          "tartea": "8–18 min",
+          "fasea": "Lehen eraikuntza gidatua",
+          "azalpena": "Alde bateko ertzean forma sinple bat marraztu eta moztu. Pieza biratu edo irauli gabe kontrako aldera posizio baliokidera trasladatu eta itsatsi. Forma berria kopiatu eta bi edo hiru tesela elkarren ondoan jarri."
+        },
+        {
+          "tartea": "18–28 min",
+          "fasea": "Zergatik funtzionatzen du?",
+          "azalpena": "Taldeek irtengune eta hutsuneen parekatzea azaldu. «Probatu aurretik zergatik genekien?» galdera erabili traslazioaren bermea azaleratzeko."
+        },
+        {
+          "tartea": "28–42 min",
+          "fasea": "Bigarren eraldaketa eta diseinu propioa",
+          "azalpena": "Beste alde-parearekin prozedura errepikatu daiteke. Talde bakoitzak bere tesela sortu, baina moztutako piezen orientazioa eta posizioa zaindu behar ditu."
+        },
+        {
+          "tartea": "42–50 min",
+          "fasea": "Teselazioa egiaztatu",
+          "azalpena": "Teselaren hainbat kopia kalkatu edo marraztu eta gutxienez 3×3 inguruko estaldura-zati bat erakutsi. Ez da dekorazioa lehentasuna."
+        },
+        {
+          "tartea": "50–55 min",
+          "fasea": "Itxiera eta justifikazioa",
+          "azalpena": "Talde bakoitzak esaldi hau osatu: «Gure teselak ez du kasualitatez funtzionatzen; funtzionatzen du...». Traslazioa eta kontrako ertzen parekatzea bateratu."
+        }
+      ],
+      "galdera_erabilgarriak": [
+        "Karratuaren zein propietatek egiten du erraza kopiak elkarren ondoan jartzea?",
+        "Moztutako zatia non jarri behar dugu? Zergatik ez edozein lekutan?",
+        "Pieza biratu gabe eramateak zer bermatzen du?",
+        "Tesela hau eskuinera mugitzen badugu, zein ertzek egingo dute bat?",
+        "Hiru kopia egokitu dira. Horrek frogatzen al du plano osoa estaliko dela?",
+        "Zer dago eraikuntza-arauan kopia guztientzat balio duena?"
+      ],
+      "pista_mailak": [
+        "1. maila: Begiratu alde bateko hutsuneari. Non dago forma bera beste aldean?",
+        "2. maila: Pentsatu teselaren kopia osoa karratuaren zabalera adina eskuinera mugitzen duzuela.",
+        "3. maila: Ertz batean kendu dugun forma bera dago kontrako ertzean, orientazio bera mantenduta. Horregatik, traslazioan bi ertzak bat datoz."
+      ],
+      "soluzioak": [
+        {
+          "izena": "Oinarrizko eraikuntza",
+          "azalpena": "Karratuaren ezkerreko ertzetik pieza bat moztu eta eskuineko ertzera desplazamendu horizontal huts batez eramaten bada, teselaren eskuineko irtengunea hurrengo kopiaren ezkerreko hutsune bera da. Kopiak karratuaren jatorrizko zabalera adina trasladatuta, ertzak zehazki bat datoz."
+        },
+        {
+          "izena": "Bi alde-pareak eraldatzea",
+          "azalpena": "Ezker-eskuin ertzekin prozedura egin ondoren, goiko-beheko ertzekin ere egin daiteke, oraingoan desplazamendu bertikala mantenduz. Kopiak bi norabideetan traslatuta, jatorrizko karratuen sare bera berreskuratzen da, baina mugak forma irregularrez ordezkatuta."
+        }
+      ],
+      "atzeko_matematika": "Eraikuntza hau traslazio bidezko teselazio baten adibidea da. Jatorrizko karratuaren kontrako aldeak bektore baten bidez erlazionatuta daude. Ertz bateko kurba edo poligono-zatia bektore horren bidez kontrako ertzera trasladatzen bada, teselaren kopia bektore berarekin mugitzean bi ertzak bat datoz. Bi norabide independenteetan prozedura eginda, planoaren sare periodiko bat sortzen da. Jardueran ez da bektoreen formalismoa behar; «forma bera, orientazio bera, kontrako aldean» eta «kopia osoa desplazatzea» nahikoa dira.\n",
+      "hedapenak": [
+        "Tesela baten diseinutik abiatuta zein karratu edo laukizuzen jatorrizko berreskura daitekeen azaltzea.",
+        "Beste talde baten teselak eraikuntza-araua benetan betetzen duen aztertzea eta, behar bada, kontraadibide bat aurkitzea.",
+        "Pieza biratuz teselazio bat eraikitzeko modurik dagoen ikertzea; hau beste familia bat da eta ez da oinarrizko arauaren ondorio zuzena.",
+        "Teselazioaren kopiak koloreztatu edo irudi figuratibo bat bilatu, baina justifikazio matematikoa amaitu ondoren bakarrik."
+      ],
+      "ebaluazioan_zer_behatu": [
+        "Moztutako pieza orientazioa aldatu gabe kontrako aldera eramaten duten.",
+        "Teselaren kopiak zehaztasunez kokatzen dituzten.",
+        "«egokitzen da» behaketatik «zergatik egokitu behar du» azalpen orokorrera igarotzen diren.",
+        "Traslazioaren ideia hitzez, keinuz edo marrazkiz adierazten duten.",
+        "Diseinu propioan eraikuntza-araua mantentzen duten."
+      ]
+    },
+    "ikaslearen_fitxa": {
+      "beharrezkoa": true,
+      "titulua": "Teselak: moztu, mugitu eta estali",
+      "blokeak": [
+        {
+          "mota": "enuntziatua",
+          "testua": "Karratu batek planoa hutsunerik eta gainjartzerik gabe estaltzen du. Gaur karratua deformatuko dugu, baina propietate hori galdu gabe."
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "1. Karratua aldatu"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Moztu forma sinple bat karratuaren alde batetik. Eraman pieza kontrako aldera, biratu edo irauli gabe, eta jarri posizio baliokidean. Zer forma sortu duzue?"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Egin edo marraztu forma berriaren hainbat kopia. Hutsunerik edo gainjartzerik geratzen al da?"
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "2. Ez da kasualitatea"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Zergatik dator bat tesela baten irtengunea hurrengo teselaren hutsunearekin? Azaldu probatu aurretik ere zergatik jakin genezakeen."
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "3. Zuen tesela"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Eraldatu beste alde-parea ere, nahi baduzue. Sortu zuen tesela eta erakutsi hainbat kopiarekin planoaren zati bat estaltzen duela."
+        },
+        {
+          "mota": "galdera",
+          "testua": "Osatu: «Gure teselak ez du kasualitatez funtzionatzen; funtzionatzen du...»"
+        },
+        {
+          "mota": "azpiizenburua",
+          "testua": "4. Eta araua aldatzen badugu?"
+        },
+        {
+          "mota": "galdera",
+          "testua": "Zer uste duzue gertatuko litzatekeela moztutako pieza kontrako aldera eramatean biratuko bagenu? Beti teselatuko al luke? Ez duzue zertan erantzun osoa aurkitu: egin aieru bat eta azaldu."
+        }
+      ]
+    },
+    "loturak": {
+      "aurretik_egitekoak": [
+        "papera-tolestu-eta-moztu"
+      ],
+      "ondoren_egitekoak": []
+    },
+    "_file": "teselak.yaml"
+  },
+  {
     "id": "txokolate-tableta",
     "bertsioa": "1.0",
     "izena": "Txokolate-tableta",

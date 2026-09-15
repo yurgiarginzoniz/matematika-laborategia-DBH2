@@ -5,7 +5,7 @@ const SITE = Object.assign({
   ai: "OpenAI ChatGPT",
   license: "CC BY-NC-SA 4.0",
   licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-  version: "0.1.8"
+  version: "0.1.14"
 }, window.LAB_SITE_CONFIG || {});
 
 function esc(v){ return (v ?? "").toString().replace(/[&<>"']/g, m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m])); }
@@ -228,10 +228,11 @@ function renderBank(){
     });
   };
 
-  document.querySelectorAll("[data-type-filter]").forEach(btn=>btn.addEventListener("click",()=>{
-    document.querySelectorAll("[data-type-filter]").forEach(b=>b.classList.remove("active"));
+  const typeFilterButtons=[...document.querySelectorAll("[data-type-filter], [data-filter]")];
+  typeFilterButtons.forEach(btn=>btn.addEventListener("click",()=>{
+    typeFilterButtons.forEach(b=>b.classList.remove("active"));
     btn.classList.add("active");
-    activeType=btn.dataset.typeFilter;
+    activeType=btn.dataset.typeFilter || btn.dataset.filter || "all";
     applyFilters();
   }));
 

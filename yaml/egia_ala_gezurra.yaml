@@ -1,0 +1,195 @@
+id: egia-ala-gezurra
+bertsioa: '1.0'
+izena: Egia ala gezurra?
+fitxa_teknikoa:
+  deskribapen_laburra: Egiazaleen eta gezurtien uharteko problema logikoen bidez hipotesiak formulatu, haien ondorioak jarraitu eta kontraesanak erabiliz aukera ezinezkoak baztertzeko erronka.
+  jarduera_mota: Erronka
+  fasea:
+  - Kultura sortzea
+  - Pentsatzeko tresnak garatzea
+  denboralizazioa: 1 saio
+  irekiera_maila: Erdi-irekia
+  zailtasuna: Ertaina
+  taldekatzea: 3ko taldeak; amaierako erronka talde artean truka daiteke
+  gaiak:
+  - Logika
+  - Dedukzioa
+  - Kontraesana
+  pentsatzeko_tresnak:
+  - Hipotesi bat egin eta ondorioak aztertzea
+  - Kontraesana bilatzea
+  - Kasuak sistematikoki antolatzea
+  - Arrazoibidea urratsez urrats aztertzea
+  - Kontraadibidea bilatzea
+  konpetentziak:
+  - kodea: '1.2'
+    sakontasuna: 3
+    nola_lantzen_da: Hipotesi desberdinak probatu, ondorioak kateatu eta kontraesanak erabiliz aukera ezinezkoak baztertzen dira.
+  - kodea: '3.2'
+    sakontasuna: 2
+    nola_lantzen_da: Pertsona baten izaerari buruzko aieruak egin eta baieztapen guztiekin bateragarriak diren egiaztatzen da.
+  - kodea: '4.1'
+    sakontasuna: 3
+    nola_lantzen_da: Baieztapenen arteko egitura logikoa identifikatu eta baldintzen ondorioak sistematikoki aztertzen dira.
+  - kodea: '4.2'
+    sakontasuna: 2
+    nola_lantzen_da: Ez da nahikoa pertsona bakoitzaren izaera esatea; taldeak bere dedukzioa urratsez urrats azaldu eta defendatu behar du.
+  - kodea: '5.1'
+    sakontasuna: 2
+    nola_lantzen_da: Hasierako hipotesi batek huts egiten duenean kontraesana informazio gisa erabiltzen da eta beste aukera bat aztertzen da.
+  - kodea: '5.2'
+    sakontasuna: 2
+    nola_lantzen_da: Taldeko hipotesiak kontrastatu, arrazoibideak zuzendu eta amaierako erronka beste talde batekin partekatu daiteke.
+
+jardueraren_aurkezpena:
+  helburua: "Problemaren erantzuna baino gehiago, dedukzio-prozesua lantzea: hipotesi bat egitea, haren ondorioak jarraitzea eta kontraesan batek hipotesia baztertzeko balio duela ulertzea."
+  azalpen_nagusia: |
+    Jarduerak Raymond Smullyanek ezagun egin zituen «knights and knaves» motako problema logikoen espiritua hartzen du abiapuntu: pertsona batzuek beti esaten dute egia eta besteek beti gezurra. Arau sinple horrek, ordea, dedukzio-kate aberatsak sortzen ditu.
+
+    Helburua ez da ikasleei logika formaleko notazioa irakastea. Interesatzen zaiguna pentsatzeko tresna bat esperientziaz eraikitzea da: «Demagun hau egia dela; zer ondorio izango lituzke?». Ondorio horiek beste baieztapenekin kontraesanean sartzen badira, hipotesia baztertzeko informazioa lortu dugu.
+
+    Hasierako bi pertsonako problemak sarrera oso baxua du. Ondoren, hiru pertsonako problema zentralak intuizio hutsa gainditu eta arrazoibidea antolatzera behartzen du. Ikasleek taula bat, kasuen zerrenda edo ahozko dedukzio-katea erabil dezakete; ez da metodo bakarra inposatu behar.
+
+    Kontraesana hemen ez da akats baten sinonimoa. Alderantziz: hipotesi baten ondorioak kontraesanera eramaten badute, zerbait frogatu dugu hipotesi horri buruz. Ideia hori geroago paradoxetan, froga faltsuen azterketan, kontraadibideetan eta beste problema askotan berrerabili daiteke.
+
+    Azkar amaitzen duten taldeentzat Smullyanen problema klasiko baten moldaketa eskaintzen da. Bertan ikasleek ohartu behar dute uharteko inork ezin duela «gezurtia naiz» baieztatu arauak hautsi gabe. Ez da beharrezkoa ikasle guztiek hedapen horretara iristea.
+
+    Jardueraren amaierako sormen-zereginean taldeek beren problema diseina dezakete. Baldintza garrantzitsuena ez da problema zaila izatea, baizik eta informazioak soluzio bakarra behartzen duela frogatu ahal izatea. Beste talde batek bigarren soluzio bat aurkitzen badu, kontraadibide horrek problema hobetzera behartzen ditu.
+
+    Irakaslearentzako irakurgai gomendatua: Raymond Smullyan, What Is the Name of This Book? The Riddle of Dracula and Other Logical Puzzles. Liburuak egiazaleen eta gezurtien problemak erabiltzen ditu logika gero eta sakonagoetara iristeko. Inspirazio-iturri gisa ere interesgarria da To Mock a Mockingbird.
+  ikasleen_ibilbide_tipikoa:
+  - Bi pertsonako hasierako erronka intuizioz konpontzen saiatzen dira.
+  - «Demagun Ane egiazalea dela» motako hipotesiak egiten hasten dira.
+  - Hipotesi batek beste pertsonen izaerak behartzen dituela ikusten dute.
+  - Kontraesan bat agertzean hipotesia baztertu daitekeela ulertzen dute.
+  - Problema zentralean arrazoibidea antolatzeko taula edo kasuen zerrenda erabiltzen dute.
+  - Azkar amaitzen dutenek Smullyanen txokoa edo problema propio baten diseinua lantzen dute.
+  ohiko_blokeoak:
+  - suposizioa: Gezurti batek esaldi bakoitzean hitz guztiak faltsuak esan behar ditu.
+    zergatik_interesgarria: Arauak baieztapen osoa egiazkoa edo faltsua izateari buruzkoak dira; ez hitz bakoitzari buruzkoak.
+  - suposizioa: Lehen hipotesiak ez badu funtzionatzen, saiakera alferrikakoa izan da.
+    zergatik_interesgarria: Kontraesanak hipotesia ezinezkoa dela frogatzen laguntzen du; informazio baliotsua da.
+  - suposizioa: Erantzuna aurkitzea nahikoa da.
+    zergatik_interesgarria: Jardueraren muina zergatik den soluzio bakarra azaltzea da.
+  bateratze_eztabaida:
+  - Zer egin dugu erantzuna zuzenean ez genekienean?
+  - Hipotesi batek kontraesana sortu duenean, zer ikasi dugu?
+  - Nola dakigu gure erantzuna posiblea dela? Eta bakarra dela?
+  - Taula, kasuen zerrenda edo ahozko arrazoibidea: zein irudikapen izan da erabilgarriena?
+  - Beste problema batean noiz izan daiteke erabilgarria «demagun... eta ikus dezagun zer gertatzen den» estrategia?
+  eramateko_ideia: Hipotesi bat egitea ez da asmatzea soilik; haren ondorioak sistematikoki jarraitzen baditugu, kontraesan batek aukera bat baztertzeko eta soluzioa justifikatzeko balio dezake.
+
+irakaslearen_fitxa:
+  jardueraren_deskribapena: |
+    Saio bakarreko erronka logikoa. Ikasleek egiazaleek beti egia eta gezurtiek beti gezurra esaten duten uharte bateko problemak ebazten dituzte. Helburua ez da trikimailua aurkitzea, hipotesiak eta kontraesanak dedukzio-tresna gisa erabiltzea baizik.
+  prestaketa:
+  - Ikaslearen fitxa inprimatu edo problemak arbelean/proiektorean prestatu.
+  - Talde bakoitzarentzat paper gehigarria utzi taulak edo kasuen zerrendak egiteko.
+  - Azkar amaitzen dutenentzat Smullyanen txokoa eta sormen-erronka prest eduki.
+  aurkezpena: 'Uharte batean bi motatako pertsonak bizi dira: egiazaleek beti esaten dute egia; gezurtiek beti esaten dute gezurra. Ezin dugu aurrez jakin nor den nor.'
+  ez_esatekoak:
+  - Ez azaldu hasieran kasuen taula egiteko metodoa; utzi ikasleei beren antolaketa aurkitzen.
+  - Ez esan «hasi Ane egiazalea dela suposatuz» taldea benetan blokeatuta egon arte.
+  - Ez zuzendu kontraesana agertzen denean; galdetu zer esan nahi duen hipotesiari buruz.
+  - Ez erabili logika formaleko notazioa jardueraren helburua hori ez delako.
+  denboralizazioa:
+  - tartea: 0–10 min
+    fasea: Sarrera · bi pertsonako erronka
+    azalpena: Hasierako problema taldeka ebatzi. Erantzunaz gain zergatia eskatu. Bateratze laburrean «hipotesia → ondorioak → kontraesana» ideia izendatzen hasi.
+  - tartea: 10–30 min
+    fasea: Problema zentrala
+    azalpena: Hiru pertsonako problema landu. Taldeek erantzuna frogatu behar dute. Irakasleak galdera graduatuak erabili, ez soluzioa eman.
+  - tartea: 30–40 min
+    fasea: Bateratzea
+    azalpena: Bi arrazoibide edo irudikapen alderatu. Kontraesana informazio gisa erabiltzea esplizitatu.
+  - tartea: 40–55 min
+    fasea: Hedapena
+    azalpena: Taldearen erritmoaren arabera Smullyanen txokoa, erronka gehigarria edo problema propio baten diseinua. Ez da beharrezkoa talde guztiek fase honetara iristea.
+  galdera_erabilgarriak:
+  - Zer gertatuko litzateke Ane egiazalea balitz?
+  - Baieztapen hori egia bada, zer behartzen du beste pertsonari buruz?
+  - Hipotesi honek kontraesana sortzen du? Non?
+  - Kontraesana aurkitzeak zer esaten digu hasierako hipotesiari buruz?
+  - Beste aukera ere bateragarria izan daiteke? Nola egiaztatuko zenukete?
+  - Nola konbentzituko zenukete beste talde bat zuen erantzuna bakarra dela?
+  pista_mailak:
+  - '1. maila: Aukeratu pertsona bat eta egin hipotesi bat: egiazalea dela. Ez saiatu dena batera erabakitzen.'
+  - '2. maila: Hipotesia egia balitz, idatzi zer izan beharko lukeen pertsona bakoitzak.'
+  - '3. maila: Begiratu baieztapen guztiak batera. Horietakoren bat bere hizlariaren izaerarekin kontraesanean dago?'
+  - '4. maila: Lehen hipotesiak huts egiten badu, probatu kontrakoa eta egiaztatu baieztapen guztiak bateragarriak direla.'
+  soluzioak:
+  - izena: Hasierako erronka · Ane eta Beñat
+    taula:
+      zutabeak:
+      - Hipotesia
+      - Ondorioa
+      - Emaitza
+      errenkadak:
+      - - Ane egiazalea
+        - Beñat gezurtia; «Biok gezurtiak gara» faltsua da
+        - Bateragarria
+      - - Ane gezurtia
+        - Beñat egiazalea izan behar luke, baina «Biok gezurtiak gara» faltsua litzateke
+        - Kontraesana
+    azalpena: 'Soluzio bakarra: Ane egiazalea da eta Beñat gezurtia. Anek egia esaten du Beñat gezurtia dela esatean; Beñaten «biok gezurtiak gara» baieztapena faltsua da, Ane ez delako gezurtia.'
+  - izena: Problema zentrala · Ane, Beñat eta June
+    taula:
+      zutabeak:
+      - Hipotesia
+      - Ondorioak
+      - Emaitza
+      errenkadak:
+      - - Ane egiazalea
+        - Beñat gezurtia; Junek «Ane egiazalea da» dioenez, June egiazalea. Beñatek June eta bera mota berekoak direla dio, eta hori faltsua da.
+        - Bateragarria
+      - - Ane gezurtia
+        - Beñat egiazalea; Juneren baieztapena faltsua denez June gezurtia. Baina Beñatek June eta bera mota berekoak direla dio eta hori faltsua litzateke.
+        - Kontraesana
+    azalpena: 'Soluzio bakarra: Ane egiazalea, Beñat gezurtia eta June egiazalea.'
+  - izena: Smullyanen txokoa · entzun ez dugun erantzuna
+    azalpena: 'Lehen pertsonari «egiazalea ala gezurtia zara?» galdetu diote, baina haren erantzuna ez dugu entzun. Bigarrenak dio: «Gezurtia dela esan du». Hirugarrenak dio: «Bigarrena gezurretan ari da». Uharteko inork ezin du egiazki edo gezurrez «gezurtia naiz» esan arau horien barruan: egiazale batek ez luke esango, eta gezurti batek ere ez luke bere buruari buruzko baieztapen egiazkoa egingo. Beraz, bigarrenaren kontakizuna faltsua da: bigarrena gezurtia da. Hirugarrenaren baieztapena egia denez, hirugarrena egiazalea da. Lehen pertsonaren mota ezin da informazio horrekin zehaztu. Problema Raymond Smullyanen knights-and-knaves tradizioaren moldaketa da.'
+  - izena: Erronka gehigarria · Bi pertsona
+    azalpena: 'Anek dio: «Beñat eta biok mota berekoak gara». Beñatek dio: «Ane gezurtia da». Soluzio bakarra: Ane gezurtia eta Beñat egiazalea. Ane egiazalea balitz, Beñat ere egiazalea litzateke, baina Beñaten baieztapena faltsua izango litzateke. Ane gezurtia izanik, haren «mota berekoak gara» baieztapena faltsua da; beraz Beñat egiazalea da, eta haren baieztapena zuzena.'
+  amaierako_bateratzea: |
+    Ez amaitu «logika-ariketa bat egin dugu» esanez. Izendatu erabilitako tresna: hipotesi bat hartu, ondorioak jarraitu eta kontraesana agertzen bada hipotesia baztertu. Azpimarratu kontraesana ez dela saiakeraren porrota; hipotesiari buruzko informazio sendoa da. Talde batek problema propioa sortu badu eta beste taldeak bigarren soluzio bat aurkitu badio, erabili kontraadibidearen balioa erakusteko.
+  hedapenak:
+  - Smullyanen beste egiazale/gezurti problema bat irakasleak hautatzea, talde indartsuentzat.
+  - Talde bakoitzak 2–3 pertsonako problema propioa sortu eta beste talde bati ematea; sortzaileek soluzioa bakarra dela frogatu behar dute.
+  - Aurrerago paradoxen jarduera batekin lotzea: zer gertatzen da baieztapenak bere buruari buruz hitz egiten hasten direnean?
+  - 'Irakaslearentzako irakurgaiak: Raymond Smullyan, What Is the Name of This Book?; To Mock a Mockingbird.'
+  ebaluazioan_zer_behatu:
+  - Hipotesiak modu esplizituan formulatzen dituzten.
+  - Hipotesi baten ondorioak koherentziaz jarraitzen dituzten.
+  - Kontraesana aukera bat baztertzeko erabiltzen duten.
+  - Erantzuna justifikatzen duten, ez soilik asmatzen.
+  - Beste aukera posible bat egon daitekeen egiaztatzen duten.
+  - Taldean besteen arrazoibidea entzun, zuzendu eta osatzen duten.
+
+ikaslearen_fitxa:
+  beharrezkoa: true
+  titulua: Egia ala gezurra?
+  blokeak:
+  - mota: enuntziatua
+    testua: 'Uharte batean bi motatako pertsonak bizi dira: egiazaleek beti esaten dute egia; gezurtiek beti esaten dute gezurra.'
+  - mota: azpiizenburua
+    testua: '1. Lehen erronka'
+  - mota: testua
+    testua: 'Anek dio: «Beñat gezurtia da». Beñatek dio: «Biok gezurtiak gara».'
+  - mota: galdera
+    testua: 'Nor da egiazalea eta nor gezurtia? Nola dakizue?'
+  - mota: azpiizenburua
+    testua: '2. Erronka nagusia'
+  - mota: testua
+    testua: 'Anek dio: «Beñat gezurtia da». Beñatek dio: «June eta biok mota berekoak gara». Junek dio: «Ane egiazalea da».'
+  - mota: galdera
+    testua: 'Nor da egiazalea eta nor gezurtia? Ez da nahikoa erantzuna ematea: frogatu zuen erantzuna.'
+  - mota: azpiizenburua
+    testua: '3. Denbora badago: sortu zuen erronka'
+  - mota: testua
+    testua: 'Sortu 2 edo 3 pertsonako egiazaleen eta gezurtien problema bat beste talde batek ebazteko. Informazioak soluzio bat behartu behar du, eta zuek frogatu behar duzue zuen soluzioa bakarra dela.'
+  - mota: galdera
+    testua: 'Zein da zuen problemaren soluzioa eta zergatik da bakarra?'
+
+loturak:
+  aurretik_egitekoak: []
+  ondoren_egitekoak: []

@@ -1,7 +1,35 @@
 <!doctype html><html lang="eu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Jarduera-bankua</title><link rel="stylesheet" href="css/style.css"></head><body>
 <div id="siteNav"></div><main><div class="page-head"><div><div class="eyebrow">Jarduera-bankua</div><h1>Jarduerak</h1></div></div>
-<div class="filters"><button class="active" data-filter="all">Guztiak</button><button data-filter="Erronka">Erronkak</button><button data-filter="Ikerketa">Ikerketak</button><button data-filter="Matematika-jolasa">Matematika-jolasak</button><button data-filter="Proiektu handia">Proiektu handiak</button></div>
+<div class="bank-filters" aria-label="Jarduera-iragazkiak">
+  <div class="filter-block">
+    <span class="filter-label">Formatua</span>
+    <div class="filters format-filters">
+      <button class="active" data-type-filter="all">Guztiak</button>
+      <button class="filter-erronka" data-type-filter="Erronka">Erronkak</button>
+      <button class="filter-ikerketa" data-type-filter="Ikerketa">Ikerketak</button>
+      <button class="filter-jolasa" data-type-filter="Matematika-jolasa">Matematika-jolasak</button>
+      <button class="filter-proiektua" data-type-filter="Proiektua">Proiektuak</button>
+    </div>
+  </div>
+  <div class="filter-block competence-filter-block">
+    <label class="filter-label" for="competenceFilter">Konpetentzia</label>
+    <select id="competenceFilter" class="competence-filter">
+      <option value="all">Guztiak</option>
+      <option value="1.1">1.1 · Problema ulertzea</option>
+      <option value="1.2">1.2 · Ebazpen-estrategiak</option>
+      <option value="2.1">2.1 · Tresna digitalak</option>
+      <option value="2.2">2.2 · Irudikapen matematikoak</option>
+      <option value="3.1">3.1 · Patroiak eta erlazioak</option>
+      <option value="3.2">3.2 · Aieruak eta egiaztapena</option>
+      <option value="4.1">4.1 · Egitura matematikoa</option>
+      <option value="4.2">4.2 · Komunikazio matematikoa</option>
+      <option value="5.1">5.1 · Iraunkortasuna eta autorregulazioa</option>
+      <option value="5.2">5.2 · Lankidetza</option>
+      <option value="5.3">5.3 · Matematika eta testuingurua</option>
+    </select>
+  </div>
+</div>
 <div id="bankRoot" class="activity-list"></div></main><div id="siteFooter"></div>
 <script src="data/actividades.js"></script><script src="data/site-config.js"></script><script src="js/app.js"></script><script>renderBank();</script>
 <script>initShell("bank");</script></body></html>

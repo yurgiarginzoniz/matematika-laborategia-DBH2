@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.1.14 — Egia ala gezurra eta bankuko iragazkien sendotzea
+- `Egia ala gezurra?` logika-erronka gehitu da, irakaslearen eta ikaslearen fitxekin.
+- Jarduera-bankuko formatu-iragazkiak bi atributu-formatuekin bateragarriak dira (`data-type-filter` eta aurreko `data-filter`), eguneratze partzialetan ere funtziona dezaten.
+- `bankua.html` eguneratua paketean sartzen da, `Proiektuak` eta konpetentzia-iragazkia bermatzeko.
+
+
+
 ## 0.1.13 — Jarraipenaren xehetasunak lokalean ere
 - `Xehetasunak ikusi` botoiak erregistroaren oharrak `jarraipena.html` orrian bertan erakusten ditu.
 - Horrek `file://` bidezko erabileran `localStorage` fitxategien artean isolatzeak sortzen zuen arazoa saihesten du.
